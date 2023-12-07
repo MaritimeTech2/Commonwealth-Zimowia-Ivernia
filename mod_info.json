@@ -3,7 +3,7 @@
 	"name":"Union of Icylla", #  Displayed to the player
 	"author":"MaritimeTech2",
     "utility":"false",
-	"version":"1.0.2",
+	"version":"0.0.1",
 	"description":"Starsector IntelliJ template.",
     "gameVersion": "0.96a-RC6", 
   	"jars":["jars/UnionOfIcylla.jar"],
