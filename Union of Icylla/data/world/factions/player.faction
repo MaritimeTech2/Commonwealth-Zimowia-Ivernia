@@ -1,0 +1,23 @@
+{
+    "portraits":{
+		"standard_male":[
+			"graphics/portraits/ui_male1.png",
+			"graphics/portraits/ui_male2.png",
+			"graphics/portraits/ui_male3.png",
+			"graphics/portraits/ui_male4.png",
+			"graphics/portraits/ui_male5.png",
+		],
+		
+		"standard_female":[
+			"graphics/portraits/ui_female1.png",
+			"graphics/portraits/ui_female2.png",
+			"graphics/portraits/ui_female3.png",
+			"graphics/portraits/ui_female4.png",
+			"graphics/portraits/ui_female5.png",
+			"graphics/portraits/ui_female6.png",
+			"graphics/portraits/ui_female7.png",
+			"graphics/portraits/ui_female8.png",
+			"graphics/portraits/ui_female10.png",
+		],
+	}
+}

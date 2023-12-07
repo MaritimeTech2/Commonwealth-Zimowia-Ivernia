@@ -1,0 +1,21 @@
+id,type,text1,text2,text3,notes
+#WEAPONS,,,,,
+,,,Assault,,
+#WEAPONSMISSILE,,,,,
+,,,Strike,,
+#SHIPS,,,,,
+ui_hyacinth,SHIP,"The Hyacinth is the pride of Icyllan engineering, being capable enough to take on much larger capital ships, whilist still being an agile and nimble vessel able to take on numerous smaller vessels.",,,
+#FIGHTERS,,,,,
+,,,,,
+#SHIPSYSTEMS,,,,,
+,,,,,
+#CAMPAIGN,,,,,
+ui,FACTION,"The Union of Icylla is a constitutional monarchy, whose monarch acts as the head of state, leading its senate and running most internal affairs.  While the heir next in line for the throne acts as the leader of Icylla’s military and has significant sway over foreign affairs.  
+
+The Union of Icylla, formed on the planet of Icylla, was originally a terraforming effort by domain military personnel and the Eridani corporation.  With the terraforming effort partly finished when the collapse struck, infighting occurred as to the course of actions the colonists would take.  Resulting in the isolation of Icylla and fracturing of the colonists into multiple factions.  Though kept in check by the united terraforming efforts, with the final transformation of Icylla from a ball of ice into a (mostly) terran data.scripts.world, war broke out on the planet for the next century.
+The end of this period of Icyllan history ended with multiple large nations sharing fragile peace on Icylla, though the largest among them was the kingdom ruled by the Vasilensko family.  The Vasilensko family was home to multiple of the greatest military geniuses of Icyllan history, and had recently merged with the Sacha family, who were renowned for their innovations in terraforming technology.  
+
+This peace was broken by the Hegemony, who arrived in force to “reclaim the system for the restoration of the Dominion of man” in c+178, however none on Icylla cared for the Hegemony’s poor propaganda.  This blatant invasion united all Icyllans behind a single cause, leading to the creation of the Union of Icylla, and the arrival of Icylla to the sector.  Since this tumultuous arrival, the Icyllans have shown themselves to be skilled in terraforming, leagues ahead of anyone in the sector.  This led to the rapid colonization of nearby systems and the cementing of Icylla as a formidable minor power.  ",,,
+icylla_planet,CUSTOM,"Icylla was formerly a ball of ice orbiting Aeki, now it is a terran world.  Though mostly comprised of taiga, there are small patches of tropical conditions near the equator, but the planet still remains a cold and unforgiving one.",,,
+Lumyra_Planet,CUSTOM,"The main industrial hub of the Union of Icylla, containing the main fuel and orbital industries and specifically chosen for its lack of an atmoshpere.",,,
+Aela_planet,CUSTOM,"The moon of Icylla, and the home of the Icyllan Burreu for Terraforming.  ",,,

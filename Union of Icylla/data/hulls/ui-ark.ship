@@ -1,0 +1,192 @@
+{
+  "hullName": "Ark",
+  "hullId": "ui-ark",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/starliner.png",
+  "style": "OMEGA",
+  "height": 284,
+  "width": 126,
+  "center": [63, 146],
+  "collisionRadius": 157,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 149,
+  "viewOffset": 0,
+  "builtInMods": [
+    "advancedcore"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 45,
+      "locations": [70.5, 47]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -45,
+      "locations": [70.5, -47]
+    },
+    {
+      "id": "WS0003y",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 90,
+      "locations": [-25, 46]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-25, -46]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 120,
+      "locations": [-86, 36.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -120,
+      "locations": [-86, -36.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        7, 0.5,
+        20, 1.5,
+        35, 1.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        49, 48,
+        32, 46.5,
+        48.5, 58.5
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        47.5, -43,
+        30, -44.5,
+        51, -55
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-140, 18.5],
+      "length": 50.5,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-140, -18.5],
+      "length": 47.5,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-140.5, -0],
+      "length": 48.5,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "COBRA_BOMBER"
+    }
+  ],
+  "bounds": [
+    -140.5, -24,
+    -136, -33,
+    -123, -33,
+    -112, -51,
+    -80.5, -51,
+    -72, -37,
+    -58.5, -43,
+    -40, -43,
+    -29.5, -52.5,
+    -6.5, -52.5,
+    -2, -43,
+    26.5, -43,
+    30, -52.5,
+    35.5, -52.5,
+    35.5, -49,
+    42, -49.5,
+    42, -59,
+    89.5, -58,
+    92.5, -39.5,
+    101.5, -39,
+    112, -27.5,
+    120, -41,
+    118.5, -28.5,
+    124, -24.5,
+    123.5, -15,
+    134.5, -3.5,
+    134.5, 3.5,
+    123.5, 15,
+    124, 24.5,
+    118.5, 28.5,
+    120, 41,
+    112, 27.5,
+    101.5, 39,
+    92.5, 39.5,
+    89.5, 58,
+    42, 59,
+    42, 49.5,
+    35.5, 49,
+    35.5, 52.5,
+    30, 52.5,
+    26.5, 43,
+    -2, 43,
+    -6.5, 52.5,
+    -29.5, 52.5,
+    -40, 43,
+    -58.5, 43,
+    -72, 37,
+    -80.5, 51,
+    -112, 51,
+    -123, 33,
+    -136, 33,
+    -140.5, 24
+  ]
+}

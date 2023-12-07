@@ -1,0 +1,14 @@
+{
+	"designTypeColors":{
+		"Icyllan":[27,35,74,255],
+	},
+  
+    "graphics":{	
+        
+		"blueprint_packages":{
+			"ui_base_package":"graphics/icons/cargo/uibase_bp_package.png",
+			},
+		
+    },
+		
+}
