@@ -1,5 +1,6 @@
-package MaritimeTech2.UnionIcylla;
+package data.scripts;
 
+import data.world.UnionIcyllaGen;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.PersonImportance;
@@ -8,10 +9,9 @@ import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
-import data.scripts.UITerraformingCorpsApplier;
 import exerelin.campaign.SectorManager;
 
-public class ui_ModPlugin extends BaseModPlugin { //we should rename this to UIModPlugin or something
+public class UIModPlugin extends BaseModPlugin { //we should rename this to UIModPlugin or something
 //    @Override
 //    public void onApplicationLoad() throws Exception {
  //       super.onApplicationLoad();
@@ -63,10 +63,9 @@ public class ui_ModPlugin extends BaseModPlugin { //we should rename this to UIM
             //person.getStats().setSkillLevel(Skills.NAVIGATION, 1);
 
             ip.addPerson(person);
-            market.setAdmin(person);
-            market.getCommDirectory().addPerson(person);
             market.addPerson(person);
-
+            market.getCommDirectory().addPerson(person);
+            market.setAdmin(person);
         }
     }
 }

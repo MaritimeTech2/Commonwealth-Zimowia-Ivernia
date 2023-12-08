@@ -1,25 +1,21 @@
 {
     "id":"ui", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
 	"name":"Union of Iskala", #  Displayed to the player
-	"author":"MaritimeTech2, and RaiDz77",
+	"author":"MaritimeTech2",
     "utility":"false",
 	"version":"0.0.1",
 	"description":"Starsector IntelliJ template.",
-    "gameVersion": "0.96a-RC6", 
+    "gameVersion": "0.96a-RC10",
   	"jars":["jars/UnionOfIcylla.jar"],
-  	"modPlugin":"MaritimeTech2.UnionIcylla.ui_ModPlugin",
-	  	"dependencies": [
-          {
+  	"modPlugin":"data.scripts.UIModPlugin",
+    "dependencies": [
+        {
             "id": "lw_lazylib",
-            "name": "LazyLib",
-          },
-          {
+             "name": "LazyLib",
+        },
+        {
             "id": "MagicLib",
             "name": "MagicLib",
-          },
-          {
-            "id": "shaderLib",
-            "name": "GraphicsLib",
-          },
-    ]
+        },
+    ],
 }
