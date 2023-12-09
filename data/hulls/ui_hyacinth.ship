@@ -1,7 +1,7 @@
 {
   "hullName": "Hyacinth",
   "hullId": "ui_hyacinth",
-  "hullSize": "CAPITAL_SHIP",
+  "hullSize": "CRUISER",
   "spriteName": "graphics/ships/champion_base.png",
   "style": "HIGH_TECH",
   "height": 240,
@@ -173,8 +173,7 @@
       "width": 19,
       "angle": -180,
       "contrailSize": 19,
-      "style": "COBRA_BOMBER",
-      "styleId": "MIDLINE"
+      "style": "COBRA_BOMBER"
     },
     {
       "location": [-114, 49.5],
