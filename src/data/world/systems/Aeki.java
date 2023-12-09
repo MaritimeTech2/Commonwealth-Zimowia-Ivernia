@@ -61,6 +61,8 @@ public class Aeki {
                 5000f,
                 420f);
 
+        system.addRingBand(lumyra, "misc", "ui_rings_lava0", 256f, 0, Color.gray, 256f, 230, 30f);
+
         lumyra.setCustomDescriptionId("Lumyra_planet"); //reference descriptions.csv
         lumyra.setInteractionImage("illustrations", "urban00");
         MarketAPI lumyra_market = addMarketplace("ui", lumyra, null,
