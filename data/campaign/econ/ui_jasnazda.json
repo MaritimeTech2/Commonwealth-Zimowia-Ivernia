@@ -1,0 +1,49 @@
+{
+	"starSystem":"UIJasnazda",
+	"markets":[
+		{
+			"entities":["ui_kuznia"],
+			"faction":"ui",
+			"size":5,
+			"startingConditions":[
+				"population_5",
+				"hot",
+				"ore_moderate",
+				"farmland_poor",
+				"ruins_scattered",
+				"habitable",
+			],
+			"industries":[
+				"population",
+				"farming",
+				"spaceport",
+			],
+		},
+		{
+			"entities":["ui_lazurowe_morze"],
+			"faction":"ui",
+			"size":6,
+			"startingConditions":[
+				"habitable",
+				"population_6",
+				"inimical_biosphere",
+				"organics_plentiful",
+				"farmland_adequate",
+				"extreme_weather",
+			],
+			"industries":[
+				"population",
+				"farming",
+				"spaceport",
+				"mining",
+				"heavybatteries",
+				"militarybase",
+				"starfortress_mid",
+			],
+		},
+	],
+
+}
+
+
+
