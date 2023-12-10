@@ -59,8 +59,8 @@ public class UIJasnazda {
         kuznia.setCustomDescriptionId("ui_kuznia"); //reference descriptions.csv
         kuznia.getSpec().setAtmosphereThickness(0.2f);
         kuznia.getSpec().setAtmosphereColor(new Color(168,67,47,235));
-        //kuznia.getSpec().setCloudTexture("graphics/planets/ui_clouds_storm");
-        //kuznia.getSpec().setCloudColor(new Color(184, 67, 44,220));
+        //kuznia.getSpec().setCloudTexture(Global.getSettings().getSpriteName("hab_glows", "ui_clouds_storm"));
+        kuznia.getSpec().setCloudColor(new Color(184, 67, 44,220));
         kuznia.applySpecChanges();
 
         PlanetAPI lazurowe_morze = system.addPlanet("ui_lazurowe_morze",
@@ -76,8 +76,9 @@ public class UIJasnazda {
         lazurowe_morze.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_frozen_water_world"));
         lazurowe_morze.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "sindria"));
         lazurowe_morze.getSpec().setAtmosphereThickness(0.3f);
-        lazurowe_morze.getSpec().setAtmosphereColor(new Color(106, 26, 186,235));
-        //lazurowe_morze.getSpec().setCloudTexture("graphics/planets/ui_clouds_storm");
+        lazurowe_morze.getSpec().setAtmosphereColor(new Color(10, 33, 166,235));
+        //lazurowe_morze.getSpec().setCloudTexture(Global.getSettings().getSpriteName("hab_glows", "ui_clouds_storm"));
+        lazurowe_morze.getSpec().setCloudColor(new Color(255, 255, 255, 130));
         lazurowe_morze.applySpecChanges();
 
 
@@ -98,7 +99,7 @@ public class UIJasnazda {
         system.addRingBand(pieklo, "misc", "rings_asteroids0", 256f, 2, Color.gray, 256f, 3000f, 250f, Terrain.RING, null);
 
         //lazurowe morze ring
-        system.addRingBand(lazurowe_morze, "misc", "rings_ice0", 256f, 2, Color.gray, 256f, 220f, 30f, Terrain.RING, "Grace of Lazurowe Morze");
+        system.addRingBand(lazurowe_morze, "misc", "ui_rings_special0", 256f, 0, Color.gray, 256f, 400f, 30f, Terrain.RING, "Grace of Lazurowe Morze");
 
         // Argon Gamma: Dead World
         //PlanetAPI arka = system.addPlanet("ui_Arka", aekiStar,"Arka","barren-bombarded",360f * (float) Math.random(),320f,3000f,41f);
@@ -107,8 +108,6 @@ public class UIJasnazda {
 
 
 
-        system.autogenerateHyperspaceJumpPoints(true, true);
-
         //i lazy, let game design the rest for me
         float radiusAfter = StarSystemGenerator.addOrbitingEntities(system, pieklo, StarAge.YOUNG,
                 3, 5, // min/max entities to add
@@ -116,6 +115,8 @@ public class UIJasnazda {
                 4, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
                 false, // whether to use custom or system-name based names
                 false); // whether to allow habitable worlds
+
+        system.autogenerateHyperspaceJumpPoints(true, true);
 
         HyperspaceTerrainPlugin plugin = (HyperspaceTerrainPlugin) Misc.getHyperspaceTerrain().getPlugin();
         NebulaEditor editor = new NebulaEditor(plugin);
