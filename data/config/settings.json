@@ -13,6 +13,7 @@
 		},
 		"planets":{
 			"ui_frozen_water_world":"graphics/planets/ui_frozen_water_world.jpg",
+			"ui_iskala":"graphics/planets/ui_iskala.jpg"
 		},
 		"hab_glows": {
 			"ui_clouds_storm":"graphics/planets/ui_clouds_storm.png",

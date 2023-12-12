@@ -34,6 +34,11 @@ public class UIJasnazda {
                 200, // The planet radius
                 0, // The planet's orbit radius from the "focus"
                 0); // The orbital period in days (how fast it orbits)
+        //pieklo.getMarket().addCondition(Conditions.ORE_ULTRARICH);
+        //pieklo.getMarket().addCondition(Conditions.RARE_ORE_ULTRARICH);
+        pieklo.getMarket().addCondition(Conditions.EXTREME_TECTONIC_ACTIVITY);
+        pieklo.getMarket().addCondition(Conditions.VERY_HOT);
+        pieklo.getMarket().addCondition("ui_pieklo_tidal_disrupture");
 
         PlanetAPI jasnazdaStar1 = system.addPlanet("ui_jasnazda1", pieklo, "Jasnazda", "star_orange", 0f, 600f, 1500f, 40f);
         system.setStar(jasnazdaStar1);
@@ -107,8 +112,17 @@ public class UIJasnazda {
         //PlanetConditionGenerator.generateConditionsForPlanet(arka, StarAge.AVERAGE);
 
 
+        JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(
+                "inner_jump_point",
+                "Inferno Jump");
+        jumpPoint1.setCircularOrbit(system.getEntityById("ui_pieklo"),
+                60, //position
+                1500, // distance from focus
+                40f); //days it takes to orbit
+        jumpPoint1.setStandardWormholeToHyperspaceVisual();
+        system.addEntity(jumpPoint1);
 
-        //i lazy, let game design the rest for me
+        //i lazy, let game design the rest for me... replace later
         float radiusAfter = StarSystemGenerator.addOrbitingEntities(system, pieklo, StarAge.YOUNG,
                 3, 5, // min/max entities to add
                 6000f, // radius to start adding at

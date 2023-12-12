@@ -3,46 +3,24 @@ package com.fs.starfarer.api.impl.campaign.intel;
 import java.awt.Color;
 import java.util.Set;
 
+import com.fs.starfarer.api.EveryFrameScript;
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.CampaignClockAPI;
-import com.fs.starfarer.api.campaign.FactionAPI;
-import com.fs.starfarer.api.campaign.SectorEntityToken;
+import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
+import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.ui.SectorMapAPI;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
+import data.scripts.UIPiekloMiningIntelScript;
 
 public class UIPiekloMiningIntel extends BaseIntelPlugin {
 
+    //MUST BE CHANGED IN UIPiekloMiningIntelScript and UIPiekloTidalDisrupture as well
     public float activeDays = 5f; //90f
     public float inactiveDays = 5f; //270f
 
-    @Override
-    public void advance(float amount) {
-        super.advance(amount);
-
-        MemoryAPI memory = Global.getSector().getMemory();
-        CampaignClockAPI clock = Global.getSector().getClock();
-
-        if (!memory.contains("ui_piekloMiningIntelTimestamp")) {
-            memory.set("ui_piekloMiningIntelTimestamp", Global.getSector().getClock().getTimestamp());
-            memory.set("ui_piekloMiningIsActive", false);
-        }
-
-        if (memory.getBoolean("ui_piekloMiningIsActive")) {
-            //shut off mining
-            if (activeDays < clock.getElapsedDaysSince(memory.getLong("ui_piekloMiningIntelTimestamp"))) {
-                memory.set("ui_piekloMiningIntelTimestamp", Global.getSector().getClock().getTimestamp());
-                memory.set("ui_piekloMiningIsActive", false);
-            }
-        }
-        else {
-            //turn on mining
-            if (inactiveDays < clock.getElapsedDaysSince(memory.getLong("ui_piekloMiningIntelTimestamp"))) {
-                memory.set("ui_piekloMiningIntelTimestamp", Global.getSector().getClock().getTimestamp());
-                memory.set("ui_piekloMiningIsActive", true);
-            }
-        }
+    public UIPiekloMiningIntel() {
+        Global.getSector().addScript(new UIPiekloMiningIntelScript(this));
     }
 
     @Override
@@ -60,18 +38,28 @@ public class UIPiekloMiningIntel extends BaseIntelPlugin {
         MemoryAPI memory = Global.getSector().getMemory();
         CampaignClockAPI clock = Global.getSector().getClock();
 
-        info.addPara("The Union of Iskala sponsors periodic mining operations on the planet Pieklo." +
-                " Although mining operations are impossible during certain seasons, sector-wide ore markets are" +
-                " always greatly effected when the operation is in effect.", opad);
-
-        if (memory.getBoolean("ui_piekloMiningIsActive")) {
-            float e = activeDays - clock.getElapsedDaysSince(memory.getLong("ui_piekloMiningIntelTimestamp"));
-            int daysLeftActive = Math.round(e);
-
-            info.addPara("Days left for this mining operation: " + daysLeftActive, opad, h, "" + daysLeftActive);
+        if (!memory.getBoolean("$ui_piekloMiningCanceledPermanently")) {
+            info.addPara("The Union of Iskala sponsors periodic mining operations on the planet Pieklo." +
+                    " Although mining operations are impossible during certain seasons, sector-wide ore markets are" +
+                    " always greatly effected when the operation is in effect.", opad);
+            info.addPara("You can keep track of this event by marking it as important", opad);
+            info.addPara("If the mining operation is disrupted, or Kuznia no longer belongs" +
+                    " to the Union of Iskala, the mining operation would likely be canceled permanently", opad);
         }
         else {
-            float e = inactiveDays - clock.getElapsedDaysSince(memory.getLong("ui_piekloMiningIntelTimestamp"));
+            info.addPara("The Union of Iskala has given up their attempts to mine Pieklo." +
+                    " Although mining operations are impossible during certain seasons, sector-wide ore markets are" +
+                    " always greatly effected when the mining operation is in effect.", opad);
+        }
+
+        if (memory.getBoolean("$ui_piekloMiningIsActive")) {
+            float e = activeDays - clock.getElapsedDaysSince(memory.getLong("$ui_piekloMiningIntelTimestamp"));
+            int daysLeftActive = Math.round(e);
+
+            info.addPara("Days left for the current mining operation: " + daysLeftActive, opad, h, "" + daysLeftActive);
+        }
+        else {
+            float e = inactiveDays - clock.getElapsedDaysSince(memory.getLong("$ui_piekloMiningIntelTimestamp"));
             int daysLeftActive = Math.round(e);
 
             info.addPara("Days until next mining operation: " + daysLeftActive, opad, h, "" + daysLeftActive);
@@ -87,13 +75,22 @@ public class UIPiekloMiningIntel extends BaseIntelPlugin {
     public Set<String> getIntelTags(SectorMapAPI map) {
         Set<String> tags = super.getIntelTags(map);
 
-        tags.add("ui");
+        for (String tag : tags) {
+            if (tag.equals(Tags.INTEL_IMPORTANT) || tag.equals(Tags.INTEL_NEW)) {
+                //do nothing
+            }
+            else {
+                tags.remove(tag);
+            }
+        }
+        if (Global.getSector().getEntityById("ui_pieklo").getMarket().getFactionId().equals("neutral")) {
+            tags.add("ui");
+        }
+        else {
+            tags.add(Global.getSector().getEntityById("ui_pieklo").getMarket().getFactionId());
+        }
 
         return tags;
-    }
-
-    public String getSortString() {
-        return "Pieklo Mining Operation";
     }
 
     public String getName() {
