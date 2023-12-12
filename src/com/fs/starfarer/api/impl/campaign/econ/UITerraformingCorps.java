@@ -31,6 +31,9 @@ public class UITerraformingCorps extends BaseMarketConditionPlugin {
                 int size = theMarket.getSize(); //get population size of the market
 
                 switch (size) { //this is a switch, uh, too much to explain here
+                    case 0: //size 1, should never happen but just to be sure
+                        dominanceScore += 0;
+                        break;
                     case 1: //size 1, should never happen but just to be sure
                         dominanceScore += 0;
                         break;

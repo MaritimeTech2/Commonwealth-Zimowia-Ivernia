@@ -30,7 +30,6 @@ public class UIModPlugin extends BaseModPlugin {
 
         if (!isNexerelinEnabled || SectorManager.getManager().isCorvusMode()) {
             new UnionIcyllaGen().generate(Global.getSector()); //create systems and do relations stuff
-            Global.getSector().getIntelManager().addIntel(new UIPiekloMiningIntel()); //intel for the Pieklo Mining Operation
         }
     }
 
@@ -38,6 +37,15 @@ public class UIModPlugin extends BaseModPlugin {
     public void onGameLoad(boolean newGame) {
         if (!Global.getSector().hasScript(UITerraformingCorpsApplier.class)) {
             Global.getSector().addScript(new UITerraformingCorpsApplier()); //add a new EveryFrameScript
+        }
+
+        boolean isNexerelinEnabled = Global.getSettings().getModManager().isModEnabled("nexerelin");
+
+        if (!isNexerelinEnabled || SectorManager.getManager().isCorvusMode()) {
+            if (!Global.getSector().getPersistentData().containsKey("PiekloMiningIntelCreated")) {
+                Global.getSector().getIntelManager().addIntel(new UIPiekloMiningIntel()); //intel for the Pieklo Mining Operation
+                Global.getSector().getPersistentData().put("PiekloMiningIntelCreated", "e");
+            }
         }
     }
 
