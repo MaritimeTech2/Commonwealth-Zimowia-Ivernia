@@ -66,10 +66,25 @@ public class UIPiekloMiningIntelScript implements EveryFrameScript {
                 }
                 intel.sendUpdateIfPlayerHasIntel("listInfoParam", false);
                 Global.getSector().getPersistentData().put("UI_PiekloMiningCancelIntelSent", "e");
+
+                //update intel and timestamp
+                if (memory.getBoolean("$ui_piekloMiningIsActive")) {
+                    if (activeDays < Global.getSector().getClock().getElapsedDaysSince(memory.getLong("$ui_piekloMiningIntelTimestamp"))) {
+                        memory.set("$ui_piekloMiningIntelTimestamp", Global.getSector().getClock().getTimestamp());
+                        memory.set("$ui_piekloMiningIsActive", false);
+                        intel.sendUpdateIfPlayerHasIntel("listInfoParam", true);
+                    }
+                }
+                else {
+                    if (inactiveDays < Global.getSector().getClock().getElapsedDaysSince(memory.getLong("$ui_piekloMiningIntelTimestamp"))) {
+                        memory.set("$ui_piekloMiningIntelTimestamp", Global.getSector().getClock().getTimestamp());
+                        memory.set("$ui_piekloMiningIsActive", true);
+                        intel.sendUpdateIfPlayerHasIntel("listInfoParam", true);
+                    }
+                }
             }
-            //done = true;
         }
-        else { //control timestamp timer
+        else { //control mining and timestamp timer
             if (memory.getBoolean("$ui_piekloMiningIsActive")) {
                 //shut off mining
                 if (activeDays < Global.getSector().getClock().getElapsedDaysSince(memory.getLong("$ui_piekloMiningIntelTimestamp"))) {
