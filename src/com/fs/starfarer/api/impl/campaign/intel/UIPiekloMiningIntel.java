@@ -48,8 +48,7 @@ public class UIPiekloMiningIntel extends BaseIntelPlugin {
         }
         else {
             info.addPara("The Union of Iskala has given up their attempts to mine Pieklo." +
-                    " Although mining operations are impossible during certain seasons, sector-wide ore markets are" +
-                    " always greatly effected when the mining operation is in effect.", opad);
+                    " However, mining operations are still possible during certain seasons, untold riches to be plundered.", opad);
         }
 
         if (memory.getBoolean("$ui_piekloMiningIsActive")) {
