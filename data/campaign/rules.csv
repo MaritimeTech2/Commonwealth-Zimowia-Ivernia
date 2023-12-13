@@ -1,2 +1,4 @@
 id,trigger,conditions,script,text,options,notes
-,,,,,,
+#marketOpen,OpenInteractionDialog,$hasMarket,"ShowDefaultVisual
+PrintDescription 3
+FireBest MarketPostOpen",Your $shipOrFleet approaches $entityName.,,
