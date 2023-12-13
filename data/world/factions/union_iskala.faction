@@ -72,7 +72,7 @@
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":[],
+		"tags":["ui_base_package"],
 		"hulls":[
 			#"gryphon",
 			#"heron",
