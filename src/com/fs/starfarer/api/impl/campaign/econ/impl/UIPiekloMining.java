@@ -23,7 +23,7 @@ public class UIPiekloMining extends BaseIndustry {
         demand(Commodities.DRUGS, 5);
 
         Pair<String, Integer> deficit = getMaxDeficit(Commodities.HEAVY_MACHINERY);
-        applyDeficitToProduction(0, deficit,
+        applyDeficitToProduction(1, deficit,
                 Commodities.ORE,
                 Commodities.RARE_ORE);
 
@@ -38,27 +38,27 @@ public class UIPiekloMining extends BaseIndustry {
         super.unapply();
     }
 
-    protected boolean hasPostDemandSection(boolean hasDemand, IndustryTooltipMode mode) {
-        Pair<String, Integer> deficit = getMaxDeficit(Commodities.DRUGS);
-        if (deficit.two <= 0) return false;
-        //return mode == IndustryTooltipMode.NORMAL && isFunctional();
-        return mode != IndustryTooltipMode.NORMAL || isFunctional();
-    }
-
-    @Override
-    protected void addPostDemandSection(TooltipMakerAPI tooltip, boolean hasDemand, IndustryTooltipMode mode) {
-        //if (mode == IndustryTooltipMode.NORMAL && isFunctional()) {
-        if (mode != IndustryTooltipMode.NORMAL || isFunctional()) {
-            Color h = Misc.getHighlightColor();
-            float opad = 10f;
-            float pad = 3f;
-
-            Pair<String, Integer> deficit = getMaxDeficit(Commodities.DRUGS);
-            if (deficit.two > 0) {
-                tooltip.addPara(getDeficitText(Commodities.DRUGS) + ": %s units.", pad, h, "" + deficit.two);
-            }
-        }
-    }
+//    protected boolean hasPostDemandSection(boolean hasDemand, IndustryTooltipMode mode) {
+//        Pair<String, Integer> deficit = getMaxDeficit(Commodities.DRUGS);
+//        if (deficit.two <= 0) return false;
+//        //return mode == IndustryTooltipMode.NORMAL && isFunctional();
+//        return mode != IndustryTooltipMode.NORMAL || isFunctional();
+//    }
+//
+//    @Override
+//    protected void addPostDemandSection(TooltipMakerAPI tooltip, boolean hasDemand, IndustryTooltipMode mode) {
+//        //if (mode == IndustryTooltipMode.NORMAL && isFunctional()) {
+//        if (mode != IndustryTooltipMode.NORMAL || isFunctional()) {
+//            Color h = Misc.getHighlightColor();
+//            float opad = 10f;
+//            float pad = 3f;
+//
+//            Pair<String, Integer> deficit = getMaxDeficit(Commodities.DRUGS);
+//            if (deficit.two > 0) {
+//                tooltip.addPara(getDeficitText(Commodities.DRUGS) + ": %s units.", pad, h, "" + deficit.two);
+//            }
+//        }
+//    }
 
 
     @Override
