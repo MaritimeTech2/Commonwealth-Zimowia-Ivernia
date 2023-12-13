@@ -1,2 +1,2 @@
 id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
-,,,,,,,,,,,,,,
+ui_piekloMining,Pieklo Mining,30,60,,5,,,"industry, industrial",,graphics/icons/industry/mining.png,com.fs.starfarer.api.impl.campaign.econ.impl.UIPiekloMining,Pieklo mining description,300,HIGH
