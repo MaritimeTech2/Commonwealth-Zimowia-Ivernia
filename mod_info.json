@@ -1,7 +1,8 @@
 {
     "id":"ui", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
 	"name":"Union of Iskala", #  Displayed to the player
-	"author":"MaritimeTech2",
+	"author":"MaritimeTech2, and RaiDz77",
+
     "utility":"false",
 	"version":"0.0.1",
 	"description":"Starsector IntelliJ template.",
@@ -16,6 +17,10 @@
         {
             "id": "MagicLib",
             "name": "MagicLib",
-        },
+          },
+          {
+            "id": "shaderLib",
+            "name": "GraphicsLib",
+          },
     ],
 }

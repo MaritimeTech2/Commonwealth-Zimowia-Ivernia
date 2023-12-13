@@ -1,11 +1,11 @@
 {
 	id:"ui",
-	"displayName":"Union of Icylla",
-	"displayNameWithArticle":"the Union of Icylla",
+	"displayName":"Union of Iskala",
+	"displayNameWithArticle":"the Union of Iskala",
 	"displayNameLong":"the Union of Icylla",
-	"displayNameLongWithArticle":"the Union of Icylla",
-	"entityNamePrefix":"Icyllan",
-	"personNamePrefix":"Icyllan",
+	"displayNameLongWithArticle":"the Union of Iskala",
+	"entityNamePrefix":"Iskalan",
+	"personNamePrefix":"Iskalan",
 	"personNamePrefixAOrAn":"an",
 	"displayNameIsOrAre":"is",
 	
@@ -43,13 +43,13 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "ui_base_package"],
 		"hulls":[
 			"apogee",
 		],
 	},
 	"knownShips":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "persean"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "persean", "ui_base_package"],
 		"hulls":[
 			"atlas",
 			"apogee",
