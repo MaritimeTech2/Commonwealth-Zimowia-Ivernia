@@ -1,9 +1,9 @@
 {
-  "hullName": "Bilczewski",
-  "hullId": "ui_bilczewski",
+  "hullName": "Pelczar",
+  "hullId": "ui_pelczar",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/tanker_medium.png",
-  "style": "OMEGA",
+  "style": "HIGH_TECH",
   "height": 234,
   "width": 120,
   "center": [60, 117],

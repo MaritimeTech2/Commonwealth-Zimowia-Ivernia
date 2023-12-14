@@ -1,0 +1,95 @@
+{
+  "hullName": "Kowalska",
+  "hullId": "ui_kowalska",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/buffalo/buffalo_base.png",
+  "style": "MIDLINE",
+  "height": 150,
+  "width": 100,
+  "center": [50, 75],
+  "collisionRadius": 78,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 85,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": 0,
+      "locations": [57, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 280,
+      "angle": 180,
+      "locations": [-46.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-71.5, 7.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-71.5, -7.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-66.5, -25.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-66.5, 25.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "COBRA_BOMBER"
+    }
+  ],
+  "bounds": [
+    -70.5, -27.5,
+    -54, -31,
+    -50, -37.5,
+    -41, -37.5,
+    -33, -47.5,
+    -3.5, -48.5,
+    1.5, -43,
+    4.5, -51,
+    42, -52,
+    51, -43.5,
+    58.5, -41.5,
+    68, -17,
+    74.5, -0,
+    68, 17,
+    58.5, 41.5,
+    51, 43.5,
+    42, 52,
+    4.5, 51,
+    1.5, 43,
+    -3.5, 48.5,
+    -33, 47.5,
+    -41, 37.5,
+    -50, 37.5,
+    -54, 31,
+    -70.5, 27.5
+  ]
+}

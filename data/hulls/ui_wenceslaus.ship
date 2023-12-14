@@ -16,27 +16,9 @@
   ],
   "weaponSlots": [
     {
-      "id": "WS0001",
-      "size": "MEDIUM",
-      "type": "UNIVERSAL",
-      "mount": "TURRET",
-      "arc": 100,
-      "angle": 0,
-      "locations": [96, -26]
-    },
-    {
-      "id": "WS0002",
-      "size": "MEDIUM",
-      "type": "UNIVERSAL",
-      "mount": "TURRET",
-      "arc": 100,
-      "angle": -0,
-      "locations": [96, 26]
-    },
-    {
       "id": "WS0003",
       "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 160,
       "angle": 45,
@@ -45,25 +27,16 @@
     {
       "id": "WS0004",
       "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 160,
       "angle": -45,
       "locations": [-10, -42.5]
     },
     {
-      "id": "WS0005",
-      "size": "MEDIUM",
-      "type": "UNIVERSAL",
-      "mount": "TURRET",
-      "arc": 100,
-      "angle": 0,
-      "locations": [86, -0]
-    },
-    {
       "id": "WS0006",
       "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 150,
       "angle": -0,
@@ -108,7 +81,7 @@
     {
       "id": "WS0011",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 150,
       "angle": 45,
@@ -117,11 +90,23 @@
     {
       "id": "WS0012",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 150,
       "angle": -45,
       "locations": [30, -33]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -71, 1,
+        -62, 1
+      ]
     }
   ],
   "engineSlots": [
