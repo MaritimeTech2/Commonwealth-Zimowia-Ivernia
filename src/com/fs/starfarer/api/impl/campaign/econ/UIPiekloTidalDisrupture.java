@@ -38,9 +38,9 @@ public class UIPiekloTidalDisrupture extends BaseMarketConditionPlugin {
             return;
         }
 
-        tooltip.addPara("Increases hazard rating by %s",
+        tooltip.addPara("%s hazard rating",
                 10f, Misc.getHighlightColor(),
-                "200");
+                "+200%");
 
         if (Global.getSector().getMemory().getBoolean("$ui_piekloMiningIsActive")) {
             float e = activeDays - Global.getSector().getClock().getElapsedDaysSince(Global.getSector().getMemory().getLong("$ui_piekloMiningIntelTimestamp"));

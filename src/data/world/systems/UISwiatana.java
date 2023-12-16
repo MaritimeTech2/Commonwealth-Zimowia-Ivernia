@@ -15,13 +15,13 @@ import org.lazywizard.lazylib.MathUtils;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 
 public class UISwiatana {
-    public void generate(SectorAPI sector) {
+    public StarSystemAPI generate(SectorAPI sector) {
 
         StarSystemAPI system = sector.createStarSystem("Swiatana");
 
         system.setType(StarSystemGenerator.StarSystemType.SINGLE);
 
-        system.getLocation().set(32000, 8000); //Northeast of core
+        system.getLocation().set(24000, 14000); //Northeast of core
 
         system.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
 
@@ -97,7 +97,7 @@ public class UISwiatana {
                 "Inner Jump");
         jumpPoint1.setCircularOrbit(system.getEntityById("Swiatana"),
                 360f * (float) Math.random(), //position
-                1000f, // distance from focus
+                1500f, // distance from focus
                 90f); //days it takes to orbit
         jumpPoint1.setStandardWormholeToHyperspaceVisual();
         system.addEntity(jumpPoint1);
@@ -119,5 +119,7 @@ public class UISwiatana {
         float radius = system.getMaxRadiusInHyperspace();
         editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0, 360f);
         editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0, 360f, 0.25f);
+
+        return system;
     }
 }
