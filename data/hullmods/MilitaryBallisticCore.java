@@ -6,15 +6,15 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 
 public class MilitaryBallisticCore extends BaseHullMod {
 
-	@Override
-	public boolean isApplicableToShip(ShipAPI ship) {
-		return true;
-	}
+	//@Override
+	//public boolean isApplicableToShip(ShipAPI ship) {
+	//	return true;
+	//}
 
-	public String getUnapplicableReason(ShipAPI ship) {
-		return null;
-		//return "Incompatible with Dedicated Targeting Core";
-	}
+	//public String getUnapplicableReason(ShipAPI ship) {
+	//	return null;
+	//	//return "Incompatible with Dedicated Targeting Core";
+	//}
 
 	public static final float RECOIL_BONUS = 50f;
 	public static final float PROJ_SPEED_BONUS = 50f;
