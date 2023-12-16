@@ -1,0 +1,49 @@
+{
+	"starSystem":"UISwiatana",
+	"markets":[
+		{
+			"entities":["ui_iskala"],
+			"faction":"ui",
+			"size":8,
+			"startingConditions":[
+				"population_8",
+				"hot",
+				"ore_moderate",
+				"farmland_poor",
+				"ruins_scattered",
+				"habitable",
+			],
+			"industries":[
+				"population",
+				"farming",
+				"spaceport",
+			],
+		},
+		{
+			"entities":["ui_ladnysiez"],
+			"faction":"ui",
+			"size":5,
+			"startingConditions":[
+				"habitable",
+				"population_5",
+				"inimical_biosphere",
+				"organics_plentiful",
+				"farmland_adequate",
+				"extreme_weather",
+			],
+			"industries":[
+				"population",
+				"farming",
+				"spaceport",
+				"mining",
+				"heavybatteries",
+				"militarybase",
+				"starfortress_mid",
+			],
+		},
+	],
+
+}
+
+
+

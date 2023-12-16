@@ -14,7 +14,7 @@ import org.lazywizard.lazylib.MathUtils;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 
 public class UIJasnazda {
-    public void generate(SectorAPI sector) {
+    public StarSystemAPI generate(SectorAPI sector) {
 
         StarSystemAPI system = sector.createStarSystem("Jasnazda");
 
@@ -139,5 +139,7 @@ public class UIJasnazda {
         float radius = system.getMaxRadiusInHyperspace();
         editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0, 360f);
         editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0, 360f, 0.25f);
+
+        return system;
     }
 }
