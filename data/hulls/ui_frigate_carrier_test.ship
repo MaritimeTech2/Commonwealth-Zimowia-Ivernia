@@ -1,0 +1,108 @@
+{
+  "hullName": "Frigate Carrier Test",
+  "hullId": "ui_frigate_carrier_test",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/ui_test_carrier.png",
+  "style": "LOW_TECH",
+  "height": 190,
+  "width": 220,
+  "center": [110, 95],
+  "collisionRadius": 163.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 144,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ui_frigate_carrier_test"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [16, 40.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -20.5, 53.5,
+        -44, 82.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-84.5, 21],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-84.5, -21],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-82, 36],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-82, -36],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-80.5, 6.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-80.5, -6.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    65, -17,
+    56.5, -29,
+    86.5, -36,
+    48, -54,
+    24, -87.5,
+    38, -99.5,
+    -19, -105.5,
+    -78, -67.5,
+    -78, 67.5,
+    -19, 105.5,
+    38, 99.5,
+    24, 87.5,
+    48, 54,
+    86.5, 36,
+    56.5, 29,
+    65, 17
+  ]
+}
