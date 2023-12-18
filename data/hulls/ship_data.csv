@@ -8,3 +8,5 @@ Exojack,ui_exojack,UIBTS,Iskalan,damper,10,3000,300,8000,3000,100,40,0,65,40,40,
 Zygmunt,ui_zygmunt,Replenishment ship,Iskalan,microburn,12,4000,400,8000,5000,350,90,0,35,30,30,30,30,3000,OMNI,,90,0.8,0.95,,,50,100,2600,250,5,50,7,100000,5,35,360,0.3,12,12,,,,,,,"CIVILIAN, FREIGHTER","ui, ui_base_bp",,0.15,2,3,,408
 Pelczar,ui_pelczar,Fuel Carrier,Iskalan,microburn,5,2000,200,8000,5000,150,65,0,85,50,40,40,35,600,OMNI,,90,0.6,0.95,,,30,48,100,1200,3,400,8,35000,5,35,360,0.3,5,5,,,,,,,"CIVILIAN, TANKER","ui, ui_base_bp",,0.5,2,3,,304
 Kowalska,ui_kowalska,Light Frieghter,Iskalan,microburn,5,2000,200,8000,5000,150,65,0,85,50,40,40,35,600,OMNI,,90,0.6,0.95,,,25,48,900,90,3,30,8,35000,5,35,360,0.25,5,5,,,,,,,CIVILIAN,"ui, ui_base_bp",,0.5,2,3,,306
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Frigate Carrier Test,ui_frigate_carrier_test,Light Frieghter,Iskalan,microburn,5,2000,200,8000,5000,150,65,0,85,50,40,40,35,600,OMNI,,90,0.6,0.95,,,25,48,900,90,3,30,8,35000,5,35,360,0.25,5,5,,,,,,,CIVILIAN,"ui, ui_base_bp",,0.5,2,3,,9923

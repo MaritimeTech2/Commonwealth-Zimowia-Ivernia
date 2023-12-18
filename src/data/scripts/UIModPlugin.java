@@ -42,9 +42,11 @@ public class UIModPlugin extends BaseModPlugin {
         boolean isNexerelinEnabled = Global.getSettings().getModManager().isModEnabled("nexerelin");
 
         if (!isNexerelinEnabled || SectorManager.getManager().isCorvusMode()) {
-            if (!Global.getSector().getPersistentData().containsKey("PiekloMiningIntelCreated")) {
-                Global.getSector().getIntelManager().addIntel(new UIPiekloMiningIntel()); //intel for the Pieklo Mining Operation
-                Global.getSector().getPersistentData().put("PiekloMiningIntelCreated", "e");
+            if (Global.getSector().getEntityById("ui_pieklo") != null) {
+                if (!Global.getSector().getPersistentData().containsKey("PiekloMiningIntelCreated")) {
+                    Global.getSector().getIntelManager().addIntel(new UIPiekloMiningIntel()); //intel for the Pieklo Mining Operation
+                    Global.getSector().getPersistentData().put("PiekloMiningIntelCreated", "e");
+                }
             }
         }
     }
