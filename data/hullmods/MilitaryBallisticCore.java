@@ -17,7 +17,7 @@ public class MilitaryBallisticCore extends BaseHullMod {
 	//}
 
 	public static final float RECOIL_BONUS = 50f;
-	public static final float PROJ_SPEED_BONUS = 50f;
+	public static final float PROJ_SPEED_BONUS = 25f;
 	
 	public static float RANGE_BONUS = 40f;
 	public static float PD_MINUS = 190f;
