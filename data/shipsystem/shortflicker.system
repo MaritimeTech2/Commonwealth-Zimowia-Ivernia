@@ -15,7 +15,7 @@
 	
 	"engineGlowColor":[100,165,255,125],
 
-	"range":300,
+	"range":200,
 	"randomRange":0,
 	
 	"renderCopyDuringTeleport":true,
@@ -26,7 +26,7 @@
 	
 	"aiHints":{
 		"activeSpeedIncrease":0,
-		"burstMovementPotential":300,
+		"burstMovementPotential":200,
 		"averageSpeedIncrease":30,
 	}
 }
