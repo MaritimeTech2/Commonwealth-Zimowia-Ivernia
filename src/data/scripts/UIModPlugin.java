@@ -1,15 +1,9 @@
 package data.scripts;
 
 import com.fs.starfarer.api.impl.campaign.intel.UIPiekloMiningIntel;
-import data.world.UnionIcyllaGen;
+import data.scripts.world.UnionIcyllaGen;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.PersonImportance;
-import com.fs.starfarer.api.campaign.econ.MarketAPI;
-import com.fs.starfarer.api.characters.FullName;
-import com.fs.starfarer.api.characters.ImportantPeopleAPI;
-import com.fs.starfarer.api.characters.PersonAPI;
-import com.fs.starfarer.api.impl.campaign.ids.*;
 import exerelin.campaign.SectorManager;
 
 public class UIModPlugin extends BaseModPlugin {
