@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static data.world.utilities.MarketCreateHelper.addMarketplace;
+import static data.scripts.world.utilities.MarketCreateHelper.addMarketplace;
 
 public class UIPiekloMiningIntelScript implements EveryFrameScript {
 

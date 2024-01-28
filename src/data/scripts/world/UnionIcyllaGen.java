@@ -1,4 +1,4 @@
-package data.world;
+package data.scripts.world;
 
 import com.fs.starfarer.api.campaign.FactionAPI;
 import com.fs.starfarer.api.campaign.SectorAPI;
@@ -9,9 +9,9 @@ import com.fs.starfarer.api.impl.campaign.procgen.NameGenData;
 import com.fs.starfarer.api.impl.campaign.procgen.ProcgenUsedNames;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
-import data.world.systems.UIJasnazda;
-import data.world.systems.UIRiftSystem;
-import data.world.systems.UISwiatana;
+import data.scripts.world.systems.UIJasnazda;
+import data.scripts.world.systems.UIRiftSystem;
+import data.scripts.world.systems.UISwiatana;
 
 public class UnionIcyllaGen { //implements SectorGeneratorPlugin {
 

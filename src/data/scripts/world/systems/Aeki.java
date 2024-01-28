@@ -1,4 +1,4 @@
-package data.world.systems;
+package data.scripts.world.systems;
 
 import java.awt.Color;
 import java.util.Arrays;
@@ -16,7 +16,7 @@ import org.lazywizard.lazylib.MathUtils;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 
 
-import static data.world.utilities.MarketCreateHelper.addMarketplace;
+import static data.scripts.world.utilities.MarketCreateHelper.addMarketplace;
 
 public class Aeki {
     public void generate(SectorAPI sector) {
