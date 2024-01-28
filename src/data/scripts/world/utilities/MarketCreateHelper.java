@@ -1,4 +1,4 @@
-package data.world.utilities;
+package data.scripts.world.utilities;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorEntityToken;

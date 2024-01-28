@@ -1,4 +1,4 @@
-package data.world.systems;
+package data.scripts.world.systems;
 
 import com.fs.starfarer.api.campaign.PlanetAPI;
 import com.fs.starfarer.api.campaign.SectorAPI;
@@ -16,7 +16,7 @@ import org.lazywizard.lazylib.MathUtils;
 import java.awt.*;
 import java.util.Arrays;
 
-import static data.world.utilities.MarketCreateHelper.addMarketplace;
+import static data.scripts.world.utilities.MarketCreateHelper.addMarketplace;
 
 public class Kaeus {
     public void generate(SectorAPI sector) {
