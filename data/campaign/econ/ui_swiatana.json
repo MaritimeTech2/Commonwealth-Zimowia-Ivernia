@@ -7,41 +7,52 @@
 			"size":8,
 			"startingConditions":[
 				"population_8",
-				"hot",
+				"cold",
+				"mild_climate",
 				"ore_moderate",
-				"farmland_poor",
-				"ruins_scattered",
+				#"rare_ore_moderate",
+				"organics_trace",
+				"farmland_bountiful",
+				"closed_immigration",
 				"habitable",
+				"regional_capital",
 			],
 			"industries":[
 				"population",
-				"farming",
-				"spaceport",
+				["farming","soil_nanites"],
+				#["megaport","fullerene_spool"],
+				"megaport",
+				"starfortress_high",
+				"patrolhq",
+				"waystation",
+				["light industries","biofactory_embryo"],
+				["heavybatteries","drone_replicator"],
 			],
 		},
 		{
 			"entities":["ui_ladnysiez"],
 			"faction":"ui",
-			"size":5,
+			"size":6,
 			"startingConditions":[
 				"habitable",
-				"population_5",
-				"inimical_biosphere",
+				"population_6",
+				"mild_climate",
 				"organics_plentiful",
 				"farmland_adequate",
-				"extreme_weather",
+				"ore_moderate",
+				"trade_center",
 			],
 			"industries":[
 				"population",
 				"farming",
 				"spaceport",
-				"mining",
+				"commerce",
 				"heavybatteries",
-				"militarybase",
-				"starfortress_mid",
-			],
-		},
-	],
+				"highcommand",
+				"starfortress_high"
+			]
+		}
+	]
 
 }
 
