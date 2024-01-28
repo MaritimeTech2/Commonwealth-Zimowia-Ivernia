@@ -4,44 +4,52 @@
 		{
 			"entities":["ui_kuznia"],
 			"faction":"ui",
-			"size":5,
+			"size":6,
 			"startingConditions":[
-				"population_5",
+				"population_6",
 				"hot",
 				"ore_moderate",
 				"farmland_poor",
-				"ruins_scattered",
-				"habitable",
+				"thin_atmosphere",
+				"industrial_polity",
+				"habitable"
 			],
 			"industries":[
 				"population",
-				"farming",
-				"spaceport",
-			],
+				"refining",
+				"megaport",
+				"highcommand",
+				#["highcommand","cryoarithmetic_engine"],
+				["heavybatteries","drone_replicator"],
+				"battlestation_high",
+				["orbitalworks","pristine_nanoforge"]
+			]
 		},
 		{
 			"entities":["ui_lazurowe_morze"],
 			"faction":"ui",
-			"size":6,
+			"size":5,
 			"startingConditions":[
 				"habitable",
-				"population_6",
-				"inimical_biosphere",
-				"organics_plentiful",
-				"farmland_adequate",
+				"population_5",
 				"extreme_weather",
+				"organics_plentiful",
+				"ore_moderate",
+				"rare_ore_abundant",
+				"farmland_adequate",
+				"mild_climate"
 			],
 			"industries":[
 				"population",
-				"farming",
+				"aquaculture",
 				"spaceport",
 				"mining",
 				"heavybatteries",
-				"militarybase",
-				"starfortress_mid",
-			],
-		},
-	],
+				"waystation",
+				"orbitalstation_high"
+			]
+		}
+	]
 
 }
 
