@@ -5,7 +5,7 @@
     "freeStart":true,
     #"spawnAsFactionId":"ui",
     
-    "ngcTooltip":"The bounty og this sector are bounties available to those who grasp it.",
+    "ngcTooltip":"This sector is dangerous, it is paramount that people like you lead the sector to a brighter future.",
     "rebelFleetSuffix":"Renegades",
 
     "asteroidMiningFleetName":"Mining Mission",
