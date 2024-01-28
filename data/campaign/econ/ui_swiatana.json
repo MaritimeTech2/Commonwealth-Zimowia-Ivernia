@@ -15,7 +15,7 @@
 				"farmland_bountiful",
 				"closed_immigration",
 				"habitable",
-				"regional_capital",
+				"regional_capital"
 			],
 			"industries":[
 				"population",
@@ -25,9 +25,9 @@
 				"starfortress_high",
 				"patrolhq",
 				"waystation",
-				["light industries","biofactory_embryo"],
-				["heavybatteries","drone_replicator"],
-			],
+				["lightindustry","biofactory_embryo"],
+				["heavybatteries","drone_replicator"]
+			]
 		},
 		{
 			"entities":["ui_ladnysiez"],
@@ -40,7 +40,7 @@
 				"organics_plentiful",
 				"farmland_adequate",
 				"ore_moderate",
-				"trade_center",
+				"trade_center"
 			],
 			"industries":[
 				"population",
