@@ -118,7 +118,7 @@ public class UIJasnazda {
                 "Inferno Jump");
         jumpPoint1.setCircularOrbit(system.getEntityById("ui_pieklo"),
                 60, //position
-                1500, // distance from focus
+                2000, // distance from focus
                 40f); //days it takes to orbit
         jumpPoint1.setStandardWormholeToHyperspaceVisual();
         system.addEntity(jumpPoint1);

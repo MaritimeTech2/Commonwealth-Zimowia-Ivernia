@@ -41,8 +41,8 @@ public class UISwiatana {
                 360f * (float) Math.random(),
                 160f,
                 4000f,
-                230f);
-        //kuznia.setCustomDescriptionId("ui_kuznia"); //reference descriptions.csv
+                730f);
+        iskala.setCustomDescriptionId("ui_iskala"); //reference descriptions.csv
         iskala.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_iskala"));
         iskala.getSpec().setTilt(0f);
         iskala.getSpec().setPitch(0f);
@@ -56,7 +56,7 @@ public class UISwiatana {
                 90f,
                 5000f,
                 360f);
-        //lazurowe_morze.setCustomDescriptionId("ui_lazurowe_morze"); //reference descriptions.csv
+        ladnysiez.setCustomDescriptionId("ui_ladnysiez"); //reference descriptions.csv
 
 
 
