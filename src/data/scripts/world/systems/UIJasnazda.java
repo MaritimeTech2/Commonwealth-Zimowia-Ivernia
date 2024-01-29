@@ -62,6 +62,7 @@ public class UIJasnazda {
                 4000f,
                 230f);
         kuznia.setCustomDescriptionId("ui_kuznia"); //reference descriptions.csv
+        kuznia.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "sindria"));
         kuznia.getSpec().setAtmosphereThickness(0.2f);
         kuznia.getSpec().setAtmosphereColor(new Color(168,67,47,235));
         //kuznia.getSpec().setCloudTexture(Global.getSettings().getSpriteName("hab_glows", "ui_clouds_storm"));
