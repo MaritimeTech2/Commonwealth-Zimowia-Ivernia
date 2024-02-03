@@ -5,7 +5,7 @@
     "utility":"false",
 	"version":"0.0.1",
 	"description":"Starsector IntelliJ template.",
-    "gameVersion": "0.96a-RC10",
+    "gameVersion": "0.97a-RC6",
   	"jars":["jars/UnionOfIskala.jar"],
   	"modPlugin":"data.scripts.UIModPlugin",
     "dependencies": [

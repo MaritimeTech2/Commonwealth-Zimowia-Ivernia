@@ -5,7 +5,7 @@ id,type,text1,text2,text3,notes
 ,,,Strike,,
 #SHIPS,,,,,
 ,,,,,
-,,,,,
+ui_wenceslaus,SHIP,"The Wenceslaus is a ship meant to act as a durable core to any fleet.  Being able to act as the flagship of a small anti-piracy fleet, or as a valuable frontline combatant in large scale fleet engagements.  Though lacking significant firepower, it makes up for that in the flexibility of its armament while its ship system keeps it alive in long fleet engagements.  ",,,
 ui_hyacinth,SHIP,"The Hyacinth is the pride of Iskalan engineering, being capable enough to take on much larger capital ships, whilist still being an agile and nimble vessel able to take on numerous smaller vessels.",,,
 #FIGHTERS,,,,,
 ,,,,,
