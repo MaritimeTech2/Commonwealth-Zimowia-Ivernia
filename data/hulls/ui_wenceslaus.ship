@@ -22,7 +22,7 @@
       "mount": "TURRET",
       "arc": 160,
       "angle": 45,
-      "locations": [4, 34]
+      "locations": [-15, 45]
     },
     {
       "id": "WS0004",
@@ -31,52 +31,25 @@
       "mount": "TURRET",
       "arc": 160,
       "angle": -45,
-      "locations": [4, -34]
-    },
-    {
-      "id": "WS0006",
-      "size": "MEDIUM",
-      "type": "ENERGY",
-      "mount": "TURRET",
-      "arc": 150,
-      "angle": 0,
-      "locations": [41, 2]
-    },
-    {
-      "id": "WS0007",
-      "size": "SMALL",
-      "type": "UNIVERSAL",
-      "mount": "TURRET",
-      "arc": 100,
-      "angle": -0,
-      "locations": [-58, -72]
-    },
-    {
-      "id": "WS0008",
-      "size": "SMALL",
-      "type": "UNIVERSAL",
-      "mount": "TURRET",
-      "arc": 100,
-      "angle": 0,
-      "locations": [-58, 72]
+      "locations": [-15, -45]
     },
     {
       "id": "WS0009",
-      "size": "SMALL",
+      "size": "MEDIUM",
       "type": "UNIVERSAL",
       "mount": "TURRET",
-      "arc": 270,
-      "angle": -180,
-      "locations": [-70, -36]
+      "arc": 300,
+      "angle": -120,
+      "locations": [-66.5, -40.5]
     },
     {
       "id": "WS0010",
-      "size": "SMALL",
+      "size": "MEDIUM",
       "type": "UNIVERSAL",
       "mount": "TURRET",
-      "arc": 270,
-      "angle": 180,
-      "locations": [-70, 36]
+      "arc": 300,
+      "angle": 120,
+      "locations": [-66.5, 40.5]
     },
     {
       "id": "WS0011",
@@ -85,7 +58,7 @@
       "mount": "TURRET",
       "arc": 150,
       "angle": 45,
-      "locations": [68, 28]
+      "locations": [72, 16]
     },
     {
       "id": "WS0012",
@@ -94,7 +67,7 @@
       "mount": "TURRET",
       "arc": 150,
       "angle": -45,
-      "locations": [68, -28]
+      "locations": [72, -16]
     },
     {
       "id": "LB 1",
@@ -107,6 +80,24 @@
         -60.5, 13.5,
         -60.5, -2
       ]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 45,
+      "locations": [30, 17]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -45,
+      "locations": [30, -17]
     }
   ],
   "engineSlots": [
@@ -127,7 +118,7 @@
       "style": "COBRA_BOMBER"
     },
     {
-      "location": [-74.5, -11.5],
+      "location": [-68.5, -7.5],
       "length": 30,
       "width": 10,
       "angle": 180,
@@ -135,23 +126,7 @@
       "style": "COBRA_BOMBER"
     },
     {
-      "location": [-74.5, 11.5],
-      "length": 30,
-      "width": 10,
-      "angle": -180,
-      "contrailSize": 30,
-      "style": "COBRA_BOMBER"
-    },
-    {
-      "location": [-71, -4.5],
-      "length": 30,
-      "width": 10,
-      "angle": 180,
-      "contrailSize": 30,
-      "style": "COBRA_BOMBER"
-    },
-    {
-      "location": [-71, 4.5],
+      "location": [-68.5, 7.5],
       "length": 30,
       "width": 10,
       "angle": -180,
@@ -160,18 +135,18 @@
     },
     {
       "location": [-94.5, 31.5],
-      "length": 87.5,
-      "width": 21,
+      "length": 81,
+      "width": 17,
       "angle": -180,
-      "contrailSize": 21,
+      "contrailSize": 17,
       "style": "COBRA_BOMBER"
     },
     {
       "location": [-94.5, -31.5],
-      "length": 87.5,
-      "width": 21,
+      "length": 81,
+      "width": 17,
       "angle": 180,
-      "contrailSize": 21,
+      "contrailSize": 17,
       "style": "COBRA_BOMBER"
     },
     {
@@ -192,38 +167,38 @@
     },
     {
       "location": [-82.5, 56],
-      "length": 74.067772,
-      "width": 20.121191,
+      "length": 70.244896,
+      "width": 12.149832,
       "angle": 131,
-      "contrailSize": 20.121191,
+      "contrailSize": 12.149832,
       "style": "COBRA_BOMBER"
     },
     {
       "location": [-82.5, -56],
-      "length": 74.067772,
-      "width": 20.121191,
+      "length": 70.244896,
+      "width": 12.149832,
       "angle": -131,
-      "contrailSize": 20.121191,
+      "contrailSize": 12.149832,
       "style": "COBRA_BOMBER"
     },
     {
       "location": [-72, 57.5],
-      "length": 61.812347,
-      "width": 17.576557,
+      "length": 68.288597,
+      "width": 11.474705,
       "angle": 130,
-      "contrailSize": 17.576557,
+      "contrailSize": 11.474705,
       "style": "COBRA_BOMBER"
     },
     {
       "location": [-72, -57.5],
-      "length": 61.812347,
-      "width": 17.576557,
+      "length": 68.288597,
+      "width": 11.474705,
       "angle": -130,
-      "contrailSize": 17.576557,
+      "contrailSize": 11.474705,
       "style": "COBRA_BOMBER"
     },
     {
-      "location": [-95, 43.5],
+      "location": [-93, 45.5],
       "length": 61,
       "width": 15,
       "angle": -180,
@@ -231,7 +206,7 @@
       "style": "COBRA_BOMBER"
     },
     {
-      "location": [-95, -43.5],
+      "location": [-93, -45.5],
       "length": 61,
       "width": 15,
       "angle": 180,
