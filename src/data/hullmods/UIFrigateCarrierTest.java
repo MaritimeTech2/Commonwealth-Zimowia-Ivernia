@@ -56,7 +56,7 @@ public class UIFrigateCarrierTest extends BaseHullMod {
         Vector2f.add(ship.getLocation(), new Vector2f((float) (dist*Math.cos(theta)), (float) (dist*Math.sin(theta))), loc);
 
         //I love you lazylib
-        ShipAPI child = CombatUtils.spawnShipOrWingDirectly("cerberus_Hardened", FleetMemberType.SHIP,
+        ShipAPI child = CombatUtils.spawnShipOrWingDirectly("ui_piotr_assault", FleetMemberType.SHIP,
                 side, 0.7f, loc, ship.getFacing());
 
         //if parent ship is ally, make child an ally too
