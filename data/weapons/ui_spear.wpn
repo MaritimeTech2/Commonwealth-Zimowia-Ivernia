@@ -1,7 +1,7 @@
 {
   "id": "ui_spear",
   "specClass": "projectile",
-  "projectileSpecId": "gauss_shot",
+  "projectileSpecId": "spear_shot",
   "type": "ENERGY",
   "size": "LARGE",
   "displayArcRadius": 1200,
@@ -46,5 +46,5 @@
       255
     ]
   },
-  "fireSoundTwo": "gauss_cannon_fire"
+  "fireSoundTwo": "mjolnir_fire_01"
 }
