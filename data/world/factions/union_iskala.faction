@@ -34,37 +34,31 @@
 		"tags":{
 		},
 		"hulls":{
-			"buffalo2":0,
-			"gryphon":2,
-			"champion":3,
-			"heron":2,
+			"ui_hyacinth":1,
+			"ui_wenceslaus":2,
+			"ui_ladislaus":3,
+			"ui_eurosia":3,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
 		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "ui_base_package"],
 		"hulls":[
-			"apogee",
+			"ui_wenceslaus","ui_hyacinth","ui_ladislaus","ui_eurosia",
 		],
 	},
 	"knownShips":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "persean", "ui_base_package"],
+		"tags":["base_bp", "hightech_bp", "ui_base_package"],
 		"hulls":[
 			"atlas",
 			"apogee",
-			"kite_original",
-			"fury",
-			"doom",
-			"afflictor",
 			"prometheus",
 			"omen",
-			"shade",
 			"tempest",
-			"conquest",
-			"champion",
-			#"eagle",
-			"valkyrie",
-			"harbinger",
+			"ui_hyacinth",
+			"ui_wenceslaus",
+			"ui_ladislaus",
+			"ui_eurosia",
 			"gryphon",
 			"heron",
 		],
@@ -73,14 +67,14 @@
 	"priorityShips":{
 		"tags":["ui_base_package"],
 		"hulls":[
-			#"gryphon",
-			#"heron",
-			"odyssey",
-			"conquest",
+			"ui_hyacinth",
+			"ui_wenceslaus",
+			"ui_ladislaus",
+			"ui_eurosia",
 		],
 	},
 	"knownFighters":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "persean"],
+		"tags":["base_bp", "hightech_bp", ],
 		"fighters":[
 			"xyphos_wing",
 			"thunder_wing",
@@ -96,13 +90,13 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "persean"],
+		"tags":["base_bp", "missile_bp", "hightech_bp",],
 		"weapons":[
-			"railgun",
-			"dualflak",
-			"heavymauler",
-			"hveldriver",
-			"gauss",
+			"ui_spear",
+			"ui_buckle",
+			"ui_shield",
+			"ui_sword",
+			"ui_szabla",
 			"mjolnir",
 			"breachpod",
 			"sabotpod",
@@ -125,10 +119,11 @@
 	"priorityWeapons":{
 		"tags":[],
 		"weapons":[
+			"ui_spear","ui_buckle",	"ui_shield","ui_sword",	"ui_szabla",
 		],
 	},
 	"knownHullMods":{
-		"tags":["base_bp", "persean"],
+		"tags":["base_bp",],
 		"hullMods":[
 			"advancedshieldemitter", # accelerated
 			"turretgyros",
@@ -158,6 +153,7 @@
 			"hiressensors",
 			"efficiency_overhaul",
 			"converted_fighterbay",
+			"ui_piotr_assault",
 		],
 	},
 	"factionDoctrine":{
@@ -190,6 +186,7 @@
 	},
 	"illegalCommodities":[
 		"organs",
+		"drugs",
 	],
 	"music":{
 		"theme":"music_diktat_market_neutral",
@@ -241,7 +238,7 @@
 			#"baseCommander":{"name":"Staff General"},
 			"baseFleetCommander":{"name":"Battle-Group General"},
 			"queenRank":{"name":"The Queen of Yuria"},
-			"factionLeader":{"name":"Emperor"},
+			"factionLeader":{"name":"Cesarz"},
 			
 	
 			"patrolCommander":{"name":"SBV Constellation Commander"},
