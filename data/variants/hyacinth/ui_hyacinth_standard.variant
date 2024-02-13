@@ -1,0 +1,34 @@
+{
+  "variantId": "ui_hyacinth_variant",
+  "hullId": "ui_hyacinth",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 25,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ui_piotr_assault"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ionpulser",
+        "WS0002": "ionpulser",
+        "WS0003": "ui_sword",
+        "WS0004": "ui_sword",
+        "WS0005": "atropos",
+        "WS0006": "atropos",
+        "WS0007": "ui_buckle",
+        "WS0008": "ui_buckle",
+        "WS0009": "ui_spear",
+        "WS0010": "ui_buckle",
+        "WS0011": "ui_buckle"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

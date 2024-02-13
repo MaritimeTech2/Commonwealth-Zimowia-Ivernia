@@ -1,0 +1,31 @@
+{
+  "variantId": "ui_wenceslaus_variant",
+  "hullId": "ui_wenceslaus",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 9,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ui_piotr_assault"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ui_sword",
+        "WS0002": "ui_sword",
+        "WS0003": "ionpulser",
+        "WS0004": "ionpulser",
+        "WS0009": "ui_shield",
+        "WS0010": "ui_shield",
+        "WS0011": "ui_buckle",
+        "WS0012": "ui_buckle"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
