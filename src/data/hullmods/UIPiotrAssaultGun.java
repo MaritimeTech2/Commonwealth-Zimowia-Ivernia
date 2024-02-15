@@ -9,22 +9,25 @@ import com.fs.starfarer.api.fleet.FleetMemberType;
 import com.fs.starfarer.api.mission.FleetSide;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
-import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
-
+import com.fs.starfarer.api.impl.campaign.ids.Stats;
 
 public class UIPiotrAssaultGun extends BaseHullMod {
 
     public static final float addcrew = 5f;
-    public static final float lesscargo = 20f;
+    public static final float lesscargo = -20f;
     public static final float recoverycost = 5f;
     public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
         stats.getMinCrewMod().modifyFlat(id, addcrew);
         stats.getSuppliesToRecover().modifyFlat(id, recoverycost);
         stats.getCargoMod().modifyFlat(id, lesscargo);
-
+        stats.getDynamic().getMod(Stats.DEPLOYMENT_POINTS_MOD).modifyFlat(id,recoverycost);
     }
+//    public void apply(MutableShipStatsAPI stats, String id ){
+//        stats.getDynamic().getMod(Stats.DEPLOYMENT_POINTS_MOD).modifyFlat(id,recoverycost);
+//
+//    }
     public void advanceInCombat(ShipAPI ship, float amount) {
 
         CombatEngineAPI engine = Global.getCombatEngine();
