@@ -21,6 +21,6 @@
 					   "particleDuration":0.12,
 					   "particleCount":12,
 					   "particleColor":[255,250,245,255]},
-	"projectileSpecId":"kineticblaster_shot",  # projectile that will be fired
+	"projectileSpecId":"sword_shot",  # projectile that will be fired
 	"fireSoundTwo":"kinetic_blaster_fire",
 }

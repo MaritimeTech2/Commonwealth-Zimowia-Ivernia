@@ -4,29 +4,30 @@ import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.impl.campaign.ids.HullMods;
+import com.fs.starfarer.api.combat.ShipAPI;
 
 public class MilitaryBallisticCore extends BaseHullMod {
 
-	//@Override
-	//public boolean isApplicableToShip(ShipAPI ship) {
-	//	return true;
-	//}
-	//public String getUnapplicableReason(ShipAPI ship) {
-		//if (ship != null && ship.getHullSize() != HullSize.CAPITAL_SHIP && ship.getHullSize() != HullSize.CRUISER) {
-		//	return "Can only be installed on cruisers and capital ships";
-		//}
-	//	if (ship.getVariant().getHullMods().contains("targetingunit")) {
-	//		return "Incompatible with Integrated Targeting Unit";
-	//	}
-	//	if (ship.getVariant().getHullMods().contains("advancedcore")) {
-	//		return "Incompatible with Advanced Targeting Core";
-	//	}
-	//	if (ship.getVariant().getHullMods().contains(HullMods.DISTRIBUTED_FIRE_CONTROL)) {
-	//		return "Incompatible with Distributed Fire Control";
-	//	}
+	@Override
+	public boolean isApplicableToShip(ShipAPI ship) {
+		return true;
+	}
+	public String getUnapplicableReason(ShipAPI ship) {
+		if (ship != null && ship.getHullSize() != HullSize.CAPITAL_SHIP && ship.getHullSize() != HullSize.CRUISER) {
+			return "Can only be installed on cruisers and capital ships";
+		}
+		if (ship.getVariant().getHullMods().contains("targetingunit")) {
+			return "Incompatible with Integrated Targeting Unit";
+		}
+		if (ship.getVariant().getHullMods().contains("advancedcore")) {
+			return "Incompatible with Advanced Targeting Core";
+		}
+		if (ship.getVariant().getHullMods().contains(HullMods.DISTRIBUTED_FIRE_CONTROL)) {
+			return "Incompatible with Distributed Fire Control";
+		}
 
-	//	return null;
-	//}
+		return null;
+	}
 
 	public static final float RECOIL_BONUS = 50f;
 	public static final float PROJ_SPEED_BONUS = 25f;

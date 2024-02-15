@@ -1,8 +1,8 @@
 {
-  "variantId": "ui_wenceslaus_variant",
+  "variantId": "ui_wenceslaus_standard",
   "hullId": "ui_wenceslaus",
-  "displayName": "New Variant",
-  "goalVariant": false,
+  "displayName": "Standard ",
+  "goalVariant": true,
   "fluxCapacitors": 9,
   "fluxVents": 15,
   "quality": 1,
