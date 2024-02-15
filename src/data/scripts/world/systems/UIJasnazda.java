@@ -26,10 +26,12 @@ public class UIJasnazda {
 
         system.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
 
+        SectorEntityToken center = system.getCenter();
+
 
 
         // Planets
-        PlanetAPI pieklo = system.addPlanet("ui_pieklo", null, "Pieklo", "lava",
+        PlanetAPI pieklo = system.addPlanet("ui_pieklo", center, "Pieklo", "lava",
                 0, // It's angular position around the star
                 200, // The planet radius
                 0, // The planet's orbit radius from the "focus"
@@ -40,26 +42,26 @@ public class UIJasnazda {
         pieklo.getMarket().addCondition(Conditions.VERY_HOT);
         pieklo.getMarket().addCondition("ui_pieklo_tidal_disrupture");
 
-        PlanetAPI jasnazdaStar1 = system.addPlanet("ui_jasnazda1", pieklo, "Jasnazda", "star_orange", 0f, 600f, 1500f, 40f);
+        PlanetAPI jasnazdaStar1 = system.addPlanet("ui_jasnazda1", center, "Jasnazda", "star_orange", 0f, 600f, 2000f, 40f);
         system.setStar(jasnazdaStar1);
         system.addCorona(jasnazdaStar1, 600, 2f, 0.1f, 2f);
         system.setLightColor(new Color(255, 255, 255)); // light color in entire system, affects all entities
 
-        PlanetAPI jasnazdaStar2 = system.addPlanet("ui_jasnazda2", pieklo, "Jasnazda II", "star_white", 120f, 450f, 1500f, 40f);
+        PlanetAPI jasnazdaStar2 = system.addPlanet("ui_jasnazda2", center, "Jasnazda II", "star_white", 120f, 450f, 2000f, 40f);
         system.setSecondary(jasnazdaStar2);
         system.addCorona(jasnazdaStar2, 400, 2f, 0.1f, 2f);
 
-        PlanetAPI jasnazdaStar3 = system.addPlanet("ui_jasnazda3", pieklo, "Jasnazda III", "star_yellow", 240f, 700f, 1500f, 40f);
+        PlanetAPI jasnazdaStar3 = system.addPlanet("ui_jasnazda3", center, "Jasnazda III", "star_yellow", 240f, 700f, 2000f, 40f);
         system.setTertiary(jasnazdaStar3);
         system.addCorona(jasnazdaStar3, 800, 2f, 0.1f, 2f);
 
         PlanetAPI kuznia = system.addPlanet("ui_kuznia",
-                pieklo,
+                center,
                 "Kuznia",
                 "barren-desert",
-                360f * (float) Math.random(),
+                120f,
                 130f,
-                4000f,
+                6000f,
                 230f);
         kuznia.setCustomDescriptionId("ui_kuznia"); //reference descriptions.csv
         kuznia.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "sindria"));
@@ -70,13 +72,13 @@ public class UIJasnazda {
         kuznia.applySpecChanges();
 
         PlanetAPI lazurowe_morze = system.addPlanet("ui_lazurowe_morze",
-                pieklo,
+                center,
                 "Lazurowe Morze",
                 "water",
-                360f * (float) Math.random(),
+                0f,
                 150f,
-                5000f,
-                360f);
+                6000f,
+                230f);
         lazurowe_morze.setCustomDescriptionId("ui_lazurowe_morze"); //reference descriptions.csv
         lazurowe_morze.setInteractionImage("illustrations", "fikenhild");
         lazurowe_morze.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_frozen_water_world"));
@@ -87,25 +89,57 @@ public class UIJasnazda {
         lazurowe_morze.getSpec().setCloudColor(new Color(255, 255, 255, 130));
         lazurowe_morze.applySpecChanges();
 
+        PlanetAPI jasnazda3 = system.addPlanet("ui_jasnazda3",
+                center,
+                "Jasnazda III",
+                "barren",
+                240f,
+                90f,
+                6800f,
+                300f);
+        jasnazda3.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
+        jasnazda3.getMarket().addCondition(Conditions.ORE_SPARSE);
+
+        PlanetAPI jasnazda4 = system.addPlanet("ui_jasnazda4",
+                center,
+                "Jasnazda IV",
+                "barren-bombarded",
+                200f,
+                50f,
+                5000f,
+                360f);
+        jasnazda4.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
+        jasnazda4.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
+        jasnazda4.getMarket().addCondition(Conditions.LOW_GRAVITY);
+
 
 
         // Terrain
         //add first stable loc
         SectorEntityToken stableLoc1 = system.addCustomEntity("jasnazda_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(pieklo, MathUtils.getRandomNumberInRange(0f, 360f), 4500f, 220);
+        stableLoc1.setCircularOrbit(center, MathUtils.getRandomNumberInRange(0f, 360f), 5500f, 220);
 
         //add second stable loc
         SectorEntityToken stableLoc2 = system.addCustomEntity("jasnazda_stableloc_2", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc2.setCircularOrbit(pieklo, MathUtils.getRandomNumberInRange(0f, 360f), 5500f, 520);
+        stableLoc2.setCircularOrbit(center, MathUtils.getRandomNumberInRange(0f, 360f), 7000f, 520);
 
         //broken lava world ring
-        system.addRingBand(pieklo, "misc", "ui_rings_lava0", 256f, 0, Color.gray, 256f, 265f, 30f);
+        system.addRingBand(center, "misc", "ui_rings_lava0", 256f, 0, Color.gray, 256f, 265f, 30f);
 
         //inner band
-        system.addRingBand(pieklo, "misc", "rings_asteroids0", 256f, 2, Color.gray, 256f, 3000f, 250f, Terrain.RING, null);
+        system.addRingBand(center, "misc", "rings_asteroids0", 256f, 2, Color.gray, 256f, 4000f, 250f, Terrain.RING, null);
 
         //lazurowe morze ring
         system.addRingBand(lazurowe_morze, "misc", "ui_rings_special0", 256f, 0, Color.gray, 256f, 400f, 30f, Terrain.RING, "Grace of Lazurowe Morze");
+
+        //outer band
+        system.addRingBand(center, "misc", "rings_asteroids0", 256f, 2, Color.gray, 256f, 8500f, 250f, Terrain.RING, null);
+        system.addRingBand(center, "misc", "rings_ice0", 256f, 1, Color.gray, 256f, 8700f, 250f, Terrain.RING, null);
+        system.addRingBand(center, "misc", "rings_asteroids0", 256f, 0, Color.gray, 256f, 8800f, 250f, Terrain.RING, null);
+        system.addRingBand(center, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 9100f, 250f, Terrain.RING, null);
+        system.addRingBand(center, "misc", "rings_ice0", 256f, 2, Color.gray, 256f, 9300f, 250f, Terrain.RING, null);
+        system.addRingBand(center, "misc", "rings_ice0", 256f, 0, Color.gray, 256f, 9400f, 250f, Terrain.RING, null);
+        system.addRingBand(center, "misc", "rings_asteroids0", 256f, 1, Color.gray, 256f, 9600f, 250f, Terrain.RING, null);
 
         // Argon Gamma: Dead World
         //PlanetAPI arka = system.addPlanet("ui_Arka", aekiStar,"Arka","barren-bombarded",360f * (float) Math.random(),320f,3000f,41f);
@@ -113,25 +147,28 @@ public class UIJasnazda {
         //PlanetConditionGenerator.generateConditionsForPlanet(arka, StarAge.AVERAGE);
 
 
+
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(
                 "inner_jump_point",
                 "Inferno Jump");
-        jumpPoint1.setCircularOrbit(system.getEntityById("ui_pieklo"),
+        jumpPoint1.setCircularOrbit(center,
                 60, //position
                 2000, // distance from focus
                 40f); //days it takes to orbit
         jumpPoint1.setStandardWormholeToHyperspaceVisual();
         system.addEntity(jumpPoint1);
 
-        //i lazy, let game design the rest for me... replace later
-        float radiusAfter = StarSystemGenerator.addOrbitingEntities(system, pieklo, StarAge.YOUNG,
-                3, 5, // min/max entities to add
-                6000f, // radius to start adding at
-                4, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
-                false, // whether to use custom or system-name based names
-                false); // whether to allow habitable worlds
+        JumpPointAPI jumpPoint2 = Global.getFactory().createJumpPoint(
+                "outer_jump_point",
+                "Outer Jump");
+        jumpPoint2.setCircularOrbit(center,
+                270, //position
+                7200, // distance from focus
+                300f); //days it takes to orbit
+        jumpPoint2.setStandardWormholeToHyperspaceVisual();
+        system.addEntity(jumpPoint2);
 
-        system.autogenerateHyperspaceJumpPoints(true, true);
+        system.autogenerateHyperspaceJumpPoints(true, false);
 
         HyperspaceTerrainPlugin plugin = (HyperspaceTerrainPlugin) Misc.getHyperspaceTerrain().getPlugin();
         NebulaEditor editor = new NebulaEditor(plugin);
