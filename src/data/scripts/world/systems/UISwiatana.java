@@ -41,7 +41,7 @@ public class UISwiatana {
                 360f * (float) Math.random(),
                 160f,
                 4000f,
-                730f);
+                200f);
         iskala.setCustomDescriptionId("ui_iskala"); //reference descriptions.csv
         iskala.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_iskala"));
         iskala.getSpec().setTilt(0f);
@@ -57,6 +57,72 @@ public class UISwiatana {
                 5000f,
                 360f);
         ladnysiez.setCustomDescriptionId("ui_ladnysiez"); //reference descriptions.csv
+
+        PlanetAPI swiatana3 = system.addPlanet("ui_swiatana3",
+                swiatanaStar,
+                "Swiatana III",
+                "barren_castiron",
+                360f * (float) Math.random(),
+                110f,
+                4650f,
+                300f);
+        swiatana3.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
+        swiatana3.getMarket().addCondition(Conditions.ORE_SPARSE);
+
+        PlanetAPI swiatana4 = system.addPlanet("ui_swiatana4",
+                swiatanaStar,
+                "Swiatana IV",
+                "rocky_metallic",
+                360f * (float) Math.random(),
+                120f,
+                6000f,
+                400f);
+        swiatana4.getMarket().addCondition(Conditions.TECTONIC_ACTIVITY);
+        swiatana4.getMarket().addCondition(Conditions.ORE_SPARSE);
+        swiatana4.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
+        swiatana4.getMarket().addCondition(Conditions.TOXIC_ATMOSPHERE);
+
+        PlanetAPI swiatana5 = system.addPlanet("ui_swiatana5",
+                swiatanaStar,
+                "Swiatana V",
+                "gas_giant",
+                180f,
+                400f,
+                10000f,
+                500f);
+        swiatana5.getSpec().setPlanetColor(new Color(185, 14, 14, 255));
+        swiatana5.getSpec().setCloudColor(new Color(196, 86, 3, 255));
+        swiatana5.getSpec().setAtmosphereThickness(0.3f);
+        swiatana5.getSpec().setCloudRotation(5f);
+        swiatana5.getSpec().setAtmosphereColor(new Color(129, 3, 13, 245));
+        swiatana5.applySpecChanges();
+        swiatana5.getMarket().addCondition(Conditions.HIGH_GRAVITY);
+        swiatana5.getMarket().addCondition(Conditions.VOLATILES_DIFFUSE);
+        swiatana5.getMarket().addCondition(Conditions.EXTREME_WEATHER);
+        swiatana5.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
+
+        PlanetAPI swiatana6 = system.addPlanet("ui_swiatana6",
+                swiatanaStar,
+                "Swiatana VI",
+                "frozen",
+                90f,
+                120f,
+                9000f,
+                400f);
+        swiatana6.getMarket().addCondition(Conditions.VERY_COLD);
+        swiatana6.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
+        swiatana6.getMarket().addCondition(Conditions.VOLATILES_TRACE);
+
+        PlanetAPI swiatana7 = system.addPlanet("ui_swiatana7",
+                swiatanaStar,
+                "Swiatana VII",
+                "rocky_ice",
+                230f,
+                120f,
+                11000f,
+                400f);
+        swiatana7.getMarket().addCondition(Conditions.VERY_COLD);
+        swiatana7.getMarket().addCondition(Conditions.ORGANICS_TRACE);
 
 
 
@@ -76,7 +142,7 @@ public class UISwiatana {
                         iskala, // entity that it's around
                         170f, // visual aroura band start
                         300f, // visual aroura band end
-                        new Color(50, 20, 100, 80), // base color
+                        new Color(50, 20, 100, 150), // base color
                         1f, // probability to spawn aurora sequence, checked once/day when no aurora in progress
                         new Color(90, 180, 140),
                         new Color(130, 145, 190),
@@ -90,6 +156,17 @@ public class UISwiatana {
         //inner band
         system.addRingBand(swiatanaStar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 3000f, 250f, Terrain.RING, null);
 
+        //around the gas giant
+        system.addRingBand(swiatana5, "misc", "rings_ice0", 256f, 0, Color.gray, 256f, 700f, 250f, Terrain.RING, null);
+        system.addRingBand(swiatana5, "misc", "rings_ice0", 256f, 1, Color.gray, 256f, 800f, 250f, Terrain.RING, null);
+        system.addRingBand(swiatana5, "misc", "rings_ice0", 256f, 2, Color.gray, 256f, 900f, 250f, Terrain.RING, null);
+        system.addRingBand(swiatana5, "misc", "rings_ice0", 256f, 3, Color.gray, 256f, 1100f, 250f, Terrain.RING, null);
+
+        //outer band
+        system.addRingBand(swiatanaStar, "misc", "rings_asteroids0", 256f, 1, Color.gray, 256f, 13000f, 250f, Terrain.RING, null);
+        system.addRingBand(swiatanaStar, "misc", "rings_ice0", 256f, 2, Color.gray, 256f, 13100f, 250f, Terrain.RING, null);
+        system.addRingBand(swiatanaStar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 13300f, 250f, Terrain.RING, null);
+
 
 
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(
@@ -102,15 +179,17 @@ public class UISwiatana {
         jumpPoint1.setStandardWormholeToHyperspaceVisual();
         system.addEntity(jumpPoint1);
 
-        //i lazy, let game design the rest for me... replace later
-        float radiusAfter = StarSystemGenerator.addOrbitingEntities(system, swiatanaStar, StarAge.YOUNG,
-                3, 5, // min/max entities to add
-                6000f, // radius to start adding at
-                4, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
-                false, // whether to use custom or system-name based names
-                false); // whether to allow habitable worlds
+        JumpPointAPI jumpPoint2 = Global.getFactory().createJumpPoint(
+                "outer_jump_point",
+                "Outer Jump");
+        jumpPoint2.setCircularOrbit(system.getEntityById("Swiatana"),
+                0f, //position
+                10000f, // distance from focus
+                400f); //days it takes to orbit
+        jumpPoint2.setStandardWormholeToHyperspaceVisual();
+        system.addEntity(jumpPoint2);
 
-        system.autogenerateHyperspaceJumpPoints(true, true);
+        system.autogenerateHyperspaceJumpPoints(true, false);
 
         HyperspaceTerrainPlugin plugin = (HyperspaceTerrainPlugin) Misc.getHyperspaceTerrain().getPlugin();
         NebulaEditor editor = new NebulaEditor(plugin);
