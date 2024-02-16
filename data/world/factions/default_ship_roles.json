@@ -3,36 +3,40 @@
 	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
 	"combatSmallForSmallFleet":{
 
-		"ui_wenceslaus_standard":3,
-		
+		"ui_ladislaus_standard":3,
+		"ui_ladislaus_pd":2,
 		
 	},
 	"combatSmall":{
 
-	"ui_wenceslaus_standard":3,	
+	"ui_wenceslaus_standard":2,
+	"ui_ladislaus_standard":3,
+	
+	"ui_ladislaus_pd":2,	
 
 	},
 	"combatMedium":{
 
-	"ui_hyacinth_standard":3,
-	
+	"ui_hyacinth_standard":1,
 	"ui_wenceslaus_standard":3,
-	
+	"ui_ladislaus_standard":2,
+	"ui_ladislaus_pd":2,
 
 	},
 	"combatLarge":{
 
-	"ui_hyacinth_standard":3,
-	
+	"ui_hyacinth_standard":2,
 	"ui_wenceslaus_standard":3,
-
+	"ui_ladislaus_standard":2,
+	"ui_ladislaus_pd":2,
 
 	},
 	"combatCapital":{
 
 	"ui_hyacinth_standard":3,
-	
 	"ui_wenceslaus_standard":3,
+	"ui_ladislaus_standard":1,
+	"ui_ladislaus_pd":1,
 
 	},
 
@@ -57,7 +61,7 @@
 	# carriers
 	"carrierSmall":{
 
-	
+	"ui_eurosia_standard":3,
 
 
 	},
@@ -93,6 +97,8 @@
 	},
 	"freighterMedium":{
 
+	"ui_kowalska_cargo":3,
+
 	},
 	"freighterLarge":{
 
@@ -102,6 +108,9 @@
 
 	},
 	"tankerMedium":{
+
+	"ui_pelczar_fuel":3,
+
 
 	},
 	"tankerLarge":{

@@ -11,6 +11,9 @@
   "shieldCenter": [0, 0],
   "shieldRadius": 50,
   "viewOffset": 0,
+  "builtInMods": [
+    "ui_sensorcore",
+  ],
   "weaponSlots": [
     {
       "id": "WS0001",

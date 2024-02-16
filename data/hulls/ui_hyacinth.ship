@@ -12,7 +12,7 @@
   "shieldRadius": 139.5,
   "viewOffset": 0,
   "builtInMods": [
-    "militarycore",
+    "ui_militarycore",
     "ecm"
   ],
   "weaponSlots": [

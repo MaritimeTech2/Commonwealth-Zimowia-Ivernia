@@ -1,0 +1,150 @@
+{
+  "hullName": "Emeric",
+  "hullId": "ui_emeric",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/ui_emeric.png",
+  "style": "HIGH_TECH",
+  "height": 150,
+  "width": 150,
+  "center": [75, 75],
+  "collisionRadius": 60.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 56.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ui_sensorcore",
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": 0,
+      "locations": [18.5, 12]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 45,
+      "angle": -0,
+      "locations": [18.5, -12]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 120,
+      "locations": [-19.5, 23.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -120,
+      "locations": [-19.5, -23.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-6, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-19.5, 9],
+      "length": 86,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-19, -6],
+      "length": 86,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-20.5, 31.5],
+      "length": 92.300003,
+      "width": 7.74,
+      "angle": 150,
+      "contrailSize": 3,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-20, -27.5],
+      "length": 92.300003,
+      "width": 7.74,
+      "angle": -150,
+      "contrailSize": 3,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-12, 39.5],
+      "length": 83.089996,
+      "width": 8.18,
+      "angle": 150,
+      "contrailSize": 3,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-14, -35.5],
+      "length": 83.089996,
+      "width": 8.18,
+      "angle": -150,
+      "contrailSize": 3,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-3.5, 46.5],
+      "length": 69.190002,
+      "width": 8.31,
+      "angle": 150,
+      "contrailSize": 3,
+      "style": "COBRA_BOMBER"
+    },
+    {
+      "location": [-4.5, -41.5],
+      "length": 69.190002,
+      "width": 8.31,
+      "angle": -150,
+      "contrailSize": 3,
+      "style": "COBRA_BOMBER"
+    }
+  ],
+  "bounds": [
+    43.5, -10.5,
+    12.5, -29.5,
+    12.5, -50.5,
+    1.5, -53,
+    -21.5, -31.5,
+    -38, -36.5,
+    -42, -22,
+    -20.5, -8,
+    -24.5, -6,
+    -24.5, 6,
+    -20.5, 8,
+    -42, 22,
+    -38, 36.5,
+    -21.5, 31.5,
+    1.5, 53,
+    12.5, 50.5,
+    12.5, 29.5,
+    43.5, 10.5
+  ]
+}
