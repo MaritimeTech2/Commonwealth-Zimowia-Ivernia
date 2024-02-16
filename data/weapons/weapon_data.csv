@@ -2,5 +2,5 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 Lance MKEW,ui_spear,3,0,2000,1200,,1200,750,500,20,30,,,,KINETIC,1600,,0.25,4.5,1,0,0,0,0,0,,2000,,,400,,,,"kinetic20, LR, ui, ui_base_bp",,Iskalan,,Anti Shield,,,,,Modified Gauss Cannon to suit Icyllan Needs,Shielded target | exposed hull,,,,5
 Puklerz CIWS,ui_buckle,0,0,150,300,,25,0,2,70,5,,,,FRAGMENTATION,10,,0,0.25,4,0.0015,0,5,1,10,,1100,,,10,,,PD,"pd6,SR, ui, ui_base_bp",,Iskalan,,Point Defense,,,,,,,,,,6
 Ekran CIWS,ui_shield,1,0,750,500,,45,0,20,55,11,,,,HIGH_EXPLOSIVE,40,,0,0.25,2,0.0025,0,1,0.5,5,,1200,,,20,,,PD,"pd15,SR, ui, ui_base_bp",,Iskalan,,Point Defense,,,,,,,,,,7
-Palasz Coilgun,ui_sword,2,0,1000,900,,300,400,200,30,11,,,,KINETIC,550,,0.25,1.5,1,0,0,0,0,0,,1800,,,200,,,,"kinetic15, LR, ui, ui_base_bp",,Iskalan,,Anti Shield,,,,,,,,,,8
-Szabla Auto Coilgun,ui_szabla,1,0,250,600,,50,50,75,45,8,12,0.5,,KINETIC,75,,0.125,0.25,3,0.125,0,0,0,0,,1600,,,75,,,,"kinetic6, LR, ui, ui_base_bp",,Iskalan,,Anti Shield,,,,,,,,,,
+Palasz Coilgun,ui_sword,2,0,1000,750,,300,250,200,30,11,,,,KINETIC,550,,0.25,1.5,1,0,0,2,0.5,0.25,,1800,,,200,,,,"kinetic15, LR, ui, ui_base_bp",,Iskalan,,Anti Shield,,,,,,,,,,8
+Szabla Auto Coilgun,ui_szabla,1,0,350,550,,75,50,75,45,8,12,0.5,,KINETIC,110,,0.125,0.25,3,0.125,0,5,1,1,,1600,,,75,,,,"kinetic6, LR, ui, ui_base_bp",,Iskalan,,Anti Shield,,,,,,,,,,

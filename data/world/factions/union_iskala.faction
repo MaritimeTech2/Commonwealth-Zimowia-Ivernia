@@ -50,17 +50,12 @@
 	"knownShips":{
 		"tags":["base_bp", "hightech_bp", "ui_base_package"],
 		"hulls":[
-			"atlas",
-			"apogee",
-			"prometheus",
 			"omen",
 			"tempest",
 			"ui_hyacinth",
 			"ui_wenceslaus",
 			"ui_ladislaus",
 			"ui_eurosia",
-			"gryphon",
-			"heron",
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -71,6 +66,8 @@
 			"ui_wenceslaus",
 			"ui_ladislaus",
 			"ui_eurosia",
+			"ui_pelczar",
+			"ui_kowalska",
 		],
 	},
 	"knownFighters":{
@@ -154,6 +151,7 @@
 			"efficiency_overhaul",
 			"converted_fighterbay",
 			"ui_piotr_assault",
+			"ui_emeric_escort",
 		],
 	},
 	"factionDoctrine":{
