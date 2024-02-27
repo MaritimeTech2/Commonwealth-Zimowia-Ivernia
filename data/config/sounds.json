@@ -1,0 +1,48 @@
+{
+    "music":{
+	"ui_starsystem_01":[
+			{
+				"source":"sounds/music",
+				"volume":0.4,
+				"files":[
+					"Eon - Relic.ogg",
+				],
+				"randomStart":false,
+			},
+		],
+        "music_campaign":[
+            # Eon
+		#{"file":"Eon - Relic.ogg","source":"sounds/music","volume":0.50},
+            
+        ],
+        "music_campaign_non_core":[
+            # Eon
+		{"file":"Eon - Valor.ogg","source":"sounds/music","volume":0.20},
+  	    
+        ],
+        "music_campaign_hyperspace":[
+            # Eon
+		{"file":"Eon - No Cap.ogg","source":"sounds/music","volume":0.30},
+		{"file":"Eon - Contraband.ogg","source":"sounds/music","volume":0.30},
+            
+        ],
+        "music_combat":[
+            # Eon
+		{"file":"Eon - Boss Level.ogg","source":"sounds/music","volume":0.30},
+		{"file":"Eon - Luz Eterna.ogg","source":"sounds/music","volume":0.30},
+		{"file":"Eon - Rebellion.ogg","source":"sounds/music","volume":0.30},
+		{"file":"Eon - Trouble.ogg","source":"sounds/music","volume":0.30},
+            
+        ],
+    },
+
+    
+
+    # HEAVY MAULER
+   # "ap_heavy_mauler_fire":
+   # [
+   #     
+   # ],
+
+   
+}

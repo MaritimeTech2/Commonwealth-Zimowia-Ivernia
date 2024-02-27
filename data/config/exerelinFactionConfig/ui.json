@@ -5,7 +5,7 @@
     "freeStart":true,
     #"spawnAsFactionId":"ui",
     
-    "ngcTooltip":"My the will of God guide you to bring the sector out of the era of suffering it finds itself in.",
+    "ngcTooltip":"May the will of God guide you to bring the sector out of the era of suffering it finds itself in.",
     "rebelFleetSuffix":"Renegades",
 
     "asteroidMiningFleetName":"Mining Mission",
@@ -21,7 +21,7 @@
 	"responseFleetSizeMod":0.45,
 	"invasionPointMult":0.45,
 
-	"vengeanceFleetSizeMult":1.05,
+	"vengeanceFleetSizeMult":1.15,
     "vengeanceLevelNames":["Hunter", "Fanatic", "Revenge"],
     "vengeanceFleetNames":["Hunter-Killer", "Fanatics", "Revengeance"],
     "vengeanceFleetNamesSingle":["a Hunter-Killer Fleet", "a Fanatical Armada", "a Revengeance Squadron"],
@@ -29,20 +29,20 @@
     "specialForcesPointMult":2.55,
 	"specialForcesSizeMult":2.55,
 
-    "stabilizeCommodities":["food", "Fuel", "supplies"],
+    "stabilizeCommodities":["food", "hand_weapons", "supplies"],
     "marketSpawnWeight":2,
 
-    #general tip; Our Terraforming tech makes us more popular among the sectors elite.
+    #general tip; Our Terraforming tech makes us infamous among the sector.
 
     "startRelationships":{
-        "independent":0.25,
-        "player":0.1,
+        "independent":-.1,
+        "player":-0.1,
         "scalartech":0.3,
         "pirates":-0.6,
         "hegemony":-0.15,
         "luddic_church":-0.45,
         "luddic_path":-0.9,
-        "persean":0.25,
+        "persean":0.1,
         "tritachyon":-0.55,
         "sindrian_diktat":-0.25,
         "diableavionics":-0.55, 
@@ -61,22 +61,23 @@
 		"shadow_industry":0.3,
         "ironshell":-0.15,
         "apex_design":0.35,
-        "star_federation":0.35,
+        "star_federation":0.1,
         "tahlan_legioinfernalis":-1.00,
         "xlu":0.8,
         "blade_breakers":-1.00,
         "SCY":0.25,
-        "default": 0.15
+        "default": -.1
     },
 
     "morality":"good",
     "alignments":{
-        "militarist":1.0,
-        "diplomatic":1.0,
-        "idealogical":0.5,
-        "technocratic":0.5
+        "technocratic":0.25,
+        "hierarchial":0.25,
+        "militarist":1,
+        "diplomatic":1,
+        "ideological":0.5,
     },
-    "diplomacyTraits":["irredentist", "stalwart", "helps_allies"],
+    "diplomacyTraits":["irredentist", "stalwart", "helps_allies", "pacifist", "low_profile"],
     
     "freeMarket":true,
 
@@ -89,22 +90,20 @@
 
     "startShipsSolo":[["brawler_Elite"]],
     "startShipsCombatSmall":[
-      ["swp_archon_att", "brawler_Assault", "centurion_Starting"],
-      ["hammerhead_Balanced", "vigilance_AP", "monitor_Escort"]
+	["ui_eurosia_standard", "ui_ladislaus_pd"],
+      ["ui_eurosia_standard", "ui_ladislaus_standard"],
     ],
-    "startShipsTradeSmall":[["tarsus_Standard", "vigilance_Starting", "mercury_PD"]],
+   "startShipsTradeSmall":[["ui_kowalska_cargo", "ui_ladislaus_pd"]],
     "startShipsCombatLarge":[
-      ["swp_eagle_black_eli", "swp_archer_cs", "swp_alastor_sta"],
-      ["eagle_Balanced", "hammerhead_Elite", "vigilance_FS"]
+      ["ui_wenceslaus_standard", "ui_eurosia_standard", "ui_ladislaus_standard"],
+      ["ui_hyacinth_standard", "ui_ladislaus_standard", "ui_ladislaus_standard"]
     ],
-    "startShipsTradeLarge":[["colossus_Standard", "mule_Standard", "shepherd_Frontier"]],
-    "startShipsExplorerLarge":[["venture_Balanced", "gemini_Standard", "wayfarer_Standard"]],
-    "startShipsCarrierSmall":[["drover_Strike", "vigilance_Standard", "brawler_Elite"]],
-    "startShipsCarrierLarge":[["heron_Strike", "hammerhead_Balanced", "centurion_Starting"]],
-    
+    "startShipsTradeLarge":[["ui_wenceslaus_standard", "ui_kowalska_cargo", "ui_ladislaus_pd"]],
+    "startShipsExplorerLarge":[["ui_wenceslaus_standard", "ui_kowalska_cargo", "ui_pelczar_fuel"]],
+    #startShipsCarrierSmall":[["drover_Strike", "vigilance_Standard", "brawler_Elite"]],    
     
     "startSpecialItems":[
-        [["midline_package", "ui_base_package"]],
+       # [["ui_base_package"]],
     ],
 
     "defenceStations":[

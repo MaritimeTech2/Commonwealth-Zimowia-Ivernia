@@ -3,28 +3,25 @@
   "hullId": "ui_piotr",
   "displayName": "Piotr Assault Gunsship",
   "goalVariant": false,
-  "fluxCapacitors": 5,
-  "fluxVents": 14,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [
-    "ecm"
-  ],
+  "hullMods": [],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "ionpulser",
-        "WS0002": "ionpulser"
+        "WS0001": "ui_szabla",
+        "WS0002": "ui_szabla",
+        "WS0003": "ui_fist"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS0003": "lightmg"
-      }
+      "weapons": {}
     }
   ],
   "modules": [],
