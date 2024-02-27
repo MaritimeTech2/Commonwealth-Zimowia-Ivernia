@@ -34,21 +34,19 @@
 		"tags":{
 		},
 		"hulls":{
-			"ui_hyacinth":1,
+			"ui_hyacinth":2,
 			"ui_wenceslaus":2,
 			"ui_ladislaus":3,
 			"ui_eurosia":3,
 		},
 	},
-	# ships the faction gets access to when importing S&W out-of-faction
+	# ships the faction gets access to when importing S&W out-of-faction, reverts to known when empty
 	"shipsWhenImporting":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "ui_base_package"],
-		"hulls":[
-			"ui_wenceslaus","ui_hyacinth","ui_ladislaus","ui_eurosia",
-		],
+		"tags":[],
+		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["base_bp", "hightech_bp", "ui_base_package"],
+		"tags":["hightech_bp", "ui_base_package", "ui"],
 		"hulls":[
 			"omen",
 			"tempest",
@@ -71,7 +69,7 @@
 		],
 	},
 	"knownFighters":{
-		"tags":["base_bp", "hightech_bp", ],
+		"tags":["base_bp", "hightech_bp", "ui"],
 		"fighters":[
 			"xyphos_wing",
 			"thunder_wing",
@@ -87,7 +85,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["base_bp", "missile_bp", "hightech_bp",],
+		"tags":["base_bp", "missile_bp", "hightech_bp","ui"],
 		"weapons":[
 			"ui_spear",
 			"ui_buckle",
@@ -187,7 +185,7 @@
 		"drugs",
 	],
 	"music":{
-		"theme":"music_diktat_market_neutral",
+		"theme":"ui_starsystem_01",
 		"market_neutral":"music_diktat_market_neutral",
 		"market_hostile":"music_diktat_market_hostile",
 		"market_friendly":"music_diktat_market_friendly",
@@ -242,7 +240,7 @@
 			"patrolCommander":{"name":"SBV Constellation Commander"},
 			"fleetCommander":{"name":"SBV Fleet Commander"},
 		
-			"baseCommander":{"name":"Interior Secretary"},
+			"baseCommander":{"name":"Base Secretary"},
 			"stationCommander":{"name":"Staff Colonel"},
 			"outpostCommander":{"name":"Staff Lieutenant-Colonel"},
 			"portmaster":{"name":"Port Authority Director"},
@@ -251,7 +249,7 @@
 			"supplyManager":{"name":"Staff Major"},
 			"medicalSupplier":{"name":"Medical Supplier"},
 		
-			"administrator":{"name":"Provincial Administrator"},
+			"administrator":{"name":"Interior Secretary"},
 			"freeAdmin":{"name":"Freelance Administrator"},
 		
 		"trader":{"name":"Trader"},

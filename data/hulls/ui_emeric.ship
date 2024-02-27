@@ -12,7 +12,7 @@
   "shieldRadius": 56.5,
   "viewOffset": 0,
   "builtInMods": [
-    "ui_sensorcore",
+    "ui_sensorcore"
   ],
   "weaponSlots": [
     {
@@ -68,7 +68,8 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 4,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-19, -6],
@@ -76,7 +77,8 @@
       "width": 10,
       "angle": 180,
       "contrailSize": 4,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-20.5, 31.5],
@@ -84,7 +86,8 @@
       "width": 7.74,
       "angle": 150,
       "contrailSize": 3,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-20, -27.5],
@@ -92,7 +95,8 @@
       "width": 7.74,
       "angle": -150,
       "contrailSize": 3,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-12, 39.5],
@@ -100,7 +104,8 @@
       "width": 8.18,
       "angle": 150,
       "contrailSize": 3,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-14, -35.5],
@@ -108,7 +113,8 @@
       "width": 8.18,
       "angle": -150,
       "contrailSize": 3,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-3.5, 46.5],
@@ -116,7 +122,8 @@
       "width": 8.31,
       "angle": 150,
       "contrailSize": 3,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-4.5, -41.5],
@@ -124,7 +131,8 @@
       "width": 8.31,
       "angle": -150,
       "contrailSize": 3,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     }
   ],
   "bounds": [

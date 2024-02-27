@@ -3,7 +3,7 @@
   "hullId": "ui_hyacinth",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/ui_hyacinth.png",
-  "style": "HIGH_TECH",
+  "style": "OMEGA",
   "height": 300,
   "width": 300,
   "center": [142, 120],
@@ -137,19 +137,21 @@
   "engineSlots": [
     {
       "location": [-73, 16],
-      "length": 78.712303,
-      "width": 17.59244,
+      "length": 78.709999,
+      "width": 17.59,
       "angle": 149,
-      "contrailSize": 17.59244,
-      "style": "COBRA_BOMBER"
+      "contrailSize": 17.59,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-73, -16],
-      "length": 78.712303,
-      "width": 17.59244,
+      "length": 78.709999,
+      "width": 17.59,
       "angle": -149,
-      "contrailSize": 17.59244,
-      "style": "COBRA_BOMBER"
+      "contrailSize": 17.59,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-66.5, 65],
@@ -157,47 +159,53 @@
       "width": 17.59,
       "angle": 149,
       "contrailSize": 17.59,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-66.5, -65],
-      "length": 78.712303,
-      "width": 17.59244,
+      "length": 78.709999,
+      "width": 17.59,
       "angle": -149,
-      "contrailSize": 17.59244,
-      "style": "COBRA_BOMBER"
+      "contrailSize": 17.59,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-57, 78],
-      "length": 59.172207,
-      "width": 16.389008,
+      "length": 59.169998,
+      "width": 16.389999,
       "angle": 149,
-      "contrailSize": 16.389008,
-      "style": "COBRA_BOMBER"
+      "contrailSize": 16.389999,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-57, -78],
-      "length": 59.172207,
-      "width": 16.389008,
+      "length": 59.169998,
+      "width": 16.389999,
       "angle": -149,
-      "contrailSize": 16.389008,
-      "style": "COBRA_BOMBER"
+      "contrailSize": 16.389999,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-47.5, 89],
-      "length": 44.51022,
-      "width": 20.009027,
+      "length": 44.509998,
+      "width": 20.01,
       "angle": 149,
-      "contrailSize": 20.009027,
-      "style": "COBRA_BOMBER"
+      "contrailSize": 20.01,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-47.5, -89],
-      "length": 44.51022,
-      "width": 20.009027,
+      "length": 44.509998,
+      "width": 20.01,
       "angle": -149,
-      "contrailSize": 20.009027,
-      "style": "COBRA_BOMBER"
+      "contrailSize": 20.01,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     }
   ],
   "bounds": [

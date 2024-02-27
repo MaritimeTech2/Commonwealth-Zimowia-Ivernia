@@ -3,14 +3,13 @@
   "hullId": "ui_eurosia",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 15,
-  "fluxVents": 10,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "ui_piotr_assault",
-    "ui_emeric_escort",
-    "ecm"
+    "ui_emeric_escort"
   ],
   "weaponGroups": [
     {

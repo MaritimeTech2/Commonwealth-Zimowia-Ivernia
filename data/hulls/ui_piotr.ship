@@ -12,35 +12,35 @@
   "shieldRadius": 50,
   "viewOffset": 0,
   "builtInMods": [
-    "ui_sensorcore",
+    "ui_sensorcore"
   ],
   "weaponSlots": [
     {
       "id": "WS0001",
-      "size": "MEDIUM",
-      "type": "ENERGY",
-      "mount": "HARDPOINT",
-      "arc": 40,
-      "angle": 0,
-      "locations": [-1.5, 13.5]
-    },
-    {
-      "id": "WS0002",
-      "size": "MEDIUM",
-      "type": "ENERGY",
-      "mount": "HARDPOINT",
-      "arc": 40,
-      "angle": -0,
-      "locations": [-1.5, -13.5]
-    },
-    {
-      "id": "WS0003",
       "size": "SMALL",
       "type": "UNIVERSAL",
       "mount": "TURRET",
+      "arc": 40,
+      "angle": 0,
+      "locations": [-8.5, 21]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 40,
+      "angle": -0,
+      "locations": [-8.5, -21]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
       "arc": 270,
-      "angle": 180,
-      "locations": [-25, -1]
+      "angle": 0,
+      "locations": [6, -0]
     }
   ],
   "engineSlots": [
@@ -50,7 +50,8 @@
       "width": 11,
       "angle": 180,
       "contrailSize": 11,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-26, -11],
@@ -58,7 +59,8 @@
       "width": 11,
       "angle": -180,
       "contrailSize": 11,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-34.5, 19],
@@ -66,7 +68,8 @@
       "width": 6.96,
       "angle": 165,
       "contrailSize": 6.96,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-36.5, -20.5],
@@ -74,7 +77,8 @@
       "width": 6.96,
       "angle": -165,
       "contrailSize": 6.96,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-32, 26.5],
@@ -82,7 +86,8 @@
       "width": 8.1,
       "angle": 165,
       "contrailSize": 8.1,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-32, -28],
@@ -90,7 +95,8 @@
       "width": 8.1,
       "angle": -165,
       "contrailSize": 8.1,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-27, 32.5],
@@ -98,7 +104,8 @@
       "width": 7.1,
       "angle": 165,
       "contrailSize": 7.1,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
       "location": [-28, -35],
@@ -106,7 +113,8 @@
       "width": 7.1,
       "angle": -165,
       "contrailSize": 7.1,
-      "style": "COBRA_BOMBER"
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     }
   ],
   "bounds": [

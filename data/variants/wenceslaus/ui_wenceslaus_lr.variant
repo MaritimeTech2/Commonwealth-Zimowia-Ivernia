@@ -3,12 +3,13 @@
   "hullId": "ui_wenceslaus",
   "displayName": "Standard ",
   "goalVariant": true,
-  "fluxCapacitors": 13,
-  "fluxVents": 15,
+  "fluxCapacitors": 14,
+  "fluxVents": 16,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "armoredweapons"
+    "armoredweapons",
+    "ecm"
   ],
   "weaponGroups": [
     {
