@@ -1,10 +1,18 @@
 package data.scripts;
 
+import com.fs.starfarer.api.campaign.PersonImportance;
+import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.characters.FullName;
+import com.fs.starfarer.api.impl.campaign.ids.Ranks;
+import com.fs.starfarer.api.impl.campaign.ids.Tags;
+import com.fs.starfarer.api.impl.campaign.ids.Voices;
 import com.fs.starfarer.api.impl.campaign.intel.UIPiekloMiningIntel;
 import data.scripts.world.UnionIcyllaGen;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import exerelin.campaign.SectorManager;
+import com.fs.starfarer.api.characters.ImportantPeopleAPI;
+import com.fs.starfarer.api.characters.PersonAPI;
 
 public class UIModPlugin extends BaseModPlugin {
 //    @Override
@@ -48,28 +56,48 @@ public class UIModPlugin extends BaseModPlugin {
     @Override
     public void onNewGameAfterEconomyLoad() {
 
-//        ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
-//        MarketAPI market = null;
-//
-//        market = Global.getSector().getEconomy().getMarket("ui_Icylla_market"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
-//        if (market != null) {
-//            PersonAPI person = Global.getFactory().createPerson();
-//            person.setId("ui_kazimir");
-//            person.setFaction("ui");
-//            person.setGender(FullName.Gender.MALE);
-//            person.setRankId(Ranks.FACTION_LEADER);
-//            person.setPostId(Ranks.POST_FACTION_LEADER);
-//            person.setImportance(PersonImportance.VERY_HIGH);
-//            person.getName().setFirst("Kazimir");
-//            person.getName().setLast("lastname");
-//            person.addTag(Tags.CONTACT_MILITARY);
-//            person.setVoice(Voices.SOLDIER); //their default dialog, for vanilla missions, etc
+        ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
+        MarketAPI market = null;
+
+        market = Global.getSector().getEconomy().getMarket("ui_iskala"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
+        if (market != null) {
+            PersonAPI person = Global.getFactory().createPerson();
+            person.setId("ui_kazimir");
+            person.setFaction("ui");
+            person.setGender(FullName.Gender.MALE);
+            person.setRankId(Ranks.FACTION_LEADER);
+            person.setPostId(Ranks.POST_FACTION_LEADER);
+            person.setImportance(PersonImportance.VERY_HIGH);
+            person.getName().setFirst("Kazimir");
+            person.getName().setLast("Vasilenko");
+            person.addTag(Tags.CONTACT_MILITARY);
+            person.setVoice(Voices.SOLDIER); //their default dialog, for vanilla missions, etc
 //            person.setPortraitSprite("graphics/portraits/characters/ui_kazimir.png"); //this is wrong, enter the sprite into settings.json
-//
-//            ip.addPerson(person);
-//            market.addPerson(person);
-//            market.getCommDirectory().addPerson(person);
-//            market.setAdmin(person);
-//        }
+
+            ip.addPerson(person);
+            ((MarketAPI) market).addPerson(person);
+            market.getCommDirectory().addPerson(person);
+            market.setAdmin(person);
+        }
+        market = Global.getSector().getEconomy().getMarket("ui_kuznia"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
+        if (market != null) {
+            PersonAPI person = Global.getFactory().createPerson();
+            person.setId("ui_anzhelika");
+            person.setFaction("ui");
+            person.setGender(FullName.Gender.FEMALE);
+            person.setRankId(Ranks.ui_crown_princess);
+            person.setPostId(Ranks.ui_crown_princess);
+            person.setImportance(PersonImportance.VERY_HIGH);
+            person.getName().setFirst("Anzhelika");
+            person.getName().setLast("Vasilenko");
+            person.addTag(Tags.CONTACT_MILITARY);
+            person.setVoice(Voices.SOLDIER); //their default dialog, for vanilla missions, etc
+//            person.setPortraitSprite("graphics/portraits/characters/ui_kazimir.png"); //this is wrong, enter the sprite into settings.json
+
+            ip.addPerson(person);
+            ((MarketAPI) market).addPerson(person);
+            market.getCommDirectory().addPerson(person);
+            market.setAdmin(person);
+        }
     }
 }

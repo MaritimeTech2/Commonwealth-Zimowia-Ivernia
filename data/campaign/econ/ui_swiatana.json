@@ -25,7 +25,8 @@
 				"starfortress_high",
 				"patrolhq",
 				"waystation",
-				["lightindustry","biofactory_embryo"],
+				#["lightindustry","biofactory_embryo"],
+				"orbitalworks",
 				["heavybatteries","drone_replicator"]
 			]
 		},
@@ -46,10 +47,11 @@
 				"population",
 				"farming",
 				"spaceport",
+				["lightindustry","biofactory_embryo"],
 				"commerce",
 				"heavybatteries",
 				"highcommand",
-				"starfortress_high"
+				"battlestation_high"
 			]
 		}
 	]

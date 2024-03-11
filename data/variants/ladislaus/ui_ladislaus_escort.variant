@@ -1,0 +1,27 @@
+{
+  "variantId": "ui_ladislaus_escort",
+  "hullId": "ui_ladislaus",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ui_emeric_escort"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ui_spear",
+        "WS0002": "ui_protector",
+        "WS0003": "ui_protector",
+        "WS0008": "ui_buckle"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
