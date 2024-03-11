@@ -5,7 +5,7 @@
     "freeStart":true,
     #"spawnAsFactionId":"ui",
     
-    "ngcTooltip":"May the will of God guide you to bring the sector out of the era of suffering it finds itself in.",
+    "ngcTooltip":"For our struggle is not against enemies of blood and flesh, but against the rulers, against the authorities, against the cosmic powers of this present darkness, against the spiritual forces of evil in the heavenly places. Therefore take up the whole armor of God, so that you may be able to withstand on that evil day, and having done everything, to stand firm. Ephesians 6:12",
     "rebelFleetSuffix":"Renegades",
 
     "asteroidMiningFleetName":"Mining Mission",
@@ -96,14 +96,14 @@
    "startShipsTradeSmall":[["ui_kowalska_cargo", "ui_ladislaus_pd"]],
     "startShipsCombatLarge":[
       ["ui_wenceslaus_standard", "ui_eurosia_standard", "ui_ladislaus_standard"],
-      ["ui_hyacinth_standard", "ui_ladislaus_standard", "ui_ladislaus_standard"]
+      ["ui_hyacinth_assault", "ui_ladislaus_standard", "ui_ladislaus_pd"]
     ],
     "startShipsTradeLarge":[["ui_wenceslaus_standard", "ui_kowalska_cargo", "ui_ladislaus_pd"]],
     "startShipsExplorerLarge":[["ui_wenceslaus_standard", "ui_kowalska_cargo", "ui_pelczar_fuel"]],
     #startShipsCarrierSmall":[["drover_Strike", "vigilance_Standard", "brawler_Elite"]],    
     
     "startSpecialItems":[
-       # [["ui_base_package"]],
+       # [["ui_base_package", ""]],[["ui_emeric_escort", ""]],
     ],
 
     "defenceStations":[

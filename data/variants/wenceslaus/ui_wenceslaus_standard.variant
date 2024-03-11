@@ -3,12 +3,12 @@
   "hullId": "ui_wenceslaus",
   "displayName": "Standard ",
   "goalVariant": true,
-  "fluxCapacitors": 14,
+  "fluxCapacitors": 8,
   "fluxVents": 15,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "ui_piotr_assault"
+    "ui_emeric_escort"
   ],
   "weaponGroups": [
     {
@@ -17,12 +17,12 @@
       "weapons": {
         "WS0001": "ui_sword",
         "WS0002": "ui_sword",
-        "WS0003": "ionpulser",
-        "WS0004": "ionpulser",
-        "WS0009": "ui_shield",
-        "WS0010": "ui_shield",
-        "WS0011": "ui_buckle",
-        "WS0012": "ui_buckle"
+        "WS0003": "ui_fist",
+        "WS0004": "ui_fist",
+        "WS0009": "ui_protector",
+        "WS0010": "ui_protector",
+        "WS0011": "sabot",
+        "WS0012": "sabot"
       }
     }
   ],

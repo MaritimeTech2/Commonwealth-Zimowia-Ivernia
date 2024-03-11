@@ -3,13 +3,12 @@
   "hullId": "ui_wenceslaus",
   "displayName": "Standard ",
   "goalVariant": true,
-  "fluxCapacitors": 14,
+  "fluxCapacitors": 7,
   "fluxVents": 16,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "armoredweapons",
-    "ecm"
+    "ui_emeric_escort"
   ],
   "weaponGroups": [
     {
@@ -19,9 +18,9 @@
         "WS0001": "ui_sword",
         "WS0002": "ui_sword",
         "WS0003": "ionbeam",
-        "WS0004": "ionpulser",
-        "WS0009": "ui_shield",
-        "WS0010": "ui_shield",
+        "WS0004": "ionbeam",
+        "WS0009": "ui_protector",
+        "WS0010": "ui_protector",
         "WS0011": "ui_szabla",
         "WS0012": "ui_szabla"
       }

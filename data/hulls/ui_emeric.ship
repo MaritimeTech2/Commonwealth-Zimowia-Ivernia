@@ -66,7 +66,7 @@
       "location": [-19.5, 9],
       "length": 86,
       "width": 10,
-      "angle": 180,
+      "angle": 174,
       "contrailSize": 4,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
@@ -75,7 +75,7 @@
       "location": [-19, -6],
       "length": 86,
       "width": 10,
-      "angle": 180,
+      "angle": -174,
       "contrailSize": 4,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"

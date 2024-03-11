@@ -3,11 +3,12 @@
   "hullId": "ui_ladislaus",
   "displayName": "Escort",
   "goalVariant": true,
-  "fluxCapacitors": 12,
-  "fluxVents": 10,
+  "fluxCapacitors": 3,
+  "fluxVents": 15,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
+    "escort_package",
     "armoredweapons"
   ],
   "weaponGroups": [

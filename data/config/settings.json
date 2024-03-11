@@ -21,5 +21,9 @@
 		"intel":{
 			"ui_pieklo_mining": "graphics/icons/intel/faction_conflict.png",
 		},
+		ui_person:{
+		"ui_anzhelika":"graphics/portraits/characters/ui_anzhelika.png",
+		"ui_kazimir":"graphics/portraits/characters/ui_kazimir.png",
+		},
 	}
 }
