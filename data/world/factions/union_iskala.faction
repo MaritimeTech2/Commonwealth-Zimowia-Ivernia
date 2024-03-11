@@ -216,7 +216,7 @@
 	"ranks":{
 		"ranks":{
 		"factionLeader":{"name":"Cesarz"},
-	
+		"ui_crown_princess":{"name":"Lieutenant General"},
 		"spaceSailor":{"name":"Private"},
 		"spaceChief":{"name":"Seargant"},
 		"spaceEnsign":{"name":"Lieutenant"},
@@ -231,8 +231,8 @@
 			#"fleetCommander":{"name":"General"},
 			#"baseCommander":{"name":"Staff General"},
 			"baseFleetCommander":{"name":"Battle-Group General"},
-			"crownPrincess":{"name":"Crown Princess"},
-			
+			"ui_crown_princess":{"name":"Crown Princess"},
+			"factionLeader":{"name":"Cesarz"},
 	
 			"patrolCommander":{"name":"SBV Constellation Commander"},
 			"fleetCommander":{"name":"SBV Fleet Commander"},
