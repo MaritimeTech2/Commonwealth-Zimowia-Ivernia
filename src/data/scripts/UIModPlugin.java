@@ -61,43 +61,43 @@ public class UIModPlugin extends BaseModPlugin {
 
         market = Global.getSector().getEconomy().getMarket("ui_iskala"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
-            PersonAPI person = Global.getFactory().createPerson();
-            person.setId("ui_kazimir");
-            person.setFaction("ui");
-            person.setGender(FullName.Gender.MALE);
-            person.setRankId(Ranks.FACTION_LEADER);
-            person.setPostId(Ranks.POST_FACTION_LEADER);
-            person.setImportance(PersonImportance.VERY_HIGH);
-            person.getName().setFirst("Kazimir");
-            person.getName().setLast("Vasilenko");
-            person.addTag(Tags.CONTACT_MILITARY);
-            person.setVoice(Voices.SOLDIER); //their default dialog, for vanilla missions, etc
-//            person.setPortraitSprite("graphics/portraits/characters/ui_kazimir.png"); //this is wrong, enter the sprite into settings.json
+            PersonAPI ui_kazimir = Global.getFactory().createPerson();
+            ui_kazimir.setId("ui_kazimir");
+            ui_kazimir.setFaction("ui");
+            ui_kazimir.setGender(FullName.Gender.MALE);
+            ui_kazimir.setRankId(Ranks.FACTION_LEADER);
+            ui_kazimir.setPostId(Ranks.POST_FACTION_LEADER);
+            ui_kazimir.setImportance(PersonImportance.VERY_HIGH);
+            ui_kazimir.getName().setFirst("Kazimir");
+            ui_kazimir.getName().setLast("Vasilenko");
+            ui_kazimir.addTag(Tags.CONTACT_MILITARY);
+            ui_kazimir.setVoice(Voices.SOLDIER); //their default dialog, for vanilla missions, etc
+            ui_kazimir.setPortraitSprite("graphics/portraits/characters/ui_kazimir.png"); //this is wrong, enter the sprite into settings.json
 
-            ip.addPerson(person);
-            ((MarketAPI) market).addPerson(person);
-            market.getCommDirectory().addPerson(person);
-            market.setAdmin(person);
+            ip.addPerson(ui_kazimir);
+            market.addPerson(ui_kazimir);
+            market.getCommDirectory().addPerson(ui_kazimir);
+            market.setAdmin(ui_kazimir);
         }
         market = Global.getSector().getEconomy().getMarket("ui_kuznia"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
-            PersonAPI person = Global.getFactory().createPerson();
-            person.setId("ui_anzhelika");
-            person.setFaction("ui");
-            person.setGender(FullName.Gender.FEMALE);
-            person.setRankId(Ranks.ui_crown_princess);
-            person.setPostId(Ranks.ui_crown_princess);
-            person.setImportance(PersonImportance.VERY_HIGH);
-            person.getName().setFirst("Anzhelika");
-            person.getName().setLast("Vasilenko");
-            person.addTag(Tags.CONTACT_MILITARY);
-            person.setVoice(Voices.SOLDIER); //their default dialog, for vanilla missions, etc
-//            person.setPortraitSprite("graphics/portraits/characters/ui_kazimir.png"); //this is wrong, enter the sprite into settings.json
+            PersonAPI ui_anzhelika = Global.getFactory().createPerson();
+            ui_anzhelika.setId("ui_anzhelika");
+            ui_anzhelika.setFaction("ui");
+            ui_anzhelika.setGender(FullName.Gender.FEMALE);
+            ui_anzhelika.setRankId("ui_crown_princess");
+            ui_anzhelika.setPostId("ui_crown_princess");
+            ui_anzhelika.setImportance(PersonImportance.VERY_HIGH);
+            ui_anzhelika.getName().setFirst("Anzhelika");
+            ui_anzhelika.getName().setLast("Vasilenko");
+            ui_anzhelika.addTag(Tags.CONTACT_MILITARY);
+            ui_anzhelika.setVoice(Voices.SOLDIER); //their default dialog, for vanilla missions, etc
+            ui_anzhelika.setPortraitSprite("graphics/portraits/characters/ui_anzhelika.png"); //this is wrong, enter the sprite into settings.json
 
-            ip.addPerson(person);
-            ((MarketAPI) market).addPerson(person);
-            market.getCommDirectory().addPerson(person);
-            market.setAdmin(person);
+            ip.addPerson(ui_anzhelika);
+            market.addPerson(ui_anzhelika);
+            market.getCommDirectory().addPerson(ui_anzhelika);
+            market.setAdmin(ui_anzhelika);
         }
     }
 }
