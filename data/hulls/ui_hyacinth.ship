@@ -3,7 +3,7 @@
   "hullId": "ui_hyacinth",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/ui_hyacinth.png",
-  "style": "OMEGA",
+  "style": "UI_BASE",
   "height": 300,
   "width": 300,
   "center": [142, 120],
@@ -19,7 +19,7 @@
     {
       "id": "WS0009",
       "size": "LARGE",
-      "type": "UNIVERSAL",
+      "type": "ENERGY",
       "mount": "TURRET",
       "arc": 240,
       "angle": 0,
@@ -64,7 +64,7 @@
     {
       "id": "WS0003",
       "size": "MEDIUM",
-      "type": "SYNERGY",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 120,
       "angle": 30,
@@ -73,7 +73,7 @@
     {
       "id": "WS0004",
       "size": "MEDIUM",
-      "type": "SYNERGY",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 120,
       "angle": -30,
@@ -118,7 +118,7 @@
     {
       "id": "WS0010",
       "size": "SMALL",
-      "type": "HYBRID",
+      "type": "ENERGY",
       "mount": "TURRET",
       "arc": 240,
       "angle": 180,
@@ -127,7 +127,7 @@
     {
       "id": "WS0011",
       "size": "SMALL",
-      "type": "HYBRID",
+      "type": "ENERGY",
       "mount": "TURRET",
       "arc": 240,
       "angle": -180,

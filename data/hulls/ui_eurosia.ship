@@ -3,7 +3,7 @@
   "hullId": "ui_eurosia",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/ui_eurosia.png",
-  "style": "OMEGA",
+  "style": "UI_BASE",
   "height": 200,
   "width": 200,
   "center": [98, 98],

@@ -4,6 +4,7 @@ import java.awt.Color;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.impl.MusicPlayerPluginImpl;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
@@ -25,14 +26,14 @@ public class UISwiatana {
 
         system.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
 
-
+        system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "ui_starsystem_01");
 
         // create the star and generate the hyperspace anchor for this system
         PlanetAPI swiatanaStar = system.initStar("Swiatana", // unique id for this star
                 "star_orange", // id in planets.json
                 750f, // radius (in pixels at default zoom)
                 250); // corona radius, from star edge
-        system.setLightColor(new Color(255, 255, 255)); // light color in entire system, affects all entities
+        system.setLightColor(new Color(255, 215, 175)); // light color in entire system, affects all entities
 
         PlanetAPI iskala = system.addPlanet("ui_iskala",
                 swiatanaStar,
@@ -40,8 +41,8 @@ public class UISwiatana {
                 "terran",
                 360f * (float) Math.random(),
                 160f,
-                4000f,
-                200f);
+                6500f,
+                720f);
         iskala.setCustomDescriptionId("ui_iskala"); //reference descriptions.csv
         iskala.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_iskala"));
         iskala.getSpec().setTilt(0f);
@@ -64,10 +65,21 @@ public class UISwiatana {
                 "barren_castiron",
                 360f * (float) Math.random(),
                 110f,
-                4650f,
+                5650f,
                 300f);
         swiatana3.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
         swiatana3.getMarket().addCondition(Conditions.ORE_SPARSE);
+
+        PlanetAPI swiatana1 = system.addPlanet("ui_swiatana1",
+                swiatanaStar,
+                "Swiatana I",
+                "jungle",
+                360f * (float) Math.random(),
+                110f,
+                2650f,
+                200f);
+        swiatana1.getMarket().addCondition(Conditions.INIMICAL_BIOSPHERE);
+        swiatana1.getMarket().addCondition(Conditions.ORE_SPARSE);
 
         PlanetAPI swiatana4 = system.addPlanet("ui_swiatana4",
                 swiatanaStar,
@@ -75,7 +87,7 @@ public class UISwiatana {
                 "rocky_metallic",
                 360f * (float) Math.random(),
                 120f,
-                6000f,
+                7500f,
                 400f);
         swiatana4.getMarket().addCondition(Conditions.TECTONIC_ACTIVITY);
         swiatana4.getMarket().addCondition(Conditions.ORE_SPARSE);

@@ -1,13 +1,13 @@
 {
 	# ui custom ranks
 	"ranks":{
-		"ui_crown_princess":{"name":"Lieutenant General"},	
-				
-	},
+		"ui_crown_princess":{"name":"Lieutenant General"},
+		"ui_terra_brother":{"name":"ZBTI Vice President"},
+},
 	
 	"posts":{
 		"ui_crown_princess":{"name":"Crown Princess"},
-	
+		"ui_terra_brother":{"name":"ZBTI Vice President"},
 	},
 }
 

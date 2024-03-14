@@ -3,7 +3,7 @@
   "hullId": "ui_wenceslaus",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/ui_wenceslaus.png",
-  "style": "HIGH_TECH",
+  "style": "UI_BASE",
   "height": 300,
   "width": 225,
   "center": [111, 119],
@@ -84,7 +84,7 @@
     {
       "id": "WS0001",
       "size": "MEDIUM",
-      "type": "HYBRID",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 150,
       "angle": 45,
@@ -93,7 +93,7 @@
     {
       "id": "WS0002",
       "size": "MEDIUM",
-      "type": "HYBRID",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 150,
       "angle": -45,

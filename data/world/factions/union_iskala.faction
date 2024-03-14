@@ -37,7 +37,7 @@
 			"ui_hyacinth":2,
 			"ui_wenceslaus":2,
 			"ui_ladislaus":3,
-			"ui_eurosia":3,
+			"ui_eurosia":2,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction, reverts to known when empty
@@ -46,7 +46,7 @@
 		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["hightech_bp", "ui_base_package", "ui"],
+		"tags":["ui_base_package", "ui"],
 		"hulls":[
 			"omen",
 			"tempest",
@@ -58,7 +58,7 @@
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":["ui_base_package"],
+		"tags":["ui_base_package", "ui"],
 		"hulls":[
 			"ui_hyacinth",
 			"ui_wenceslaus",
@@ -66,10 +66,12 @@
 			"ui_eurosia",
 			"ui_pelczar",
 			"ui_kowalska",
+			"ui_zygmunt",
+			"ui_krizin",
 		],
 	},
 	"knownFighters":{
-		"tags":["base_bp", "hightech_bp", "ui"],
+		"tags":[ "ui"],
 		"fighters":[
 			"xyphos_wing",
 			"thunder_wing",
@@ -85,7 +87,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["missile_bp", "hightech_bp","ui"],
+		"tags":["ui"],
 		"weapons":[
 			"ui_spear",
 			"ui_buckle",
@@ -95,12 +97,6 @@
 			"breachpod",
 			"sabotpod",
 			"phasecl",
-			"cyclone",
-			"hurricane",
-			"squall",
-			"locust",
-			"pdburst",
-			"amblaster",
 			"phasebeam",
 			"heavyblaster",
 			"heavyburst",

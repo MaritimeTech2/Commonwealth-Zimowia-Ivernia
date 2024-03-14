@@ -2,19 +2,19 @@
 	# The following hull style ids are reserved and can not be used:
 	# "sounds", "DEFAULT", "FIGHTER", "FRIGATE", "DESTROYER", "CRUISER", "CAPITAL_SHIP"
 	#Ships
-	"ui_base":{
-		"hyperspaceJitterColor":[255,145,75,200],
+	"UI_BASE":{
+		"hyperspaceJitterColor":[255,100,100,255],
 		"baseCampaignExplosionColor":[255,145,75,255],
 		"baseCombatExplosionColor":[255,145,75,255],
 		"fighterRepairFlickerColor":[255,145,75,255],
 		"fighterChipIconColor":[255,255,255,255],
 		"weaponDisabledExplosionColor":[255,145,75,255],
 		"shieldRingColor":[255,255,255,255],
-		"shieldInnerColor":[125,125,255,75],
+		"shieldInnerColor":[255,215,125,75],
 		"fluxVentCoreColor":[255,255,255,255],
-		"fluxVentFringeColor":[125,0,155,255],
-		"engineLoopSet":"uaf_engine_cruiser", 					# id of entry in sounds.json
-		"engineAccelerateSet":"uaf_engine_starter",		# id of entry in sounds.json
+		"fluxVentFringeColor":[225,215,125,255],
+		"engineLoopSet":"engine_loop", 					# id of entry in sounds.json
+		"engineAccelerateSet":"engine_accelerate",		# id of entry in sounds.json
 		"empLoopSet":"emp_loop",						# id of entry in sounds.json
 		"fluxLoopSet":"flux_loop",						# id of entry in sounds.json
 		"ventFluxSet":"vent_flux",						# id of entry in sounds.json
@@ -25,9 +25,10 @@
 		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
 		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
 		
-		"colorShiftCovers":true,
-		"coversColorShiftAmount":0.9,  # 0 to 1
+		#"colorShiftCovers":true,
+		"coversColorShiftAmount":0,  # 0 to 1
 		"coversMatchShipBrightness":true,
+		
 		"slotCoverSmallTurret":"graphics/weapons/covers/cover_turret_midline_small.png",
 		"slotCoverSmallHardpoint":"graphics/weapons/covers/cover_hardpoint_midline_small.png",
 		"slotCoverMediumTurret":"graphics/weapons/covers/cover_turret_midline_medium.png",
@@ -40,7 +41,7 @@
 		"dHullOverlayHeavy":"graphics/damage/dmod_overlay_midline_heavy.png",
 	},
 	#Fighters
-		},
+		
 }
 
 

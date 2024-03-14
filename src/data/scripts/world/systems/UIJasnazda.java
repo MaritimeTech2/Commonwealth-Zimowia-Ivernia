@@ -4,6 +4,7 @@ import java.awt.Color;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.impl.MusicPlayerPluginImpl;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
@@ -28,7 +29,7 @@ public class UIJasnazda {
 
         SectorEntityToken center = system.getCenter();
 
-
+        system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "ui_starsystem_01");
 
         // Planets
         PlanetAPI pieklo = system.addPlanet("ui_pieklo", center, "Pieklo", "lava",
