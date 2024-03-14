@@ -1,18 +1,19 @@
 {
     "music":{
-	"ui_starsystem_01":[
+	    "ui_starsystem_01":[
 			{
 				"source":"sounds/music",
-				"volume":0.4,
+				"volume":0.2,
 				"files":[
-					"Eon - Relic.ogg",
+					"Eon - Relic.ogg"
 				],
-				"randomStart":false,
-			},
-		],
+				"randomStart":false
+			}
+
+        ],
         "music_campaign":[
             # Eon
-		#{"file":"Eon - Relic.ogg","source":"sounds/music","volume":0.50},
+		#{"file":"Eon - Relic.ogg","source":"sounds/music","volume":0.20},
             
         ],
         "music_campaign_non_core":[

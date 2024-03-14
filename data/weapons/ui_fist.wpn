@@ -25,10 +25,10 @@
 					   "particleColor":[100,200,255,255]},
 					   
 	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
-	"projectileSpecId":"ionpulser_shot",  # projectile that will be fired
+	"projectileSpecId":"fist_shot",  # projectile that will be fired
 	#"fireSoundOne":"thumper_spinup",
 	"fireSoundTwo":"ion_pulser_fire",
-	"glowColor":[100,150,255,225],
+	"glowColor":[255,215,125,255],
 	#"autocharge":true,
 	#"interruptibleBurst":true,
 }

@@ -1,15 +1,15 @@
 {
   "hullName": "Zygmunt",
   "hullId": "ui_zygmunt",
-  "hullSize": "CAPITAL_SHIP",
-  "spriteName": "graphics/ships/atlas.png",
-  "style": "OMEGA",
-  "height": 400,
-  "width": 200,
-  "center": [100, 200],
-  "collisionRadius": 220,
-  "shieldCenter": [0, 0],
-  "shieldRadius": 208.5,
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/ui_zygmunt.png",
+  "style": "UI_BASE",
+  "height": 300,
+  "width": 300,
+  "center": [150, 170],
+  "collisionRadius": 161.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 152.5,
   "viewOffset": 0,
   "weaponSlots": [
     {
@@ -19,7 +19,7 @@
       "mount": "TURRET",
       "arc": 270,
       "angle": 90,
-      "locations": [-119, 79]
+      "locations": [-46, 54]
     },
     {
       "id": "WS0002",
@@ -28,89 +28,139 @@
       "mount": "TURRET",
       "arc": 270,
       "angle": -90,
-      "locations": [-119, -79]
+      "locations": [-46, -54]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-93, 13.5]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-93.5, -15.5]
     }
   ],
   "engineSlots": [
     {
-      "location": [-191.5, 34.5],
-      "length": 30,
-      "width": 10,
-      "angle": 180,
-      "contrailSize": 30,
-      "style": "COBRA_BOMBER"
+      "location": [-119.5, 70.5],
+      "length": 70.830002,
+      "width": 10.89,
+      "angle": 155,
+      "contrailSize": 10.89,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
-      "location": [-191.5, -34.5],
-      "length": 30,
-      "width": 10,
-      "angle": -180,
-      "contrailSize": 30,
-      "style": "COBRA_BOMBER"
+      "location": [-119.5, -70.5],
+      "length": 70.830002,
+      "width": 10.89,
+      "angle": -155,
+      "contrailSize": 10.89,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
-      "location": [-193.5, 18.5],
-      "length": 30,
-      "width": 10,
-      "angle": 180,
-      "contrailSize": 30,
-      "style": "COBRA_BOMBER"
+      "location": [-107.5, 81],
+      "length": 68.080002,
+      "width": 10.43,
+      "angle": 155,
+      "contrailSize": 10.43,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
-      "location": [-193.5, -18.5],
-      "length": 30,
-      "width": 10,
-      "angle": -180,
-      "contrailSize": 30,
-      "style": "COBRA_BOMBER"
+      "location": [-107.5, -81],
+      "length": 68.080002,
+      "width": 10.43,
+      "angle": -155,
+      "contrailSize": 10.43,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     },
     {
-      "location": [-195, 1.5],
-      "length": 44,
-      "width": 19,
-      "angle": 180,
-      "contrailSize": 19,
-      "style": "COBRA_BOMBER"
+      "location": [-94.5, 94.5],
+      "length": 52.919998,
+      "width": 9.63,
+      "angle": 155,
+      "contrailSize": 9.63,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
+    },
+    {
+      "location": [-94.5, -94.5],
+      "length": 52.919998,
+      "width": 9.63,
+      "angle": -155,
+      "contrailSize": 9.63,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
+    },
+    {
+      "location": [-86.5, 47.5],
+      "length": 70.870003,
+      "width": 11.16,
+      "angle": -169,
+      "contrailSize": 11.16,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
+    },
+    {
+      "location": [-86.5, -47.5],
+      "length": 70.870003,
+      "width": 11.16,
+      "angle": 169,
+      "contrailSize": 11.16,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
+    },
+    {
+      "location": [-79, 35.5],
+      "length": 68.220001,
+      "width": 10.15,
+      "angle": -169,
+      "contrailSize": 10.15,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
+    },
+    {
+      "location": [-79, -35.5],
+      "length": 68.220001,
+      "width": 10.15,
+      "angle": 169,
+      "contrailSize": 10.15,
+      "style": "CUSTOM",
+      "styleId": "UI_STANDARD"
     }
   ],
   "bounds": [
-    -195.5, -8,
-    -189, -48.5,
-    -182.5, -48.5,
-    -176.5, -58,
-    -146.5, -57,
-    -136.5, -60.5,
-    -132.5, -86.5,
-    -110, -91,
-    -106.5, -73,
-    -102, -77.5,
-    -75.5, -69,
-    -71, -73,
-    127, -72,
-    128, -66.5,
-    156.5, -61.5,
-    164.5, -45,
-    172, -43.5,
-    184, -9,
-    173.5, -7.5,
-    173.5, 7.5,
-    184, 9,
-    172, 43.5,
-    164.5, 45,
-    156.5, 61.5,
-    128, 66.5,
-    127, 72,
-    -71, 73,
-    -75.5, 69,
-    -102, 77.5,
-    -106.5, 73,
-    -110, 91,
-    -132.5, 86.5,
-    -136.5, 60.5,
-    -146.5, 57,
-    -176.5, 58,
-    -182.5, 48.5,
-    -189, 48.5,
-    -195.5, 8
+    -106.5, -22,
+    -82, -30,
+    -86, -50.5,
+    -112, -43,
+    -121, -68,
+    -93.5, -99.5,
+    -88.5, -99.5,
+    94, -27.5,
+    94.5, -15,
+    87.5, -11.5,
+    87.5, 11.5,
+    94.5, 15,
+    94, 27.5,
+    -88.5, 99.5,
+    -93.5, 99.5,
+    -121, 68,
+    -112, 43,
+    -86, 50.5,
+    -82, 30,
+    -106.5, 22
   ]
 }

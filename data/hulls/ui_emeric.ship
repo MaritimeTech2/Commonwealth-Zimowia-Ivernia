@@ -3,7 +3,7 @@
   "hullId": "ui_emeric",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/ui_emeric.png",
-  "style": "HIGH_TECH",
+  "style": "UI_BASE",
   "height": 150,
   "width": 150,
   "center": [75, 75],

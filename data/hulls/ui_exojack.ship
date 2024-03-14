@@ -3,7 +3,7 @@
   "hullId": "ui_exojack",
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/construction_rig.png",
-  "style": "OMEGA",
+  "style": "UI_BASE",
   "height": 220,
   "width": 100,
   "center": [50, 110],

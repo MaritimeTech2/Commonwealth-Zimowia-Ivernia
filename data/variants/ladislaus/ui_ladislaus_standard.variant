@@ -3,7 +3,7 @@
   "hullId": "ui_ladislaus",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 10,
+  "fluxCapacitors": 12,
   "fluxVents": 15,
   "quality": 1,
   "permaMods": [],
@@ -16,8 +16,8 @@
       "mode": "LINKED",
       "weapons": {
         "WS0001": "ui_spear",
-        "WS0002": "ui_sword",
-        "WS0003": "ui_sword",
+        "WS0002": "ui_protector",
+        "WS0003": "ui_protector",
         "WS0004": "sabot",
         "WS0005": "sabot",
         "WS0008": "ui_buckle"

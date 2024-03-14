@@ -27,6 +27,7 @@
 				"waystation",
 				#["lightindustry","biofactory_embryo"],
 				"orbitalworks",
+				"highcommand",
 				["heavybatteries","drone_replicator"]
 			]
 		},
@@ -50,7 +51,7 @@
 				["lightindustry","biofactory_embryo"],
 				"commerce",
 				"heavybatteries",
-				"highcommand",
+				#"highcommand",
 				"battlestation_high"
 			]
 		}

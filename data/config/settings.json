@@ -24,6 +24,7 @@
 		"ui_person":{
 		"ui_anzhelika":"graphics/portraits/characters/ui_anzhelika.png",
 		"ui_kazimir":"graphics/portraits/characters/ui_kazimir.png",
+		"ui_zygfryd":"graphics/portraits/characters/ui_zygfryd.png",
 		},
 	}
 }

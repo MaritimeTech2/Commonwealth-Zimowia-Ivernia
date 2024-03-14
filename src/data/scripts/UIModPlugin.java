@@ -99,5 +99,25 @@ public class UIModPlugin extends BaseModPlugin {
             market.getCommDirectory().addPerson(ui_anzhelika);
             market.setAdmin(ui_anzhelika);
         }
+        market = Global.getSector().getEconomy().getMarket("ui_ladnysiez"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
+        if (market != null) {
+            PersonAPI ui_zygfryd = Global.getFactory().createPerson();
+            ui_zygfryd.setId("ui_anzhelika");
+            ui_zygfryd.setFaction("ui");
+            ui_zygfryd.setGender(FullName.Gender.MALE);
+            ui_zygfryd.setRankId("ui_terra_brother");
+            ui_zygfryd.setPostId("ui_terra_brother");
+            ui_zygfryd.setImportance(PersonImportance.VERY_HIGH);
+            ui_zygfryd.getName().setFirst("Zygfryd");
+            ui_zygfryd.getName().setLast("Vasilenko");
+            ui_zygfryd.addTag(Tags.CONTACT_SCIENCE);
+            ui_zygfryd.setVoice(Voices.SCIENTIST); //their default dialog, for vanilla missions, etc
+            ui_zygfryd.setPortraitSprite("graphics/portraits/characters/ui_zygfryd.png"); //this is wrong, enter the sprite into settings.json
+
+            ip.addPerson(ui_zygfryd);
+            market.addPerson(ui_zygfryd);
+            market.getCommDirectory().addPerson(ui_zygfryd);
+            market.setAdmin(ui_zygfryd);
+        }
     }
 }

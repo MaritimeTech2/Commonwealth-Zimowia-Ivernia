@@ -1,9 +1,9 @@
 {
   "variantId": "ui_ladislaus_escort",
   "hullId": "ui_ladislaus",
-  "displayName": "New Variant",
+  "displayName": "Carrier",
   "goalVariant": false,
-  "fluxCapacitors": 1,
+  "fluxCapacitors": 2,
   "fluxVents": 5,
   "quality": 1,
   "permaMods": [],
@@ -18,7 +18,8 @@
         "WS0001": "ui_spear",
         "WS0002": "ui_protector",
         "WS0003": "ui_protector",
-        "WS0008": "ui_buckle"
+        "WS0004": "ui_emp",
+        "WS0005": "ui_emp"
       }
     }
   ],

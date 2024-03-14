@@ -3,11 +3,14 @@
   "hullId": "ui_hyacinth",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 12,
-  "fluxVents": 30,
+  "fluxCapacitors": 5,
+  "fluxVents": 21,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "magazines"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
@@ -15,8 +18,8 @@
       "weapons": {
         "WS0001": "ui_fist",
         "WS0002": "ui_fist",
-        "WS0003": "ui_fist",
-        "WS0004": "ui_fist",
+        "WS0003": "ui_sword",
+        "WS0004": "ui_sword",
         "WS0005": "atropos",
         "WS0006": "atropos",
         "WS0007": "ui_szabla",

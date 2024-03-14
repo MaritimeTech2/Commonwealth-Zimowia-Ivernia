@@ -8,7 +8,8 @@
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "ui_emeric_escort"
+    "ui_emeric_escort",
+    "armoredweapons"
   ],
   "weaponGroups": [
     {
@@ -21,8 +22,8 @@
         "WS0004": "ui_fist",
         "WS0009": "ui_protector",
         "WS0010": "ui_protector",
-        "WS0011": "sabot",
-        "WS0012": "sabot"
+        "WS0011": "ui_emp",
+        "WS0012": "ui_emp"
       }
     }
   ],

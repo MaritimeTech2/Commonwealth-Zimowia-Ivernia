@@ -3,7 +3,7 @@
   "hullId": "ui_pelczar",
   "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/ui_pelczar.png",
-  "style": "MIDLINE",
+  "style": "UI_BASE",
   "height": 200,
   "width": 200,
   "center": [100, 100],
