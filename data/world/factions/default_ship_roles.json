@@ -27,7 +27,7 @@
 	},
 	"combatCapital":{
 
-	
+	"ui_jadwiga_standard":2,
 
 	},
 
@@ -52,7 +52,7 @@
 	# carriers
 	"carrierSmall":{
 
-	"ui_eurosia_standard":3,
+	"ui_eurosia_standard":2,
 
 
 	},
