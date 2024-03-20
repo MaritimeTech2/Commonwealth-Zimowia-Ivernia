@@ -3,12 +3,12 @@
   "hullId": "ui_emeric",
   "displayName": "Escort",
   "goalVariant": false,
-  "fluxCapacitors": 10,
+  "fluxCapacitors": 12,
   "fluxVents": 7,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "escort_package",
+    "hardenedshieldemitter",
     "armoredweapons"
   ],
   "weaponGroups": [
@@ -20,7 +20,7 @@
         "WS0002": "ui_laz",
         "WS0003": "ui_laz",
         "WS0004": "ui_laz",
-        "WS0005": "ui_protector"
+        "WS0005": "ui_shield"
       }
     }
   ],

@@ -3,9 +3,9 @@
 	"specClass":"projectile",
 	"type":"BALLISTIC",
 	"size":"SMALL",
-	"turretSprite":"graphics/weapons/mg_light_turret_base.png",
+	"turretSprite":"graphics/weapons/ui_buckle_turret.png",
 	"turretGunSprite":"graphics/weapons/mg_light_turret_recoil.png",
-	"hardpointSprite":"graphics/weapons/mg_light_hardpoint_base.png",
+	"hardpointSprite":"graphics/weapons/ui_buckle_hardpoint.png",
 	"hardpointGunSprite":"graphics/weapons/mg_light_hardpoint_recoil.png",
 	"visualRecoil":3.0,  # the gun sprites are only used if this is non-0
 	"turretOffsets":[12, 0],
