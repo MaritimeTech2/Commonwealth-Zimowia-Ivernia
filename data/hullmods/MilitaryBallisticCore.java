@@ -29,12 +29,8 @@ public class MilitaryBallisticCore extends BaseHullMod {
 		return null;
 	}
 
-	public static final float RECOIL_BONUS = 50f;
-	public static final float PROJ_SPEED_BONUS = 20f;
 	public static final float PROJ_SPEED_BONUS = 25f;
 	public static float RANGE_BONUS = 45f;
-	public static float PD_MINUS = 190f;
-	public static float VISION_BONUS = 500f;
 	public static float TURRET_SPEED_BONUS = 10f;
 	//public static float AUTOFIRE_AIM = 0.5f;
 
@@ -47,19 +43,13 @@ public class MilitaryBallisticCore extends BaseHullMod {
 	}
 
 	public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
-		// modify all weapon type range by a percent
+		// modify weapon range by a set percent
 		stats.getBallisticWeaponRangeBonus().modifyPercent(id, RANGE_BONUS);
 		stats.getEnergyWeaponRangeBonus().modifyPercent(id, RANGE_BONUS);
 		stats.getBeamWeaponRangeBonus().modifyPercent(id, RANGE_BONUS);
-
+		// modify pd weapon range
 		stats.getNonBeamPDWeaponRangeBonus().modifyPercent(id, RANGE_BONUS);
 		stats.getBeamPDWeaponRangeBonus().modifyPercent(id, RANGE_BONUS);
-
-		stats.getSightRadiusMod().modifyFlat(id, VISION_BONUS);
-		//stats.getAutofireAimAccuracy().modifyFlat(id, AUTOFIRE_AIM);
-
-		//stats.getMaxRecoilMult().modifyMult(id, 1f - (0.01f * RECOIL_BONUS));
-		//stats.getRecoilPerShotMult().modifyMult(id, 1f - (0.01f * RECOIL_BONUS));
 		// Modify turret rotation speed by a percent
 		stats.getWeaponTurnRateBonus().modifyPercent(id, TURRET_SPEED_BONUS);
 		stats.getBeamWeaponTurnRateBonus().modifyPercent(id, TURRET_SPEED_BONUS);
