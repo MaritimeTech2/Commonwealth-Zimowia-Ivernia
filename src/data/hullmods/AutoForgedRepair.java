@@ -46,9 +46,34 @@ public class AutoForgedRepair extends BaseHullMod {
         stats.getCombatWeaponRepairTimeMult().modifyPercent(id,COMBAT_REPAIR_ENG);
         // increases repair rate speed for ships after a battle in the campaign layer
         stats.getRepairRatePercentPerDay().modifyPercent(id, CAMPAIGN_REPAIR);
+
         // gives the ships a hull repair modifier while in battle
         //stats.getHullCombatRepairRatePercentPerSecond()
         //stats.getMaxCombatHullRepairFraction()
     }
+    public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
+        ship.addListener(new ui_hullrepairlistener(ship));
+    }
 
+    public static class ui_hullrepairlistener implements AdvanceableListener {
+        ShipAPI ship;
+//        Float maxHealPercentage = 0.3F;
+//        Float healPerSecond = 0.0F;
+//        Float healedSoFar = 0.0F;
+//        Float delay = 0.0F;
+
+        public ui_hullrepairlistener(ShipAPI ship) {
+            this.ship = ship;
+        }
+
+        public void advance(float amount) {
+            float CR_LEVEL = this.ship.getCurrentCR();
+            float HEAL_BASE = (Float)AutoForgedRepair.mag.get(this.ship.getHullSize());
+            float HEAL_PER_SECOND = amount*(CR_LEVEL/0.7f)*HEAL_BASE;
+
+            ship.setHitpoints(ship.getHitpoints() + HEAL_PER_SECOND);
+
+        }
+
+    }
 }

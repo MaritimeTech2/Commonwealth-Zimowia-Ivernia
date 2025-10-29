@@ -30,8 +30,6 @@ public class MilitarySensorCore extends BaseHullMod {
 	}
 
 	public static float RANGE_BONUS = 20f;
-	public static float VISION_BONUS = 1000f;
-	//public static float AUTOFIRE_AIM = 0.5f;
 	public static final float PROJ_SPEED_BONUS = 50f;
 	public static float RANGE_MULT = 80f;
 	public static float VISION_BONUS = 1500f;
