@@ -79,14 +79,14 @@ public class MilitarySensorCore extends BaseHullMod {
 		stats.getWeaponTurnRateBonus().modifyPercent(id, TURRET_SPEED_BONUS);
 		stats.getBeamWeaponTurnRateBonus().modifyPercent(id, TURRET_SPEED_BONUS);
 		// modify the ecm bonus
-		stats.getDynamic().getMod(Stats.ELECTRONIC_WARFARE_FLAT).modifyFlat(id, ECM_BONUS);
+		//stats.getDynamic().getMod(Stats.ELECTRONIC_WARFARE_FLAT).modifyFlat(id, ECM_BONUS);
 		// modify missile aiming
 		stats.getEccmChance().modifyFlat(id, ECCM_CHANCE);
 		stats.getMissileGuidance().modifyFlat(id, GUIDANCE_IMPROVEMENT);
 		// reduce enemy ecm bonus by a percent
-		stats.getDynamic().getMod(Stats.ELECTRONIC_WARFARE_PENALTY_MOD).modifyMult(id, EW_PENALTY_MULT);
+		//stats.getDynamic().getMod(Stats.ELECTRONIC_WARFARE_PENALTY_MOD).modifyMult(id, EW_PENALTY_MULT);
 		// increase sensor range in campaign map
-		stats.getDynamic().getMod(Stats.HRS_SENSOR_RANGE_MOD).modifyFlat(id, SENSOR_BONUS);
+		//stats.getDynamic().getMod(stats.HRS_SENSOR_RANGE_MOD).modifyFlat(id, SENSOR_BONUS);
 
 	}
 

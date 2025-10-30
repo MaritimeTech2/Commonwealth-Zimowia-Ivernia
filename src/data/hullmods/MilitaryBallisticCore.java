@@ -37,8 +37,7 @@ public class MilitaryBallisticCore extends BaseHullMod {
 	public String getDescriptionParam(int index, HullSize hullSize) {
 		if (index == 0) return "" + (int)Math.round(RANGE_BONUS) + "%";
 		if (index == 1) return "" + (int)Math.round(PROJ_SPEED_BONUS) + "%";
-		if (index == 2) return "" + new Float(VISION_BONUS).intValue() + "su";
-		if (index == 2) return "" + n(int)Math.round(TURRET_SPEED_BONUS) + "su";
+		if (index == 2) return "" + (int)Math.round(TURRET_SPEED_BONUS) + "%";
 		return null;
 	}
 

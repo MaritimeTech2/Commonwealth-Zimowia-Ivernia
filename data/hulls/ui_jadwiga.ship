@@ -12,7 +12,9 @@
   "shieldRadius": 350,
   "viewOffset": 0,
   "builtInMods": [
-    "ui_militarycore"
+    "ui_militarycore",
+    "ui_autoforge_repair",
+    "ui_composite_armor"
   ],
   "builtInWeapons": {
     "WS0021": "ui_punch"
@@ -43,7 +45,7 @@
       "mount": "HARDPOINT",
       "arc": 30,
       "angle": 0,
-      "locations": [240.5, 52.5]
+      "locations": [228, 68]
     },
     {
       "id": "WS0004",
@@ -52,7 +54,7 @@
       "mount": "HARDPOINT",
       "arc": 30,
       "angle": -0,
-      "locations": [240.5, -52.5]
+      "locations": [228, -68]
     },
     {
       "id": "WS0005",
@@ -60,8 +62,8 @@
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 115,
-      "angle": 15,
-      "locations": [178, 78]
+      "angle": 50,
+      "locations": [168, 80.5]
     },
     {
       "id": "WS0006",
@@ -69,8 +71,8 @@
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 115,
-      "angle": -15,
-      "locations": [178, -78]
+      "angle": -50,
+      "locations": [168, -80.5]
     },
     {
       "id": "WS0007",
@@ -78,8 +80,8 @@
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 235,
-      "angle": 45,
-      "locations": [122, 94]
+      "angle": 90,
+      "locations": [92.5, 115]
     },
     {
       "id": "WS0008",
@@ -87,8 +89,8 @@
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 235,
-      "angle": -45,
-      "locations": [122, -94]
+      "angle": -90,
+      "locations": [92.5, -115]
     },
     {
       "id": "WS0013",
@@ -111,19 +113,19 @@
     {
       "id": "WS0015",
       "size": "SMALL",
-      "type": "ENERGY",
-      "mount": "TURRET",
-      "arc": 200,
-      "angle": 45,
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": -0,
       "locations": [88, 21]
     },
     {
       "id": "WS0016",
       "size": "SMALL",
-      "type": "ENERGY",
-      "mount": "TURRET",
-      "arc": 200,
-      "angle": -45,
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
       "locations": [88, -21]
     },
     {
@@ -132,8 +134,8 @@
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 205,
-      "angle": -76,
-      "locations": [14.5, -93]
+      "angle": -106,
+      "locations": [18, -73.5]
     },
     {
       "id": "WS0018",
@@ -141,8 +143,8 @@
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 205,
-      "angle": 76,
-      "locations": [14.5, 93]
+      "angle": 106,
+      "locations": [18, 73.5]
     },
     {
       "id": "WS0021",
@@ -179,132 +181,186 @@
       "arc": 360,
       "angle": 0,
       "locations": [-261.5, 3.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [205.5, 46.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": -0,
+      "locations": [205.5, -46.5]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [181, 27]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": -0,
+      "locations": [181, -27]
+    },
+    {
+      "id": "WS0019",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -96,
+      "locations": [-55.5, -34.5]
+    },
+    {
+      "id": "WS0020",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 96,
+      "locations": [-55.5, 34.5]
     }
   ],
   "engineSlots": [
     {
       "location": [-63, 157],
-      "length": 147.800003,
-      "width": 28.610001,
+      "length": 207.069366,
+      "width": 44.160042,
       "angle": 155,
-      "contrailSize": 28.610001,
+      "contrailSize": 44.160042,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-63, -157],
-      "length": 147.800003,
-      "width": 28.610001,
+      "length": 207.069366,
+      "width": 44.160042,
       "angle": -155,
-      "contrailSize": 28.610001,
+      "contrailSize": 44.160042,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-81.5, 127],
-      "length": 113.260002,
-      "width": 21.469999,
+      "length": 174.052643,
+      "width": 34.332321,
       "angle": 155,
-      "contrailSize": 21.469999,
+      "contrailSize": 34.332321,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-81.5, -127],
-      "length": 113.260002,
-      "width": 21.469999,
+      "length": 174.052643,
+      "width": 34.332321,
       "angle": -155,
-      "contrailSize": 21.469999,
+      "contrailSize": 34.332321,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-210.5, 94.5],
-      "length": 76.440002,
-      "width": 13.21,
-      "angle": 150,
-      "contrailSize": 13.21,
+      "length": 140.494949,
+      "width": 21.134687,
+      "angle": 152.5,
+      "contrailSize": 21.134687,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-210.5, -94.5],
-      "length": 76.440002,
-      "width": 13.21,
-      "angle": -150,
-      "contrailSize": 13.21,
+      "length": 140.494949,
+      "width": 21.134687,
+      "angle": -152.5,
+      "contrailSize": 21.134687,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-201.5, 107.5],
-      "length": 63.299999,
-      "width": 10.729999,
+      "length": 152.060547,
+      "width": 31.246826,
       "angle": 150,
-      "contrailSize": 10.729999,
+      "contrailSize": 31.246826,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-201.5, -107.5],
-      "length": 63.299999,
-      "width": 10.729999,
+      "length": 152.060547,
+      "width": 31.246826,
       "angle": -150,
-      "contrailSize": 10.729999,
+      "contrailSize": 31.246826,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-269.5, 31],
-      "length": 100.5,
-      "width": 9,
+      "length": 251,
+      "width": 38,
       "angle": 180,
-      "contrailSize": 9,
+      "contrailSize": 38,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-269.5, -31],
-      "length": 100.5,
-      "width": 9,
+      "length": 251,
+      "width": 38,
       "angle": -180,
-      "contrailSize": 9,
+      "contrailSize": 38,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
-      "location": [-228, 40.5],
-      "length": 95.339996,
-      "width": 17.719999,
-      "angle": 150,
-      "contrailSize": 17.719999,
+      "location": [-235.5, 41],
+      "length": 139.383743,
+      "width": 27.580488,
+      "angle": 141,
+      "contrailSize": 27.580488,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
-      "location": [-228, -40.5],
-      "length": 95.339996,
-      "width": 17.719999,
-      "angle": -150,
-      "contrailSize": 17.719999,
+      "location": [-235.5, -41],
+      "length": 139.383743,
+      "width": 27.580488,
+      "angle": -141,
+      "contrailSize": 27.580488,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-212, -49],
-      "length": 82.889999,
-      "width": 15.14,
-      "angle": -150,
-      "contrailSize": 15.14,
+      "length": 149.065887,
+      "width": 38.954327,
+      "angle": -139.5,
+      "contrailSize": 38.954327,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     },
     {
       "location": [-212, 49],
-      "length": 82.889999,
-      "width": 15.14,
-      "angle": 150,
-      "contrailSize": 15.14,
+      "length": 149.065887,
+      "width": 38.954327,
+      "angle": 139.5,
+      "contrailSize": 38.954327,
       "style": "CUSTOM",
       "styleId": "UI_STANDARD"
     }
