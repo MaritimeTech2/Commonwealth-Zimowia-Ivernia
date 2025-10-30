@@ -70,8 +70,12 @@ public class AutoForgedRepair extends BaseHullMod {
             float CR_LEVEL = this.ship.getCurrentCR();
             float HEAL_BASE = (Float)AutoForgedRepair.mag.get(this.ship.getHullSize());
             float HEAL_PER_SECOND = amount*(CR_LEVEL/0.7f)*HEAL_BASE;
-
-            ship.setHitpoints(ship.getHitpoints() + HEAL_PER_SECOND);
+            float MAX_HP = this.ship.getMaxHitpoints();
+            float CURRENT_HP = this.ship.getHitpoints();
+            if (CURRENT_HP < MAX_HP) {
+                ship.setHitpoints(ship.getHitpoints() + HEAL_PER_SECOND);
+            }
+            else {}
 
         }
 
