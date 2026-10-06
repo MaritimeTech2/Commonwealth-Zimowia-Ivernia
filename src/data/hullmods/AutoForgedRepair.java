@@ -16,16 +16,16 @@ import java.util.Map;
 public class AutoForgedRepair extends BaseHullMod {
 
     public static final float CASUALTY_REDUCTION = 40f;
-    public static final float COMBAT_REPAIR_ENG = 50f;
+    public static final float COMBAT_REPAIR_ENG = 100f;
     public static final float CAMPAIGN_REPAIR = 100f;
     public static final float CAMPAIGN_REPAIR_COST = 50f;
 
     public static Map mag = new HashMap();
     static {
-        mag.put(HullSize.FRIGATE, 100f);
-        mag.put(HullSize.DESTROYER, 25f);
-        mag.put(HullSize.CRUISER, 50f);
-        mag.put(HullSize.CAPITAL_SHIP, 100f);
+        mag.put(HullSize.FRIGATE, 15f);
+        mag.put(HullSize.DESTROYER, 20f);
+        mag.put(HullSize.CRUISER, 30f);
+        mag.put(HullSize.CAPITAL_SHIP, 50f);
     }
 
     public String getDescriptionParam(int index, HullSize hullSize) {
@@ -33,6 +33,8 @@ public class AutoForgedRepair extends BaseHullMod {
         if (index == 1) return "" + ((Float) mag.get(HullSize.DESTROYER)).intValue() + "%";
         if (index == 2) return "" + ((Float) mag.get(HullSize.CRUISER)).intValue() + "%";
         if (index == 3) return "" + ((Float) mag.get(HullSize.CAPITAL_SHIP)).intValue() + "%";
+        if (index == 4) return "" + (int) Math.round(COMBAT_REPAIR_ENG * 100f) + "%";
+        if (index == 5) return "" + (int) Math.round(CAMPAIGN_REPAIR * 100f) + "%";
         return null;
     }
 

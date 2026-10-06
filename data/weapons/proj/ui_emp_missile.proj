@@ -44,7 +44,7 @@
 					"numShots":5,
 					"damage":50,
 					"emp":450, # needs to match highlight in weapon_data.csv
-					"damageType":KINETIC,
+					"damageType":ENERGY,
 					"hitpoints":500,
 					"evenSpread":true,
 					"arc":20,

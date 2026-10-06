@@ -9,7 +9,7 @@ import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 
 
 public class ShimmerStats extends BaseShipSystemScript {
-    public static final float MAX_TIME_MULT = 2f;
+    public static final float MAX_TIME_MULT = 2.5f;
     public static final float MIN_TIME_MULT = 0.1f;
     public static final float DAM_MULT = 0.2f;
 

@@ -16,3 +16,157 @@ SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a loop
 ,,,,,,
 #Go to Zygfryd,,,,,,
 kazimir_goto_zygfryd,PickGreeting,$Id == ui_kazimir score:1000,ShowPersonVisual,"You call into the office of the Cesarz, and are answered by a secretary, who tells you that the Cesarz is currently unavailable, however the Vice President of the Terraforming Burreu is looking for captains who have proven themselves to assist him.  ",100:cutCommLink:Cut the comm link,
+,,,,,,
+# gate interactions,,,,,,"# we can treat $global.gatesActive as ""has working Janus device"" -dgb"
+gateOpenDialog,OpenInteractionDialog,$tag:gate,"ShowDefaultVisual
+FireAll PopulateGateOptions","A silent ring of adamantine material, derelict of a former age.
+
+The Gate is inert.",,
+gateOpenDialogActive,OpenInteractionDialog,"$tag:gate
+$global.gatesActive
+$gateScanned
+$global.playerCanUseGates","ShowDefaultVisual
+FireAll PopulateGateOptions","Before you vast and potent hangs an adamantine ring, derelict of a former age.
+
+You have scanned this Gate and discovered the rhythm of the secret heart of the thing, hidden in a slip of space. Using the Janus Device to create a bridge to another Gate requires a massive quantity of fuel. The more distant the target, the more fuel is required.
+
+The Janus Device operates by transferring enormous amounts of peculiarly phased energy via a lead ship's hyperdrive field to stabilize a direct gate-to-gate connection.",,
+gateOpenDialogActiveCanNotUse,OpenInteractionDialog,"$tag:gate
+$global.gatesActive
+$gateScanned
+!$global.playerCanUseGates","ShowDefaultVisual
+FireAll PopulateGateOptions","Before you vast and potent hangs an adamantine ring, derelict of a former age.
+
+You have scanned this Gate and discovered the rhythm of the secret heart of the thing, hidden in a slip of space. Using the Janus Device to create a bridge to another Gate requires a massive quantity of fuel. The more distant the target, the more fuel is required.
+
+You must integrate the Janus Device into your fleet to use the Gate.",,
+gateOpenDialogCanScan1,OpenInteractionDialog,"$tag:gate
+$global.canScanGates
+!$global.gatesActive
+!$gateScanned","ShowDefaultVisual
+FireAll PopulateGateOptions","A silent ring of adamantine material, derelict of a former age.
+
+Your sensors officer nods to your cue. Your command interface lights up. 'EXECUTE SCAN' blinks expectantly. The Gate awaits, as cold as a tomb.",,
+gateOpenDialogCanScan1a,OpenInteractionDialog,"$tag:gate
+$global.canScanGates
+!$global.gatesActive
+$gateScanned","ShowDefaultVisual
+FireAll PopulateGateOptions","A silent ring of adamantine material, derelict of a former age.
+
+You have scanned this Gate and discovered the rhythm of the secret heart of the thing, hidden in a slip of space.",,
+gateOpenDialogCanScan2,OpenInteractionDialog,"$tag:gate
+$global.canScanGates
+$global.gatesActive
+!$gateScanned","ShowDefaultVisual
+FireAll PopulateGateOptions","A silent ring of adamantine material, derelict of a former age.
+
+Your sensors officer nods to you; the hyperwave scanner is ready. The words 'EXECUTE SCAN' blink expectantly in your command interface.
+
+You will need a scan of this Gate to be able to use it, with the Janus Device, as an access or egress point from the Gate network.",,
+gateFlyThrough,DialogOptionSelected,$option == gateFlyThrough,"$flewThrough = true 0
+FireAll PopulateGateOptions","You order your $shipOrFleet to traverse the dead gateway. Your bridge crew is especially quiet during the passage.
+
+Nothing happens.",,
+gateScanSelFirstTime,DialogOptionSelected,"$option == gateScan
+!$global.gatesActive
+$global.numGatesScanned == 0
+$global.gaATG_inProgress","$gateScanned = true
+$global.numGatesScanned++
+Call $global.gaATG_ref scannedGateForCoureuse
+GateCMD notifyScanned
+ShowDefaultVisual
+FireBest GAATGGateScanSummary","Your command display is overlaid with a representation of the hyperspace manifold surrounding the Gate. It is calm and cool, devoid of drive-wakes.
+
+As the scan begins you watch a line of disruption flare between the icon representing your flagship and the icon representing the Gate. Spirals and ripples spill out in non-Newtonian waves, surging from a point at the center of the Gate. No, it's not a point - a circle, a sphere, a torus and inverted funnel; then some other form that makes you squeeze your eyes shut. You hear faint music from far away.
+
+""Captain?"" Your sensors officer is looking at you, ""The scan is complete."" You realize it's the second time they said this, and you gesture as if you were simply lost in thought.",,
+gateScanSelDuringMission,DialogOptionSelected,"$option == gateScan
+!$global.gatesActive
+$global.gaATG_inProgress
+$global.numGatesScanned > 0
+$global.numGatesScanned < 6","$gateScanned = true
+$global.numGatesScanned++
+Call $global.gaATG_ref scannedGateForCoureuse
+GateCMD notifyScanned
+ShowDefaultVisual
+FireBest GAATGGateScanSummary","Your command display shows a representation of the hyperspace manifold. It is calm and cool.
+
+The scan begins, a line of disruption flaring between your flagship and the Gate. Spirals and ripples spill and surge in non-Newtonian bursts from a point at the center of the Gate. No, not a point - a circle, a sphere, a torus and inverted funnel; then some geometry that does not parse.
+
+You hear the faint music.
+
+""Captain,"" your sensors officer reports, ""The scan is complete.""",,
+gateScanSel,DialogOptionSelected,$option == gateScan,"$gateScanned = true
+$global.numGatesScanned++
+GateCMD notifyScanned
+ShowDefaultVisual
+FireAll PopulateGateOptions","Your command display shows the hyperspace manifold. It is calm and cool.
+
+The scanning beam flares in the hyperdimensional display. Spirals and ripples spill in bursts from the Gate, surging into inconceivable geometry. You hear a wisp of faint music.
+
+""Captain,"" your sensors officer reports, ""The scan is complete.""",,
+gateUseOptSel,DialogOptionSelected,"$option == gateUse
+$global.gatesActive",GateCMD selectDestination,,,
+gateFlyThroughOpt,PopulateGateOptions,"!$flewThrough
+!$global.gatesActive
+!$gateExploded",,,5:gateFlyThrough:Fly through the Gate,
+gateUseOpt,PopulateGateOptions,"$global.gatesActive
+$global.playerCanUseGates
+$gateScanned",,,10:gateUse:Travel through the Gate,
+gateScanOpt,PopulateGateOptions,"!$gateScanned
+$global.canScanGates",,,0:gateScan:Scan the Gate,
+gateLeaveOpt,PopulateGateOptions,,,,100:defaultLeave:Leave,
+,,,,,,
+# Gate scan count during gaATG,,,,,,
+,,,,,,
+gaATGgateScanSummaryLuddic,GAATGGateScanSummary,$GAATGluddicPostScan score:1000,"Call $global.gaATG_ref luddicGateFleetMoveBack
+unset $GAATGluddicPostScan",,gaATG_gateScanSummaryLuddic2:Continue,"# this step is to add a ""Continue"" to break up the huge block of text."
+gaATGgateScanSummaryLuddic2,DialogOptionSelected,$option == gaATG_gateScanSummaryLuddic2,FireBest GAATGGateScanSummary,"You personally see off the party of Luddic faithful who maintained vigil from your flagship. Their fleet is returning; their collective devotion uninterrupted.
+
+""Blessings of Ludd upon you, captain,"" says their leader. ""I shall speak well of you to the Prophet Returned.""
+
+You know to nod in acceptance without raising any theological questions, and give a polite wave as their shuttle leaves the bay.",,
+gaATGgateScanEndCheck1,GAATGGateScanSummary,"Call $global.gaATG_ref updateData
+$global.numGatesScanned >= 6","$global.gaATG_scannedSixGates = true
+Call $global.gaATG_ref updateStage
+FireAll PopulateGateOptions",,,
+gaATGgateScanEndCheck2,GAATGGateScanSummary,"Call $global.gaATG_ref updateData
+$global.numGatesScanned < 6",FireAll PopulateGateOptions,,,
+,,,,,,
+,,,,,,
+# Gate dev testing options,,,,,,
+devGateCanScanOn,PopulateGateOptions,"$global.isDevMode
+!$global.canScanGates",SetOptionColor devGateScanOn gray,,"200:devGateScanOn:>> (dev) Turn ON ""allow player to scan gates""",
+devGateCanScanOff,PopulateGateOptions,"$global.isDevMode
+$global.canScanGates",SetOptionColor devGateScanOff gray,,"200:devGateScanOff:>> (dev) Turn OFF ""allow player to scan gates""",
+devGatesActiveOn,PopulateGateOptions,"$global.isDevMode
+!$global.gatesActive",SetOptionColor devGateActiveOn gray,,"201:devGateActiveOn:>> (dev) Turn ON ""gates active""",
+devGatesActiveOff,PopulateGateOptions,"$global.isDevMode
+$global.gatesActive",SetOptionColor devGateActiveOff gray,,"201:devGateActiveOff:>> (dev) Turn OFF ""gates active""",
+devGatesPlayerCanUseOn,PopulateGateOptions,"$global.isDevMode
+!$global.playerCanUseGates",SetOptionColor devGateCanUseOn gray,,"202:devGateCanUseOn:>> (dev) Turn ON ""player can use gates""",
+devGatesPlayerCanUseOff,PopulateGateOptions,"$global.isDevMode
+$global.playerCanUseGates",SetOptionColor devGateCanUseOff gray,,"202:devGateCanUseOff:>> (dev) Turn OFF ""player can use gates""",
+devGatesExplode,PopulateGateOptions,"$global.isDevMode
+!$gateExploded",SetOptionColor devGateExplode gray,,210:devGateExplode:>> (dev) Explode the gate,
+devGateCanScanOnSel,DialogOptionSelected,$option == devGateScanOn,"$global.canScanGates = true
+AddText ""canScanGates = $global.canScanGates""
+FireAll PopulateGateOptions",,,
+devGateCanScanOffSel,DialogOptionSelected,$option == devGateScanOff,"$global.canScanGates = false
+AddText ""canScanGates = $global.canScanGates""
+FireAll PopulateGateOptions",,,
+devGatesActiveOnSel,DialogOptionSelected,$option == devGateActiveOn,"$global.gatesActive = true
+AddText ""gatesActive = $global.gatesActive""
+FireAll PopulateGateOptions",,,
+devGatesActiveOffSel,DialogOptionSelected,$option == devGateActiveOff,"$global.gatesActive = false
+AddText ""gatesActive = $global.gatesActive""
+FireAll PopulateGateOptions",,,
+devGatesPlayerCanUseOnSel,DialogOptionSelected,$option == devGateCanUseOn,"$global.playerCanUseGates = true
+AddText ""playerCanUseGates = $global.playerCanUseGates""
+FireAll PopulateGateOptions",,,
+devGatesPlayerCanUseOffSel,DialogOptionSelected,$option == devGateCanUseOff,"$global.playerCanUseGates = false
+AddText ""playerCanUseGates = $global.playerCanUseGates""
+FireAll PopulateGateOptions",,,
+devGatesExplodeSel,DialogOptionSelected,$option == devGateExplode,"GateCMD explode
+$gateExploded = true 0
+FireAll PopulateGateOptions",,,

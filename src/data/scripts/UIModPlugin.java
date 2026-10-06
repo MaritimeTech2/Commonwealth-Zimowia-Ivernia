@@ -1,12 +1,15 @@
 package data.scripts;
 
+import com.fs.starfarer.api.campaign.CharacterDataAPI;
 import com.fs.starfarer.api.campaign.PersonImportance;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.characters.CharacterStatsSkillEffect;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
+import com.fs.starfarer.api.impl.campaign.ids.Skills;
 import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.impl.campaign.ids.Voices;
-import com.fs.starfarer.api.impl.campaign.intel.UIPiekloMiningIntel;
+//import com.fs.starfarer.api.impl.campaign.intel.UIPiekloMiningIntel;
 import data.scripts.world.UnionIcyllaGen;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
@@ -37,20 +40,20 @@ public class UIModPlugin extends BaseModPlugin {
 
     @Override
     public void onGameLoad(boolean newGame) {
-        if (!Global.getSector().hasScript(UITerraformingCorpsApplier.class)) {
+        /*if (!Global.getSector().hasScript(UITerraformingCorpsApplier.class)) {
             Global.getSector().addScript(new UITerraformingCorpsApplier()); //add a new EveryFrameScript
-        }
+        }*/
 
         boolean isNexerelinEnabled = Global.getSettings().getModManager().isModEnabled("nexerelin");
 
-        if (!isNexerelinEnabled || SectorManager.getManager().isCorvusMode()) {
+        /*if (!isNexerelinEnabled || SectorManager.getManager().isCorvusMode()) {
             if (Global.getSector().getEntityById("ui_pieklo") != null) {
                 if (!Global.getSector().getPersistentData().containsKey("PiekloMiningIntelCreated")) {
                     Global.getSector().getIntelManager().addIntel(new UIPiekloMiningIntel()); //intel for the Pieklo Mining Operation
                     Global.getSector().getPersistentData().put("PiekloMiningIntelCreated", "e");
                 }
             }
-        }
+        }*/
     }
 
     @Override
@@ -59,7 +62,7 @@ public class UIModPlugin extends BaseModPlugin {
         ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
         MarketAPI market = null;
 
-        market = Global.getSector().getEconomy().getMarket("ui_iskala"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
+        market = Global.getSector().getEconomy().getMarket("ui_lodowazemia"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
             PersonAPI ui_kazimir = Global.getFactory().createPerson();
             ui_kazimir.setId("ui_kazimir");
@@ -79,7 +82,7 @@ public class UIModPlugin extends BaseModPlugin {
             market.getCommDirectory().addPerson(ui_kazimir);
             market.setAdmin(ui_kazimir);
         }
-        market = Global.getSector().getEconomy().getMarket("ui_kuznia"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
+        market = Global.getSector().getEconomy().getMarket("ui_agropelter"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
             PersonAPI ui_anzhelika = Global.getFactory().createPerson();
             ui_anzhelika.setId("ui_anzhelika");
@@ -99,7 +102,7 @@ public class UIModPlugin extends BaseModPlugin {
             market.getCommDirectory().addPerson(ui_anzhelika);
             market.setAdmin(ui_anzhelika);
         }
-        market = Global.getSector().getEconomy().getMarket("ui_ladnysiez"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
+        market = Global.getSector().getEconomy().getMarket("ui_torthuil"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
             PersonAPI ui_zygfryd = Global.getFactory().createPerson();
             ui_zygfryd.setId("ui_anzhelika");
