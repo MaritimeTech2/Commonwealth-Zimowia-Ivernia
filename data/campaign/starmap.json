@@ -1,7 +1,7 @@
 {
 	"starSystemLocations":{
-		"UIJasnazda":[0, 0], #overriden in code
-		"UISwiatana":[0, 0], #overriden in code
+		"UIAlkanost":[0, 0], #overriden in code
+		"UIEllenTrechend":[0, 0], #overriden in code
 		#"Mysterious Rift":[0, 0], #overriden in code
 	}
 }

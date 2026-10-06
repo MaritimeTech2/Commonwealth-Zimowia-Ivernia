@@ -12,7 +12,8 @@
   "shieldRadius": 50,
   "viewOffset": 0,
   "builtInMods": [
-    "ui_sensorcore"
+    "ui_composite_armor",
+    "ui_autoforge_repair"
   ],
   "weaponSlots": [
     {

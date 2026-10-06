@@ -9,9 +9,11 @@ import com.fs.starfarer.api.impl.campaign.procgen.NameGenData;
 import com.fs.starfarer.api.impl.campaign.procgen.ProcgenUsedNames;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
-import data.scripts.world.systems.UIJasnazda;
+import data.scripts.world.systems.UIEllenTrechend;
 import data.scripts.world.systems.UIRiftSystem;
-import data.scripts.world.systems.UISwiatana;
+import data.scripts.world.systems.UIAlkanost;
+import com.fs.starfarer.api.impl.campaign.GateEntityPlugin;
+
 
 public class UnionIcyllaGen { //implements SectorGeneratorPlugin {
 
@@ -20,8 +22,10 @@ public class UnionIcyllaGen { //implements SectorGeneratorPlugin {
             SharedData.getData().getPersonBountyEventData().addParticipatingFaction("ui"); //what does this do lol
 
             //generate star systems
-            StarSystemAPI jasnazda = new UIJasnazda().generate(sector);
-            StarSystemAPI swiatana = new UISwiatana().generate(sector);
+            //StarSystemAPI ellentrechend = new UIEllenTrechend().generate(sector);
+            //public static PLAYER_CAN_USE_GATE;
+            new UIEllenTrechend().generate(sector);
+            StarSystemAPI alkanost = new UIAlkanost().generate(sector);
             new UIRiftSystem().generate(sector);
 
             //create constellation
@@ -30,15 +34,19 @@ public class UnionIcyllaGen { //implements SectorGeneratorPlugin {
             constellation.setLeavePickedNameUnused(true);
             constellation.setNameOverride("Okrzyk");
             //put the systems in the constellation
-            constellation.getSystems().add(jasnazda);
-            constellation.getSystems().add(swiatana);
+            //constellation.getSystems().add(ellentrechend);
+            constellation.getSystems().add(alkanost);
             //yes, you have to identify it twice
-            jasnazda.setConstellation(constellation);
-            swiatana.setConstellation(constellation);
+            ///ellentrechend.setConstellation(constellation);
+            alkanost.setConstellation(constellation);
 
             //starting relations
             FactionAPI ui = sector.getFaction("ui");
             ui.setRelationship(Factions.PIRATES, -0.5f);
             ui.setRelationship(Factions.LUDDIC_PATH, -0.5f);
+            ui.setRelationship(Factions.HEGEMONY, -0.2f);
+            ui.setRelationship(Factions.TRITACHYON, -0.5f);
+            ui.setRelationship(Factions.LUDDIC_CHURCH, -0.5f);
+            ui.setRelationship(Factions.PERSEAN, 0.2f);
         }
 }

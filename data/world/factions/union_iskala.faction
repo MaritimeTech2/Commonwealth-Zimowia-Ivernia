@@ -1,17 +1,17 @@
 {
 	id:"ui",
-	"displayName":"Union of Iskala",
-	"displayNameWithArticle":"the Union of Iskala",
-	"displayNameLong":"the Union of Iskala",
-	"displayNameLongWithArticle":"the Union of Iskala",
-	"entityNamePrefix":"Iskalan",
-	"personNamePrefix":"Iskalan",
+	"displayName":"Commonwealth",
+	"displayNameWithArticle":"the Commonwealth",
+	"displayNameLong":"Commonwealth of Kotlinska-Ivernia",
+	"displayNameLongWithArticle":"the Commonwealth of Kotlinska-Ivernia",
+	"entityNamePrefix":"Commonwealth",
+	"personNamePrefix":"Polarian",
 	"personNamePrefixAOrAn":"an",
 	"displayNameIsOrAre":"is",
 	
-	"logo":"graphics/faction/flags/icylla_flag.png",
-	"crest":"graphics/faction/flags/icylla_crest.png",
-	"shipNamePrefix":"UI-SBV",
+	"logo":"graphics/faction/flags/commonwealth_flag.png",
+	"crest":"graphics/faction/flags/commonwealth_crest.png",
+	"shipNamePrefix":"CEV",
 	
 	"color":[27,35,74,255],
 	"baseUIColor":[237,238,246,255],
@@ -37,7 +37,7 @@
 			"ui_hyacinth":2,
 			"ui_wenceslaus":2,
 			"ui_ladislaus":3,
-			"ui_eurosia":2,
+			"ui_jadwiga":2,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction, reverts to known when empty
@@ -48,8 +48,6 @@
 	"knownShips":{
 		"tags":["ui_base_package", "ui"],
 		"hulls":[
-			"omen",
-			"tempest",
 			"ui_hyacinth",
 			"ui_wenceslaus",
 			"ui_ladislaus",
@@ -63,12 +61,8 @@
 			"ui_hyacinth",
 			"ui_wenceslaus",
 			"ui_ladislaus",
-			"ui_eurosia",
-			"ui_pelczar",
-			"ui_kowalska",
-			"ui_zygmunt",
-			"ui_krizin",
-		],
+			"ui_jadwiga",
+			],
 	},
 	"knownFighters":{
 		"tags":[ "ui"],
@@ -102,7 +96,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":[],
+		"tags":[ui],
 		"weapons":[
 			"ui_spear","ui_buckle",	"ui_shield","ui_sword",	"ui_szabla",
 		],
@@ -279,10 +273,10 @@
 		"taskForce":"Guard Corp",
 		
 		"scavengerSmall":"Recovery Squadron",
-		"scavengerMedium":"Requisition Fleet",
-		"scavengerHeavy":"Exploration Armada",
+		"scavengerMedium":"Salvage Wing",
+		"scavengerHeavy":"Exploration Detachment",
 
-		"foodReliefFleet":"UI Provision Relief Fleet",
+		"foodReliefFleet":"Commonwealth Relief Fleet",
 		#"foodReliefFleet":"Nutrition Relief Fleet",
 
 		"mercScout":"Concoffinate Mercenaries",

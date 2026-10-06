@@ -1,0 +1,60 @@
+{
+	"starSystem":"UIEllenTrechend",
+	"markets":[
+		{
+			"entities":["ui_vanduo"],
+			"faction":"ui",
+			"size":6,
+			"startingConditions":[
+				"population_6",
+				"extreme_weather",
+				"dense_atmosphere",
+				"inimical_biosphere",
+				"volatiles_plentiful",
+				"organics_abundant",
+				"ore_sparse",
+				"rare_ore_sparse",
+				"farmland_poor"
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"aquaculture",
+				["mining","mantle_bore"],
+				"refining",
+				"heavybatteries",
+				"orbitalstation_mid"
+			]
+		},
+		{
+			"entities":["ui_torthuil"],
+			"faction":"ui",
+			"size":7,
+			"startingConditions": [
+				"population_7",
+				"habitable",
+				"mild_climate",
+				"inimical_biosphere",
+				"decivilized_subpop",
+				"ruins_extensive",
+				"organics_common",
+				"farmland_poor",
+				"ore_moderate"
+			],
+			"industries":[
+				"population",
+				["megaport","fullerene_spool"],
+				["lightindustry","biofactory_embryo"],
+				["farming","soil_nanites"],
+				"techmining",
+				"highcommand",
+				"heavybatteries",
+				"battlestation"
+			]
+		}
+	]
+
+}
+
+
+

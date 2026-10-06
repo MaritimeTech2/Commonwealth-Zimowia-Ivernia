@@ -33,13 +33,13 @@ public class MilitarySensorCore extends BaseHullMod {
 	public static float RANGE_BONUS = 20f;
 	public static final float PROJ_SPEED_BONUS = 50f;
 	public static float RANGE_MULT = 80f;
-	public static float VISION_BONUS = 1500f;
+	public static Float VISION_BONUS = 1500f;
 	public static float TURRET_SPEED_BONUS = 40f;
 	public static float ECM_BONUS = 1f;
 	public static float ECCM_CHANCE = 0.5f;
 	public static float GUIDANCE_IMPROVEMENT = 1f;
 	public static float EW_PENALTY_MULT = 0.15f;
-	public static float SENSOR_BONUS = 50f;
+	public static Float SENSOR_BONUS = 50f;
 	public static float AUTOFIRE_AIM = 0.2f;
 
 
@@ -49,9 +49,9 @@ public class MilitarySensorCore extends BaseHullMod {
 		if (index == 0) return "" + (int)Math.round((1f - RANGE_MULT) * 100f) + "%";
 		if (index == 1) return "" + (int)Math.round(PROJ_SPEED_BONUS) + "%";
 		//if (index == 0) return "" + (int)RANGE_THRESHOLD;
-		if (index == 1) return "" + new Float(VISION_BONUS).intValue();
-		if (index == 2) return "" + new Float(VISION_BONUS).intValue();
-		if (index == 3) return "" + new Float(SENSOR_BONUS).intValue();
+		if (index == 1) return "" + VISION_BONUS.intValue();
+		if (index == 2) return "" + VISION_BONUS.intValue();
+		if (index == 3) return "" + SENSOR_BONUS.intValue();
 		if (index == 4) return "" + (int)Math.round(TURRET_SPEED_BONUS) + "%";
 		if (index == 5) return "" + (int)Math.round(ECM_BONUS) + "%";
 		if (index == 6) return "" + (int)Math.round(EW_PENALTY_MULT) + "%";
