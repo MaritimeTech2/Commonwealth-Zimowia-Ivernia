@@ -169,7 +169,8 @@ public class UIEllenTrechend {
         SectorEntityToken gate1 = system.addCustomEntity("ui_ellen_trechend_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);
         gate1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 8250,1350);
         //code to add tag which ties to rulescmd to make gate active
-        gate1.addTag("iskalan_gate");
+        //gate1.addTag("iskalan_gate");
+        gate1.addTag("gatec");
 
 
 

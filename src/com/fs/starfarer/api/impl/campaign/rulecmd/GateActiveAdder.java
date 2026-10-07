@@ -7,9 +7,7 @@ import com.fs.starfarer.api.impl.campaign.GateEntityPlugin;
 import com.fs.starfarer.api.impl.campaign.rulecmd.BaseCommandPlugin;
 import com.fs.starfarer.api.impl.campaign.rulecmd.missions.GateCMD;
 import com.fs.starfarer.api.util.Misc;
-import com.fs.starfarer.campaign.CampaignEntity;
-import data.scripts.world.systems.UIAlkanost;
-import data.scripts.world.systems.UIEllenTrechend;
+
 
 import java.util.List;
 import java.util.Map;
@@ -49,8 +47,10 @@ public class GateActiveAdder extends BaseCommandPlugin{
         playerCargo = playerFleet.getCargo();
 
         if (command.equals("notifyScanned")) {
-
-            GateCMD.notifyScanned(entity);
+            SectorEntityToken otherGate1 = Global.getSector().getEntityById("alkanost_gate");
+            SectorEntityToken otherGate2 = Global.getSector().getEntityById("ui_ellen_trechend_gate");
+            GateCMD.notifyScanned(otherGate1);
+            GateCMD.notifyScanned(otherGate2);
         }
         return true;
     }
