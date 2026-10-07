@@ -82,7 +82,7 @@ public class GateEntityPlugin_C extends BaseCustomEntityPlugin{
     }
 
     public static boolean canUseGates() {
-//		if (true) return true;
+		if (true) return true;
         if (Global.getSector().getMemoryWithoutUpdate().getBoolean(PLAYER_CAN_USE_GATES)) {
             return true;
         }

@@ -168,13 +168,9 @@ public class UIEllenTrechend {
         //add gate
         SectorEntityToken gate1 = system.addCustomEntity("ui_ellen_trechend_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);
         gate1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 8250,1350);
-        //code to hopefully make gate active
-        /*((GateEntityPlugin) gate1.getCustomPlugin()).canUseGates();
-        //((GateEntityPlugin)gate1.getCustomPlugin()).;
-        GateEntityPlugin.getGateData().scanned.add(gate1);
-        ((GateEntityPlugin)gate1.getCustomPlugin()).isActive();
-        gate1.getCustomPlugin().advance(0f); // makes gate activate if already did quest
-        //GateCMD.notifyScanned(gate1);*/
+        //code to add tag which ties to rulescmd to make gate active
+        gate1.addTag("iskalan_gate");
+
 
 
         //broken lava world ring

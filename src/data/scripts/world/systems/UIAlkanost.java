@@ -131,12 +131,10 @@ public class UIAlkanost {
         nav1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 5825,700);
 
         //add gate
-        SectorEntityToken gate1 = system.addCustomEntity("alkanost_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);
+        SectorEntityToken gate1 = system.addCustomEntity("alkanost_gate", null, "inactive_gate", Factions.NEUTRAL);
         gate1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 8250,1350);
-        //code to hopefully make gate active
-       /* //GateEntityPlugin.getGateData().scanned.add(gate1);
-        //gate1.getCustomPlugin().advance(0f); // makes gate activate if already did quest
-        ((GateEntityPlugin)gate1.getCustomPlugin()).isActive();*/
+        //code to add tag which ties to rulescmd to make gate active
+        gate1.addTag("iskalan_gate");
 
 
         //lodowazemia magnetic field
