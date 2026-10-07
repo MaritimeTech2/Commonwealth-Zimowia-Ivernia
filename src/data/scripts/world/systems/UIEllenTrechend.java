@@ -72,6 +72,18 @@ public class UIEllenTrechend {
                 330f);
         torthuil.setCustomDescriptionId("ui_torthuil"); //reference descriptions.csv
 
+        PlanetAPI jasnazda4 = system.addPlanet("ui_jasnazda4",
+                center,
+                "Jasnazda IV",
+                "barren-bombarded",
+                200f,
+                50f,
+                7250f,
+                360f);
+        jasnazda4.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
+        jasnazda4.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
+        jasnazda4.getMarket().addCondition(Conditions.LOW_GRAVITY);
+
 
         PlanetAPI swiatana5 = system.addPlanet("ui_swiatana5",
                 center,

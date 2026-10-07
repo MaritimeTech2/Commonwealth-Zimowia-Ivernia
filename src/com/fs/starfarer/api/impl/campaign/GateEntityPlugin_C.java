@@ -78,6 +78,7 @@ public class GateEntityPlugin_C extends BaseCustomEntityPlugin{
         }
         CargoAPI cargo = Global.getSector().getPlayerFleet().getCargo();
         return cargo.getQuantity(CargoItemType.SPECIAL, new SpecialItemData(Items.JANUS, null)) > 0;
+        //return false;
     }
 
     public static boolean canUseGates() {
@@ -87,6 +88,7 @@ public class GateEntityPlugin_C extends BaseCustomEntityPlugin{
         }
         CargoAPI cargo = Global.getSector().getPlayerFleet().getCargo();
         return cargo.getQuantity(CargoItemType.SPECIAL, new SpecialItemData(Items.JANUS, null)) > 0;
+        //return false;
     }
 
     transient protected SpriteAPI baseSprite;
