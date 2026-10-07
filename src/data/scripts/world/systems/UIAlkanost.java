@@ -134,7 +134,8 @@ public class UIAlkanost {
         SectorEntityToken gate1 = system.addCustomEntity("alkanost_gate", null, "inactive_gate", Factions.NEUTRAL);
         gate1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 8250,1350);
         //code to add tag which ties to rulescmd to make gate active
-        gate1.addTag("iskalan_gate");
+        //gate1.addTag("iskalan_gate");
+        gate1.addTag("gatec");
 
 
         //lodowazemia magnetic field
