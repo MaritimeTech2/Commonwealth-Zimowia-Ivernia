@@ -22,11 +22,15 @@ gateOpenDialog,OpenInteractionDialog,$tag:gate,"ShowDefaultVisual
 FireAll PopulateGateOptions","A silent ring of adamantine material, derelict of a former age.
 
 The Gate is inert.",,
-gateOpenDialogActive,OpenInteractionDialog,"$tag:gate
-$global.gatesActive
-$gateScanned
-$global.playerCanUseGates","ShowDefaultVisual
-FireAll PopulateGateOptions","Before you vast and potent hangs an adamantine ring, derelict of a former age.
+gateOpenDialogActive,OpenInteractionDialog,"$tag:gatec
+$tag:gate","ShowDefaultVisual
+$global.gatesActive = true
+$global.playerCanUseGates = true
+$gateScanned = true
+$global.numGatesScanned++
+GateActiveAdder notifyScanned
+ShowDefaultVisual
+FireAll PopulateGateOptions","Before you vast and potent hangs an adamantine ring, Rekindled for a new  age.
 
 You have scanned this Gate and discovered the rhythm of the secret heart of the thing, hidden in a slip of space. Using the Janus Device to create a bridge to another Gate requires a massive quantity of fuel. The more distant the target, the more fuel is required.
 
@@ -58,6 +62,10 @@ gateOpenDialogCanScan2,OpenInteractionDialog,"$tag:gate
 $global.canScanGates
 $global.gatesActive
 !$gateScanned","ShowDefaultVisual
+$global.gatesActive = true
+$gateScanned = true
+$global.numGatesScanned++
+GateCMD notifyScanned
 FireAll PopulateGateOptions","A silent ring of adamantine material, derelict of a former age.
 
 Your sensors officer nods to you; the hyperwave scanner is ready. The words 'EXECUTE SCAN' blink expectantly in your command interface.
@@ -170,3 +178,9 @@ FireAll PopulateGateOptions",,,
 devGatesExplodeSel,DialogOptionSelected,$option == devGateExplode,"GateCMD explode
 $gateExploded = true 0
 FireAll PopulateGateOptions",,,
+,,,,,,
+# RaiDz Gate Testing Corner,,,,,,
+ui_interact_iskalan_gate,OpenInteractionDialog,$tag:iskalan_gate,FireAll PopulateIskalanGateOptions,,,
+ui_iskalan_gate_leave_option,PopulateIskalanGateOptions,,,,100:defaultLeave:Leave raidz,
+ui_iskalan_gate_choose_destination_option,PopulateIskalanGateOptions,,,,1:uiOpenDestinationPicker:Choose Destination raidz,
+ui_iskalan_gate_choose_destination,DialogOptionSelected,$option == uiOpenDestinationPicker,UI_GateCMD_raidz selectDestination,,,
