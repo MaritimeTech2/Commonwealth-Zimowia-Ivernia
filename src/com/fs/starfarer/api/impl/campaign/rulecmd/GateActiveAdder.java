@@ -19,7 +19,6 @@ public class GateActiveAdder extends BaseCommandPlugin{
     protected SectorEntityToken entity;
     protected TextPanelAPI text;
     protected OptionPanelAPI options;
-    protected CargoAPI playerCargo;
     protected MemoryAPI memory;
     protected InteractionDialogAPI dialog;
     protected Map<String, MemoryAPI> memoryMap;
@@ -44,7 +43,6 @@ public class GateActiveAdder extends BaseCommandPlugin{
         options = dialog.getOptionPanel();
 
         playerFleet = Global.getSector().getPlayerFleet();
-        playerCargo = playerFleet.getCargo();
 
         if (command.equals("notifyScanned")) {
             SectorEntityToken otherGate1 = Global.getSector().getEntityById("alkanost_gate");
