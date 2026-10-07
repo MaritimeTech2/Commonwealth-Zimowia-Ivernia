@@ -112,19 +112,6 @@ public class UIAlkanost {
         jasnazda3.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
         jasnazda3.getMarket().addCondition(Conditions.ORE_SPARSE);
 
-        /*PlanetAPI jasnazda4 = system.addPlanet("ui_jasnazda4",
-                alkanoststar,
-                "Jasnazda IV",
-                "barren-bombarded",
-                200f,
-                50f,
-                9000f,
-                360f);
-        jasnazda4.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
-        jasnazda4.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
-        jasnazda4.getMarket().addCondition(Conditions.LOW_GRAVITY);*/
-
-
 
         // Terrain
         //add first stable loc
