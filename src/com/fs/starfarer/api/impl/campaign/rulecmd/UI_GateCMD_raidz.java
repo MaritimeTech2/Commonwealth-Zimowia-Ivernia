@@ -42,6 +42,9 @@ import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.Misc.Token;
 
+import static com.fs.starfarer.api.impl.campaign.GateEntityPlugin.GATE_SCANNED;
+import static com.fs.starfarer.api.impl.campaign.GateEntityPlugin.PLAYER_CAN_USE_GATES;
+
 public class UI_GateCMD_raidz extends BaseCommandPlugin{
     protected CampaignFleetAPI playerFleet;
     protected SectorEntityToken entity;
@@ -71,8 +74,6 @@ public class UI_GateCMD_raidz extends BaseCommandPlugin{
 
         if (command.equals("selectDestination")) {
             selectDestination();
-        } else if (command.equals("notifyScanned")) {
-            notifyScanned(entity);
         }
         return true;
     }
@@ -89,9 +90,16 @@ public class UI_GateCMD_raidz extends BaseCommandPlugin{
         final ArrayList<SectorEntityToken> gates =
                 new ArrayList<SectorEntityToken>(Global.getSector().getCustomEntitiesWithTag("iskalan_gate"));
         gates.remove(entity);
+        if (Global.getSector().getMemoryWithoutUpdate().getBoolean(PLAYER_CAN_USE_GATES)) {
+            for (SectorEntityToken gate : Global.getSector().getCustomEntitiesWithTag("gate")) {
+                if (!gate.getMemoryWithoutUpdate().getBoolean(GATE_SCANNED)) continue;
+                gates.add(gate);
+        }   }
+
         dialog.showCampaignEntityPicker("Select destination", "Destination:", "Initiate transit",
                 Global.getSector().getPlayerFaction(), gates,
                 new BaseCampaignEntityPickerListener() {
+
                     public void pickedEntity(SectorEntityToken entity) {
                         int cost = computeFuelCost(entity);
                         Global.getSector().getPlayerFleet().getCargo().removeFuel(cost);
@@ -156,10 +164,5 @@ public class UI_GateCMD_raidz extends BaseCommandPlugin{
                         return 1f / Misc.GATE_FUEL_COST_MULT;
                     }
                 });
-    }
-
-    public static void notifyScanned(SectorEntityToken gate) {
-        GateEntityPlugin.getGateData().scanned.add(gate);
-        gate.getCustomPlugin().advance(0f); // makes gate activate if already did quest
     }
 }
