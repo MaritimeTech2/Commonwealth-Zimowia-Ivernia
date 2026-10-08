@@ -5,8 +5,8 @@
 	"displayNameLong":"Commonwealth of Kotlinska-Ivernia",
 	"displayNameLongWithArticle":"the Commonwealth of Kotlinska-Ivernia",
 	"entityNamePrefix":"Commonwealth",
-	"personNamePrefix":"Polarian",
-	"personNamePrefixAOrAn":"an",
+	#"personNamePrefix":"Polarian",
+	"personNamePrefixAOrAn":"a",
 	"displayNameIsOrAre":"is",
 	
 	"logo":"graphics/faction/flags/commonwealth_flag.png",

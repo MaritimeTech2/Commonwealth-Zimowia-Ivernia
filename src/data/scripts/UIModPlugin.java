@@ -100,7 +100,7 @@ public class UIModPlugin extends BaseModPlugin {
             ip.addPerson(ui_anzhelika);
             market.addPerson(ui_anzhelika);
             market.getCommDirectory().addPerson(ui_anzhelika);
-            market.setAdmin(ui_anzhelika);
+            //market.setAdmin(ui_anzhelika);
         }
         market = Global.getSector().getEconomy().getMarket("ui_torthuil"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
@@ -120,7 +120,7 @@ public class UIModPlugin extends BaseModPlugin {
             ip.addPerson(ui_zygfryd);
             market.addPerson(ui_zygfryd);
             market.getCommDirectory().addPerson(ui_zygfryd);
-            market.setAdmin(ui_zygfryd);
+            //market.setAdmin(ui_zygfryd);
         }
     }
 }

@@ -13,6 +13,7 @@ import data.scripts.world.systems.UIEllenTrechend;
 import data.scripts.world.systems.UIRiftSystem;
 import data.scripts.world.systems.UIAlkanost;
 import com.fs.starfarer.api.impl.campaign.GateEntityPlugin;
+import data.scripts.world.systems.UISirin;
 
 
 public class UnionIcyllaGen { //implements SectorGeneratorPlugin {
@@ -26,7 +27,8 @@ public class UnionIcyllaGen { //implements SectorGeneratorPlugin {
             //public static PLAYER_CAN_USE_GATE;
             new UIEllenTrechend().generate(sector);
             StarSystemAPI alkanost = new UIAlkanost().generate(sector);
-            new UIRiftSystem().generate(sector);
+            StarSystemAPI sirin = new UISirin().generate(sector);
+            //new UIRiftSystem().generate(sector);
 
             //create constellation
             Constellation constellation = new Constellation(Constellation.ConstellationType.NORMAL, StarAge.AVERAGE);
@@ -36,17 +38,19 @@ public class UnionIcyllaGen { //implements SectorGeneratorPlugin {
             //put the systems in the constellation
             //constellation.getSystems().add(ellentrechend);
             constellation.getSystems().add(alkanost);
+            constellation.getSystems().add(sirin);
             //yes, you have to identify it twice
             ///ellentrechend.setConstellation(constellation);
             alkanost.setConstellation(constellation);
+            sirin.setConstellation(constellation);
 
             //starting relations
             FactionAPI ui = sector.getFaction("ui");
-            ui.setRelationship(Factions.PIRATES, -0.5f);
+            ui.setRelationship(Factions.PIRATES, -0.25f);
             ui.setRelationship(Factions.LUDDIC_PATH, -0.5f);
-            ui.setRelationship(Factions.HEGEMONY, -0.2f);
+            ui.setRelationship(Factions.HEGEMONY, -0.3f);
             ui.setRelationship(Factions.TRITACHYON, -0.5f);
             ui.setRelationship(Factions.LUDDIC_CHURCH, -0.5f);
-            ui.setRelationship(Factions.PERSEAN, 0.2f);
+            ui.setRelationship(Factions.PERSEAN, 0.3f);
         }
 }

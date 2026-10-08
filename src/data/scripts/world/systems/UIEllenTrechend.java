@@ -42,11 +42,11 @@ public class UIEllenTrechend {
                 200, // The planet radius
                 0, // The planet's orbit radius from the "focus"
                 0); // The orbital period in days (how fast it orbits)
-        //pieklo.getMarket().addCondition(Conditions.ORE_ULTRARICH);
-        //pieklo.getMarket().addCondition(Conditions.RARE_ORE_ULTRARICH);
+        pieklo.getMarket().addCondition(Conditions.ORE_ULTRARICH);
+        pieklo.getMarket().addCondition(Conditions.RARE_ORE_ULTRARICH);
         pieklo.getMarket().addCondition(Conditions.EXTREME_TECTONIC_ACTIVITY);
         pieklo.getMarket().addCondition(Conditions.VERY_HOT);
-        //pieklo.getMarket().addCondition("ui_pieklo_tidal_disrupture");
+        //pieklo.getMarket().addCondition("ui_pieklo_tidal_disrupture"); //added to connect to a season mining script which was never done.
 
         PlanetAPI jasnazdaStar1 = system.addPlanet("ui_ellen_trechend1", center, "Ellen Trechend", "star_orange", 0f, 600f, 2000f, 40f);
         system.setStar(jasnazdaStar1);
@@ -67,9 +67,9 @@ public class UIEllenTrechend {
                 "Torthuil",
                 "terran",
                 120f,
-                150f,
+                180f,
                 6450f,
-                330f);
+                280f);
         torthuil.setCustomDescriptionId("ui_torthuil"); //reference descriptions.csv
 
         PlanetAPI jasnazda4 = system.addPlanet("ui_jasnazda4",
@@ -77,9 +77,9 @@ public class UIEllenTrechend {
                 "Jasnazda IV",
                 "barren-bombarded",
                 200f,
-                50f,
-                7250f,
-                360f);
+                110f,
+                4650f,
+                363f);
         jasnazda4.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
         jasnazda4.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
         jasnazda4.getMarket().addCondition(Conditions.LOW_GRAVITY);
@@ -91,8 +91,8 @@ public class UIEllenTrechend {
                 "gas_giant",
                 180f,
                 400f,
-                10000f,
-                1200f);
+                13500f,
+                720f);
         swiatana5.getSpec().setPlanetColor(new Color(185, 14, 14, 255));
         swiatana5.getSpec().setCloudColor(new Color(196, 86, 3, 255));
         swiatana5.getSpec().setAtmosphereThickness(0.3f);
@@ -117,7 +117,7 @@ public class UIEllenTrechend {
         vanduo.setInteractionImage("illustrations", "fikenhild");
         vanduo.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_frozen_water_world"));
         vanduo.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "sindria"));
-        vanduo.getSpec().setAtmosphereThickness(0.3f);
+        vanduo.getSpec().setAtmosphereThickness(0.7f);
         vanduo.getSpec().setAtmosphereColor(new Color(10, 33, 166,235));
         //vanduo.getSpec().setCloudTexture(Global.getSettings().getSpriteName("hab_glows", "ui_clouds_storm"));
         vanduo.getSpec().setCloudColor(new Color(255, 255, 255, 130));
@@ -141,7 +141,7 @@ public class UIEllenTrechend {
                 "Swiatana VII",
                 "rocky_ice",
                 230f,
-                90f,
+                60f,
                 1900f,
                 60f);
         swiatana7.getMarket().addCondition(Conditions.VERY_COLD);
@@ -151,7 +151,7 @@ public class UIEllenTrechend {
         // Terrain
         //add first stable loc
         SectorEntityToken stableLoc1 = system.addCustomEntity("ui_ellen_trechend_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(center, MathUtils.getRandomNumberInRange(0f, 360f), 5500f, 220);
+        stableLoc1.setCircularOrbit(center, MathUtils.getRandomNumberInRange(0f, 360f), 4150f, 220);
 
         /*//add second stable loc
         SectorEntityToken stableLoc2 = system.addCustomEntity("ui_ellen_trechend_stableloc_2", "Stable Location", "stable_location", Factions.NEUTRAL);
@@ -159,18 +159,18 @@ public class UIEllenTrechend {
 
         //add comms relay
         SectorEntityToken comms1 = system.addCustomEntity("ui_ellen_trechend_comms1", "Comms Beacon", "comm_relay", "ui");
-        comms1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 6500f, 290);
+        comms1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 5800f, 290);
 
         //add nav beacon
         SectorEntityToken nav1 = system.addCustomEntity("ui_ellen_trechend_nav1", "Nav Beacon", "nav_buoy", "ui");
-        nav1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 11000,1500);
+        nav1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 15000,800);
 
         //add gate
         SectorEntityToken gate1 = system.addCustomEntity("ui_ellen_trechend_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);
-        gate1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 8250,1350);
+        gate1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 7250,380);
         //code to add tag which ties to rulescmd to make gate active
         gate1.addTag("iskalan_gate");
-        //gate1.addTag("gatec");
+
 
 
 
@@ -181,7 +181,7 @@ public class UIEllenTrechend {
         system.addRingBand(center, "misc", "rings_asteroids0", 256f, 2, Color.gray, 256f, 3800f, 250f, Terrain.RING, null);
 
         //lazurowe morze ring
-        system.addRingBand(vanduo, "misc", "ui_rings_special0", 256f, 0, Color.gray, 256f, 400f, 30f, Terrain.RING, "Grace of Lazurowe Morze");
+        system.addRingBand(vanduo, "misc", "ui_rings_special0", 256f, 0, Color.gray, 256f, 400f, 30f, Terrain.RING, "Grace of Vanduo");
 
         //outer band
         system.addRingBand(center, "misc", "rings_asteroids0", 256f, 2, Color.gray, 256f, 8000f, 250f, Terrain.RING, null);
@@ -220,8 +220,8 @@ public class UIEllenTrechend {
                 "Outer Jump");
         jumpPoint2.setCircularOrbit(center,
                 270, //position
-                7200, // distance from focus
-                300f); //days it takes to orbit
+                9500, // distance from focus
+                380f); //days it takes to orbit
         jumpPoint2.setStandardWormholeToHyperspaceVisual();
         system.addEntity(jumpPoint2);
 
