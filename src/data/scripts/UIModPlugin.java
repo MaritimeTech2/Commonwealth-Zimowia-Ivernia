@@ -62,7 +62,7 @@ public class UIModPlugin extends BaseModPlugin {
         ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
         MarketAPI market = null;
 
-        market = Global.getSector().getEconomy().getMarket("ui_lodowazemia"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
+        market = Global.getSector().getEconomy().getMarket("ui_zimowia"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
             PersonAPI ui_kazimir = Global.getFactory().createPerson();
             ui_kazimir.setId("ui_kazimir");

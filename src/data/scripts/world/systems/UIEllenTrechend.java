@@ -91,7 +91,7 @@ public class UIEllenTrechend {
                 "gas_giant",
                 180f,
                 400f,
-                13500f,
+                14500f,
                 720f);
         swiatana5.getSpec().setPlanetColor(new Color(185, 14, 14, 255));
         swiatana5.getSpec().setCloudColor(new Color(196, 86, 3, 255));
@@ -111,14 +111,15 @@ public class UIEllenTrechend {
                 "water",
                 0f,
                 100f,
-                2500f,
+                3000f,
                 90f);
         vanduo.setCustomDescriptionId("ui_vanduo"); //reference descriptions.csv
         vanduo.setInteractionImage("illustrations", "fikenhild");
         vanduo.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_frozen_water_world"));
         vanduo.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "sindria"));
-        vanduo.getSpec().setAtmosphereThickness(0.7f);
-        vanduo.getSpec().setAtmosphereColor(new Color(10, 33, 166,235));
+        vanduo.getSpec().setAtmosphereThickness(.9f);
+        vanduo.getSpec().setAtmosphereColor(new Color(110, 133, 166,235));
+        vanduo.getSpec().setCloudRotation(5F);
         //vanduo.getSpec().setCloudTexture(Global.getSettings().getSpriteName("hab_glows", "ui_clouds_storm"));
         vanduo.getSpec().setCloudColor(new Color(255, 255, 255, 130));
         vanduo.applySpecChanges();
@@ -142,7 +143,7 @@ public class UIEllenTrechend {
                 "rocky_ice",
                 230f,
                 60f,
-                1900f,
+                2200f,
                 60f);
         swiatana7.getMarket().addCondition(Conditions.VERY_COLD);
         swiatana7.getMarket().addCondition(Conditions.ORGANICS_TRACE);

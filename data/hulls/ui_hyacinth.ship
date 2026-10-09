@@ -65,7 +65,7 @@
     {
       "id": "WS0003",
       "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "type": "ENERGY",
       "mount": "TURRET",
       "arc": 210,
       "angle": 0,
@@ -74,7 +74,7 @@
     {
       "id": "WS0004",
       "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "type": "ENERGY",
       "mount": "TURRET",
       "arc": 210,
       "angle": 0,

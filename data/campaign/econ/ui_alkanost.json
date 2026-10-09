@@ -2,7 +2,7 @@
 	"starSystem":"UIAlkanost",
 	"markets":[
 		{
-			"entities":["ui_lodowazemia"],
+			"entities":["ui_zimowia"],
 			"faction":"ui",
 			"size":8,
 			"startingConditions":[
@@ -19,7 +19,7 @@
 			"industries":[
 				"population",
 				"farming",
-				"spaceport",
+				["megaport","fullerene_spool"],
 				"starfortress_high",
 				"lightindustry",
 				"orbitalworks",
@@ -43,7 +43,7 @@
 			"industries":[
 				"population",
 				"refining",
-				"megaport",
+				["megaport","fullerene_spool"],
 				"waystation",
 				"heavybatteries",
 				"battlestation_high",

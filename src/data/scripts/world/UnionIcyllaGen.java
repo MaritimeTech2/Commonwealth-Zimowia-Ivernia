@@ -24,7 +24,6 @@ public class UnionIcyllaGen { //implements SectorGeneratorPlugin {
 
             //generate star systems
             //StarSystemAPI ellentrechend = new UIEllenTrechend().generate(sector);
-            //public static PLAYER_CAN_USE_GATE;
             new UIEllenTrechend().generate(sector);
             StarSystemAPI alkanost = new UIAlkanost().generate(sector);
             StarSystemAPI sirin = new UISirin().generate(sector);

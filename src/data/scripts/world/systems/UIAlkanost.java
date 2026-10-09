@@ -45,9 +45,9 @@ public class UIAlkanost {
                 "terran",
                 360f * (float) Math.random(),
                 200f,
-                6450f,
+                6750f,
                 380f);
-        zimowia.setCustomDescriptionId("ui_lodowazemia"); //reference descriptions.csv
+        zimowia.setCustomDescriptionId("ui_zimowia"); //reference descriptions.csv
         zimowia.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_iskala"));
         zimowia.getSpec().setTilt(0f);
         zimowia.getSpec().setPitch(0f);
@@ -59,7 +59,7 @@ public class UIAlkanost {
                 "barren-desert",
                 360f * (float) Math.random(),
                 140f,
-                5000f,
+                4300f,
                 300f);
         agropelter.setCustomDescriptionId("ui_agropelter"); //reference descriptions.csv
         agropelter.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "sindria"));
@@ -75,7 +75,7 @@ public class UIAlkanost {
                 "barren_castiron",
                 360f * (float) Math.random(),
                 140f,
-                10000f,
+                9750f,
                 320f);
         swiatana3.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
         swiatana3.getMarket().addCondition(Conditions.ORE_SPARSE);
@@ -97,7 +97,7 @@ public class UIAlkanost {
                 "rocky_metallic",
                 360f * (float) Math.random(),
                 120f,
-                7550f,
+                11950f,
                 340);
         swiatana4.getMarket().addCondition(Conditions.TECTONIC_ACTIVITY);
         swiatana4.getMarket().addCondition(Conditions.ORE_SPARSE);
@@ -110,7 +110,7 @@ public class UIAlkanost {
                 "barren",
                 240f,
                 90f,
-                500f,
+                900f,
                 460f);
         jasnazda3.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
         jasnazda3.getMarket().addCondition(Conditions.ORE_SPARSE);
@@ -130,7 +130,7 @@ public class UIAlkanost {
         // Terrain
         //add first stable loc
         SectorEntityToken stableLoc1 = system.addCustomEntity("jasnazda_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(alkanoststar, MathUtils.getRandomNumberInRange(0f, 360f), 4500f, 220);
+        stableLoc1.setCircularOrbit(alkanoststar, MathUtils.getRandomNumberInRange(0f, 360f), 2500f, 220);
 
         /*//add second stable loc
         SectorEntityToken stableLoc2 = system.addCustomEntity("jasnazda_stableloc_2", "Stable Location", "stable_location", Factions.NEUTRAL);
@@ -138,15 +138,15 @@ public class UIAlkanost {
 
         //add comms relay
         SectorEntityToken comms1 = system.addCustomEntity("alkanost_comms1", "Comms Beacon", "comm_relay", "ui");
-        comms1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 7050, 400);
+        comms1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 5000, 400);
 
         //add nav beacon
         SectorEntityToken nav1 = system.addCustomEntity("alkanost_nav1", "Nav Beacon", "nav_buoy", "ui");
-        nav1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 11825,700);
+        nav1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 13600,700);
 
         //add gate
-        SectorEntityToken gate1 = system.addCustomEntity("alkanost_gate", null, "inactive_gate", Factions.NEUTRAL);
-        gate1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 8250,420);
+        SectorEntityToken gate1 = system.addCustomEntity("alkanost_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);
+        gate1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 12350,420);
         //code to add tag which ties to rulescmd to make gate active
         gate1.addTag("iskalan_gate");
         //gate1.addTag("gatec");

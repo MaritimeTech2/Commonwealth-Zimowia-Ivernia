@@ -34,7 +34,7 @@ public class AutoForgedRepair extends BaseHullMod {
         if (index == 2) return "" + ((Float) mag.get(HullSize.CRUISER)).intValue() + "%";
         if (index == 3) return "" + ((Float) mag.get(HullSize.CAPITAL_SHIP)).intValue() + "%";
         if (index == 4) return "" + (int) Math.round(COMBAT_REPAIR_ENG * 100f) + "%";
-        if (index == 5) return "" + (int) Math.round(CAMPAIGN_REPAIR * 100f) + "%";
+        if (index == 5) return "" + (int) Math.round(CASUALTY_REDUCTION * 100f) + "%";
         return null;
     }
 
@@ -47,7 +47,7 @@ public class AutoForgedRepair extends BaseHullMod {
         stats.getCombatEngineRepairTimeMult().modifyPercent(id,COMBAT_REPAIR_ENG);
         stats.getCombatWeaponRepairTimeMult().modifyPercent(id,COMBAT_REPAIR_ENG);
         // increases repair rate speed for ships after a battle in the campaign layer
-        stats.getRepairRatePercentPerDay().modifyPercent(id, CAMPAIGN_REPAIR);
+        //stats.getRepairRatePercentPerDay().modifyPercent(id, CAMPAIGN_REPAIR);
 
         // gives the ships a hull repair modifier while in battle
         //stats.getHullCombatRepairRatePercentPerSecond()
