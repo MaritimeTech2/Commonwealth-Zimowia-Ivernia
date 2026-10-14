@@ -1,6 +1,6 @@
 {
 	
-	"UI_STANDARD":{
+	"CZI_STANDARD":{
 		"engineColor":[255,100,100,255],
 		"contrailParticleSizeMult":6,
 		"contrailParticleDuration":2,

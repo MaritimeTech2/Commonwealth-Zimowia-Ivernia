@@ -1,8 +1,10 @@
 {
 	"starSystemLocations":{
-		"UIAlkanost":[0, 0], #overriden in code
-		"UIEllenTrechend":[0, 0], #overriden in code
+		"CZIAlkanost":[0, 0], #overriden in code
+		"CZIEllenTrechend":[0, 0], #overriden in code
 		#"Mysterious Rift":[0, 0], #overriden in code
-		"UISirin": [0, 0], #overriden in code
+		"CZISirin": [0, 0], #overriden in code
+		"CZIPuca": [0, 0], #overriden in code
+
 	}
 }

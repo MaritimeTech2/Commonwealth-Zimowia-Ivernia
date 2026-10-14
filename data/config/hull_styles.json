@@ -2,7 +2,7 @@
 	# The following hull style ids are reserved and can not be used:
 	# "sounds", "DEFAULT", "FIGHTER", "FRIGATE", "DESTROYER", "CRUISER", "CAPITAL_SHIP"
 	#Ships
-	"UI_BASE":{
+	"CZI_BASE":{
 		"hyperspaceJitterColor":[255,100,100,255],
 		"baseCampaignExplosionColor":[255,145,75,255],
 		"baseCombatExplosionColor":[255,145,75,255],

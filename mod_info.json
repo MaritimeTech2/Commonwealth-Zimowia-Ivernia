@@ -8,7 +8,7 @@
 	"description":"A faction mod",
     "gameVersion": "0.98a-RC8",
   	"jars":["jars/UnionOfIskala.jar"],
-  	"modPlugin":"data.scripts.UIModPlugin",
+  	"modPlugin":"data.scripts.CZIModPlugin",
 
     "dependencies": [
         {

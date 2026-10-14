@@ -1,6 +1,6 @@
 {
 	"designTypeColors":{
-		"Iskalan":[27,35,74,255]
+		"Commonwealth":[27,35,74,255]
 	},
 
 	# where rule commands called from rules.csv can be implemented.'
@@ -11,7 +11,7 @@
   
     "graphics":{
 		"blueprint_packages":{
-			"ui_base_package":"graphics/icons/cargo/uibase_bp_package.png",
+			"czi_base_package":"graphics/icons/cargo/uibase_bp_package.png",
 			},
 		"misc":{
 			"ui_rings_lava0":"graphics/planets/ui_rings_lava0.png",
@@ -27,10 +27,10 @@
 		"intel":{
 			"ui_pieklo_mining": "graphics/icons/intel/faction_conflict.png",
 		},
-		"ui_person":{
-		"ui_anzhelika":"graphics/portraits/characters/ui_anzhelika.png",
-		"ui_kazimir":"graphics/portraits/characters/ui_kazimir.png",
-		"ui_zygfryd":"graphics/portraits/characters/ui_zygfryd.png",
+		"czi_person":{
+		"czi_anzhelika":"graphics/portraits/characters/czi_anzhelika.png",
+		"czi_kazimir":"graphics/portraits/characters/czi_kazimir.png",
+		"czi_zygfryd":"graphics/portraits/characters/czi_zygfryd.png",
 		},
 
 		

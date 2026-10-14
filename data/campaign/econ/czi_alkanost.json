@@ -1,0 +1,60 @@
+{
+	"starSystem":"CZIAlkanost",
+	"markets":[
+		{
+			"entities":["czi_zimowia"],
+			"faction":"czi",
+			"size":8,
+			"startingConditions":[
+				"population_8",
+				"habitable",
+				"mild_climate",
+				"ore_abundant",
+				"rare_ore_abundant",
+				"organics_abundant",
+				"farmland_bountiful",
+				"closed_immigration",
+				"regional_capital"
+			],
+			"industries":[
+				"population",
+				"farming",
+				["megaport","fullerene_spool"],
+				"starfortress_high",
+				"lightindustry",
+				"orbitalworks",
+				"highcommand",
+				"heavybatteries"
+			]
+		},
+		{
+			"entities":["czi_agropelter"],
+			"faction":"czi",
+			"size":6,
+			"startingConditions":[
+				"population_6",
+				"hot",
+				"ore_rich",
+				"rare_ore_rich",
+				"thin_atmosphere",
+				"habitable",
+				"industrial_polity"
+			],
+			"industries":[
+				"population",
+				"refining",
+				["megaport","fullerene_spool"],
+				"waystation",
+				"heavybatteries",
+				"battlestation_high",
+				["orbitalworks","pristine_nanoforge"],
+				"mining",
+				"fuelprod"
+			]
+		}
+	]
+
+}
+
+
+

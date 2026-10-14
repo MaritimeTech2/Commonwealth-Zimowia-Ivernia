@@ -1,5 +1,5 @@
 {
-	"id":"ui_archangelspear",  # this id must match what's in the spreadsheet
+	"id":"czi_archangelspear",  # this id must match what's in the spreadsheet
 	"specClass":"projectile",
 	"type":"ENERGY",
 	"size":"LARGE",

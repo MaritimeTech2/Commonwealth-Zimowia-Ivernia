@@ -3,7 +3,7 @@
   "hullId": "ui_piotr",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/ui_piotr.png",
-  "style": "UI_BASE",
+  "style": "CZI_BASE",
   "height": 150,
   "width": 150,
   "center": [75, 75],
@@ -12,8 +12,8 @@
   "shieldRadius": 50,
   "viewOffset": 0,
   "builtInMods": [
-    "ui_composite_armor",
-    "ui_autoforge_repair"
+    "czi_composite_armor",
+    "czi_autoforge_repair"
   ],
   "weaponSlots": [
     {
@@ -52,7 +52,7 @@
       "angle": 180,
       "contrailSize": 11,
       "style": "CUSTOM",
-      "styleId": "UI_STANDARD"
+      "styleId": "CZI_STANDARD"
     },
     {
       "location": [-26, -11],
@@ -61,7 +61,7 @@
       "angle": -180,
       "contrailSize": 11,
       "style": "CUSTOM",
-      "styleId": "UI_STANDARD"
+      "styleId": "CZI_STANDARD"
     },
     {
       "location": [-34.5, 19],
@@ -70,7 +70,7 @@
       "angle": 165,
       "contrailSize": 6.96,
       "style": "CUSTOM",
-      "styleId": "UI_STANDARD"
+      "styleId": "CZI_STANDARD"
     },
     {
       "location": [-36.5, -20.5],
@@ -79,7 +79,7 @@
       "angle": -165,
       "contrailSize": 6.96,
       "style": "CUSTOM",
-      "styleId": "UI_STANDARD"
+      "styleId": "CZI_STANDARD"
     },
     {
       "location": [-32, 26.5],
@@ -88,7 +88,7 @@
       "angle": 165,
       "contrailSize": 8.1,
       "style": "CUSTOM",
-      "styleId": "UI_STANDARD"
+      "styleId": "CZI_STANDARD"
     },
     {
       "location": [-32, -28],
@@ -97,7 +97,7 @@
       "angle": -165,
       "contrailSize": 8.1,
       "style": "CUSTOM",
-      "styleId": "UI_STANDARD"
+      "styleId": "CZI_STANDARD"
     },
     {
       "location": [-27, 32.5],
@@ -106,7 +106,7 @@
       "angle": 165,
       "contrailSize": 7.1,
       "style": "CUSTOM",
-      "styleId": "UI_STANDARD"
+      "styleId": "CZI_STANDARD"
     },
     {
       "location": [-28, -35],
@@ -115,7 +115,7 @@
       "angle": -165,
       "contrailSize": 7.1,
       "style": "CUSTOM",
-      "styleId": "UI_STANDARD"
+      "styleId": "CZI_STANDARD"
     }
   ],
   "bounds": [

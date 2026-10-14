@@ -1,0 +1,46 @@
+{
+  "variantId": "czi_jadwiga_standard",
+  "hullId": "czi_jadwiga",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 22,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "targetingunit",
+    "stabilizedshieldemitter",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hurricane",
+        "WS0002": "gauss",
+        "WS0003": "heavymauler",
+        "WS0004": "czi_sword",
+        "WS0005": "czi_sword",
+        "WS0006": "heavymauler",
+        "WS0007": "ionbeam",
+        "WS0008": "ionbeam",
+        "WS0009": "czi_sword",
+        "WS0010": "czi_sword",
+        "WS0011": "czi_shield",
+        "WS0012": "czi_fist",
+        "WS0013": "czi_miss",
+        "WS0014": "heavyburst",
+        "WS0015": "czi_sciath",
+        "WS0016": "pdburst",
+        "WS0017": "czi_buckle",
+        "WS0020": "czi_buckle",
+        "WS0021": "czi_emp",
+        "WS0022": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

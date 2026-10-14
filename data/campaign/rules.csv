@@ -15,7 +15,7 @@ SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a loop
 ""Enterance to this system is forbidden by Iskalan Naval Diktat 47. All tresspassers will be eliminated on sight.""",beaconLeave:Leave,
 ,,,,,,
 #Go to Zygfryd,,,,,,
-kazimir_goto_zygfryd,PickGreeting,$Id == ui_kazimir score:1000,ShowPersonVisual,"You call into the office of the Cesarz, and are answered by a secretary, who tells you that the Cesarz is currently unavailable, however the Vice President of the Terraforming Burreu is looking for captains who have proven themselves to assist him.  ",100:cutCommLink:Cut the comm link,
+kazimir_goto_zygfryd,PickGreeting,$Id == czi_kazimir score:1000,ShowPersonVisual,"You call into the office of the Cesarz, and are answered by a secretary, who tells you that the Cesarz is currently unavailable, however the Vice President of the Terraforming Burreu is looking for captains who have proven themselves to assist him.  ",100:cutCommLink:Cut the comm link,
 ,,,,,,
 ,,,,,,
 # RaiDz Gate Testing Corner,,,,,,

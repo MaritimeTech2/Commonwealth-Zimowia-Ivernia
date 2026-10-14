@@ -1,0 +1,163 @@
+{
+  "hullName": "Rusalka",
+  "hullId": "czi_rusalka",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/czi_rusalka.png",
+  "style": "CZI_BASE",
+  "height": 200,
+  "width": 200,
+  "center": [100, 100],
+  "collisionRadius": 142.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 120,
+  "viewOffset": 0,
+  "builtInMods": [
+    "czi_autoforge_repair",
+    "czi_composite_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 60,
+      "angle": 0,
+      "locations": [5, 26.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 60,
+      "angle": -0,
+      "locations": [5, -26.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [-50.5, 1]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-71, 1]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        19, -0,
+        43.5, 0.5
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [68, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-84, 12.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-84, -12.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-53.5, 21],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-53.5, -21],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-40, 30],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-40, -30],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    }
+  ],
+  "bounds": [
+    -91.5, -5.5,
+    -71, -19,
+    -55.5, -18.5,
+    -42.5, -28,
+    -40.5, -31.5,
+    -36, -30.5,
+    -54.5, -48,
+    -42.5, -64,
+    -10.5, -44,
+    7, -43,
+    19, -34,
+    94, -24,
+    95.5, -11,
+    87.5, -10.5,
+    87.5, 10.5,
+    95.5, 11,
+    94, 24,
+    19, 34,
+    7, 43,
+    -10.5, 44,
+    -42.5, 64,
+    -54.5, 48,
+    -36, 30.5,
+    -40.5, 31.5,
+    -42.5, 28,
+    -55.5, 18.5,
+    -71, 19,
+    -91.5, 5.5
+  ]
+}

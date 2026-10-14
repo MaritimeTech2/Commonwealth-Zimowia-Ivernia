@@ -76,7 +76,7 @@ public class UIFrigateCarrierTest extends BaseHullMod {
 
         // spawn the frigate
         float cr = ship.getCurrentCR();
-        ShipAPI child = CombatUtils.spawnShipOrWingDirectly("ui_piotr_assault", FleetMemberType.SHIP,
+        ShipAPI child = CombatUtils.spawnShipOrWingDirectly("czi_bystryk_PD", FleetMemberType.SHIP,
                 side, cr, loc, ship.getFacing());
 
         //if parent ship is ally in allied battle, make child an ally too

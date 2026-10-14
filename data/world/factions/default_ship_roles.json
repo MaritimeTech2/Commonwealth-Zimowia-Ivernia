@@ -3,31 +3,31 @@
 	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
 	"combatSmallForSmallFleet":{
 
-		"ui_ladislaus_pd":7,
+		"czi_bystryk_PD":7,
 		
 	},
 	"combatSmall":{
-	"ui_ladislaus_escort":1,
-	"ui_ladislaus_standard":5,
-	"ui_ladislaus_pd":6,	
+	"czi_bystryk_PD":6,
+	"czi_brychan_standard":5,
+	"czi_kilian_standard":2,	
 
 	},
 	"combatMedium":{
 
-	"ui_hyacinth_Assault":4,
-	"ui_wenceslaus_standard":5,
-	"ui_wenceslaus_lr":5
+	"czi_kaukas_standard":3,
+	"czi_kazimierz_stanadard":5,
+	"czi_sluagh_standard":1,
 
 	},
 	"combatLarge":{
 
-	"ui_hyacinth_standard":3,
+	"czi_hyacinth_standard":3,
 	
 
 	},
 	"combatCapital":{
 
-	"ui_jadwiga_standard":2,
+	"czi_jadwiga_standard":2,
 
 	},
 
@@ -52,12 +52,12 @@
 	# carriers
 	"carrierSmall":{
 
-	"ui_eurosia_standard":2,
+	"czi_rusalka_standard":2,
 
 
 	},
 	"carrierMedium":{
-
+	"czi_oillipheist_standard":3,
 	
 
 	},
@@ -85,30 +85,32 @@
 	# freighters and such
 	"freighterSmall":{
 
-	"ui_kowalska_cargo":3,
+	
 
 	},
 	"freighterMedium":{
 
-	"ui_zygmunt_standard":3,
+	"czi_pelczar_standard":3,
 
 	},
 	"freighterLarge":{
+	"czi_cailleach_standard":3
 
 	},
 
 	"tankerSmall":{
 
-	"ui_pelczar_fuel":3,
+	
 
 	},
 	"tankerMedium":{
 
-	"ui_krizin_standard":3,
+	"czi_pelczar_standard":3,
 
 
 	},
 	"tankerLarge":{
+	"czi_cailleach_standard":3
 
 	},
 

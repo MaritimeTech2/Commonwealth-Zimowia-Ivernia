@@ -1,0 +1,37 @@
+{
+  "variantId": "czi_hyacinth_standard",
+  "hullId": "czi_hyacinth",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 20,
+  "fluxVents": 16,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "targetingunit",
+    "blast_doors",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "czi_sword",
+        "WS0002": "czi_sword",
+        "WS0003": "czi_fist",
+        "WS0004": "czi_fist",
+        "WS0005": "czi_emp",
+        "WS0006": "czi_emp",
+        "WS0007": "czi_sciath",
+        "WS0008": "czi_sciath",
+        "WS0009": "czi_spear",
+        "WS0010": "pdburst",
+        "WS0011": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
