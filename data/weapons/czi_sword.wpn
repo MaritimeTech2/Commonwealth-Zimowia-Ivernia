@@ -1,26 +1,48 @@
 {
-	"id":"czi_sword",  # this id must match what's in the spreadsheet
-	"specClass":"projectile",
-	"type":"BALLISTIC",
-	"size":"MEDIUM",
-	"turretSprite":"graphics/weapons/kinetic_blaster_turret_base.png",
-	"turretGlowSprite":"graphics/weapons/kinetic_blaster_turret_glow.png",
-	"hardpointSprite":"graphics/weapons/kinetic_blaster_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/weapons/kinetic_blaster_hardpoint_glow.png",
-	"glowColor":[165,155,150,255],
-	"turretOffsets":[20, 0],
-	"turretAngleOffsets":[0],
-	"hardpointOffsets":[30, 0],
-	"hardpointAngleOffsets":[0],
-	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
-	"animationType":"GLOW_AND_FLASH",
-	"muzzleFlashSpec":{"length":40.0,   # only used if animationType = MUZZLE_FLASH
-					   "spread":15.0,
-					   "particleSizeMin":20.0,
-					   "particleSizeRange":10.0,
-					   "particleDuration":0.12,
-					   "particleCount":12,
-					   "particleColor":[255,250,245,255]},
-	"projectileSpecId":"sword_shot",  # projectile that will be fired
-	"fireSoundTwo":"kinetic_blaster_fire",
+  "id": "czi_sword",
+  "specClass": "projectile",
+  "projectileSpecId": "sword_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/palasz_t.png",
+  "turretGlowSprite": "graphics/weapons/palasz_t_glow.png",
+  "hardpointSprite": "graphics/weapons/palasz_h.png",
+  "hardpointGlowSprite": "graphics/weapons/palasz_h_glow.png",
+  "glowColor": [
+    165,
+    155,
+    150,
+    255
+  ],
+  "turretOffsets": [
+    19,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    33,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 15,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      250,
+      245,
+      255
+    ]
+  },
+  "fireSoundTwo": "kinetic_blaster_fire"
 }

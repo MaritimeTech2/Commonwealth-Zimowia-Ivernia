@@ -28,7 +28,7 @@ public class Composite_ablative_armor extends BaseHullMod {
     public String getDescriptionParam(int index, HullSize hullSize) {
         if (index == 0) return "" + (int) Math.round(ARMOR_MULT * 100f) + "%";
         //if (index == 1) return "" + (int) Math.round(EMP_REDUCTION * 100f) + "%";
-        if (index == 1) return "" + (int) Math.round(CAMPAIGN_REPAIR * 100f) + "%";
+        if (index == 1) return "" + (int) Math.round(CAMPAIGN_REPAIR) + "%";
         return null;
     }
 

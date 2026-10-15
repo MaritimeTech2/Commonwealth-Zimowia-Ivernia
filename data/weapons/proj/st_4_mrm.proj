@@ -46,7 +46,7 @@
 					"canSplitEarly":false,
 					"splitSound":"pilum_lrm_split",
 					"numShots":1,
-					"damage":800,
+					"damage":400,
 					"emp":500, # needs to match highlight in weapon_data.csv
 					"damageType":FRAGMENTATION,
 					"hitpoints":150,

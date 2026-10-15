@@ -37,7 +37,7 @@
     {
       "id": "WS0001",
       "size": "SMALL",
-      "type": "HYBRID",
+      "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 240,
       "angle": -90,
@@ -66,7 +66,7 @@
       "size": "MEDIUM",
       "type": "SYNERGY",
       "mount": "HARDPOINT",
-      "arc": 90,
+      "arc": 30,
       "angle": 90,
       "locations": [29, 11]
     },
@@ -76,7 +76,7 @@
       "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 240,
-      "angle": 130,
+      "angle": -60,
       "locations": [3.5, 2]
     },
     {

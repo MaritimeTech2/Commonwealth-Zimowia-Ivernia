@@ -3,7 +3,7 @@
   "hullId": "czi_rusalka",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 4,
+  "fluxCapacitors": 3,
   "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
@@ -20,16 +20,14 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "czi_emp",
-        "WS0002": "czi_emp"
+        "WS0001": "czi_buckle",
+        "WS0002": "czi_buckle"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
-      "weapons": {
-        "WS0004": "czi_buckle"
-      }
+      "weapons": {}
     },
     {
       "autofire": false,

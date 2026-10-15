@@ -2,7 +2,7 @@
 	"id":"ui_emp_missile",
 	"specClass":"missile",	
 	"missileType":"MIRV",
-	"sprite":"graphics/missiles/missile_sabot.png",
+	"sprite":"graphics/missiles/missile_emp.png",
 	"size":[9,18],	
 	"center":[4.5,9],
 	"collisionRadius":16,
@@ -42,9 +42,9 @@
 					"canSplitEarly":true,
 					"splitSound":"sabot_srm_split",
 					"numShots":5,
-					"damage":50,
-					"emp":450, # needs to match highlight in weapon_data.csv
-					"damageType":ENERGY,
+					"damage":200,
+					"emp":200, # needs to match highlight in weapon_data.csv
+					"damageType":FRAGMENTATION,
 					"hitpoints":500,
 					"evenSpread":true,
 					"arc":20,

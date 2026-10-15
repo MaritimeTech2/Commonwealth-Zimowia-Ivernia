@@ -19,19 +19,19 @@
     {
       "id": "WS0001",
       "size": "SMALL",
-      "type": "SYNERGY",
+      "type": "COMPOSITE",
       "mount": "HARDPOINT",
-      "arc": 60,
-      "angle": 0,
+      "arc": 270,
+      "angle": 70,
       "locations": [5, 26.5]
     },
     {
       "id": "WS0002",
       "size": "SMALL",
-      "type": "SYNERGY",
-      "mount": "HARDPOINT",
-      "arc": 60,
-      "angle": -0,
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -70,
       "locations": [5, -26.5]
     },
     {
@@ -42,15 +42,6 @@
       "arc": 210,
       "angle": 0,
       "locations": [-50.5, 1]
-    },
-    {
-      "id": "WS0004",
-      "size": "MEDIUM",
-      "type": "BALLISTIC",
-      "mount": "TURRET",
-      "arc": 210,
-      "angle": 180,
-      "locations": [-71, 1]
     },
     {
       "id": "LB 1",

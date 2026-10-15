@@ -5,10 +5,10 @@
   "type": "ENERGY",
   "size": "LARGE",
   "displayArcRadius": 1200,
-  "turretSprite": "graphics/weapons/gauss_cannon_turret_base.png",
-  "turretGlowSprite": "graphics/weapons/gauss_cannon_turret_glow.png",
-  "hardpointSprite": "graphics/weapons/gauss_cannon_hardpoint_base.png",
-  "hardpointGlowSprite": "graphics/weapons/gauss_cannon_hardpoint_glow.png",
+  "turretSprite": "graphics/weapons/sw_phalanx1 (1).png",
+  "turretGlowSprite": "graphics/weapons/sw_phalanx1_glow.png",
+  "hardpointSprite": "graphics/weapons/sw_phalanx1 (1).png",
+  "hardpointGlowSprite": "graphics/weapons/sw_phalanx1_glow.png",
   "glowColor": [
     100,
     100,
@@ -16,14 +16,14 @@
     255
   ],
   "turretOffsets": [
-    25,
+    33,
     0
   ],
   "turretAngleOffsets": [
     0
   ],
   "hardpointOffsets": [
-    35,
+    52,
     0
   ],
   "hardpointAngleOffsets": [

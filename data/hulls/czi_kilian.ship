@@ -13,7 +13,8 @@
   "viewOffset": 0,
   "builtInMods": [
     "czi_autoforge_repair",
-    "czi_composite_armor"
+    "czi_composite_armor",
+    "fluxshunt"
   ],
   "weaponSlots": [
     {
@@ -23,7 +24,7 @@
       "mount": "HARDPOINT",
       "arc": 60,
       "angle": 0,
-      "locations": [9, 13]
+      "locations": [0, 17]
     },
     {
       "id": "WS0002",
@@ -32,25 +33,25 @@
       "mount": "HARDPOINT",
       "arc": 60,
       "angle": 0,
-      "locations": [9, -7]
+      "locations": [0.5, -13]
     },
     {
       "id": "WS0003",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 270,
-      "angle": 82,
-      "locations": [9.5, 39.5]
+      "arc": 290,
+      "angle": 83,
+      "locations": [10.5, 44]
     },
     {
       "id": "WS0004",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 270,
+      "arc": 290,
       "angle": -83,
-      "locations": [9.5, -28.5]
+      "locations": [10.5, -38]
     },
     {
       "id": "LB 1",

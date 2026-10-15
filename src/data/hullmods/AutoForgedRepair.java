@@ -29,12 +29,12 @@ public class AutoForgedRepair extends BaseHullMod {
     }
 
     public String getDescriptionParam(int index, HullSize hullSize) {
-        if (index == 0) return "" + ((Float) mag.get(HullSize.FRIGATE)).intValue() + "%";
-        if (index == 1) return "" + ((Float) mag.get(HullSize.DESTROYER)).intValue() + "%";
-        if (index == 2) return "" + ((Float) mag.get(HullSize.CRUISER)).intValue() + "%";
-        if (index == 3) return "" + ((Float) mag.get(HullSize.CAPITAL_SHIP)).intValue() + "%";
-        if (index == 4) return "" + (int) Math.round(COMBAT_REPAIR_ENG * 100f) + "%";
-        if (index == 5) return "" + (int) Math.round(CASUALTY_REDUCTION * 100f) + "%";
+        if (index == 0) return "" + ((Float) mag.get(HullSize.FRIGATE)).intValue();
+        if (index == 1) return "" + ((Float) mag.get(HullSize.DESTROYER)).intValue();
+        if (index == 2) return "" + ((Float) mag.get(HullSize.CRUISER)).intValue();
+        if (index == 3) return "" + ((Float) mag.get(HullSize.CAPITAL_SHIP)).intValue();
+        if (index == 4) return "" + (int) Math.round(COMBAT_REPAIR_ENG) + "%";
+        if (index == 5) return "" + (int) Math.round(CASUALTY_REDUCTION) + "%";
         return null;
     }
 
