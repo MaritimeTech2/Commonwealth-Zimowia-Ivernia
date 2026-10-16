@@ -2,7 +2,7 @@
   "variantId": "czi_kaukas_standard",
   "hullId": "czi_kaukas",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 20,
   "fluxVents": 8,
   "quality": 1,

@@ -2,7 +2,7 @@
   "variantId": "czi_rusalka_standard",
   "hullId": "czi_rusalka",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 3,
   "fluxVents": 0,
   "quality": 1,

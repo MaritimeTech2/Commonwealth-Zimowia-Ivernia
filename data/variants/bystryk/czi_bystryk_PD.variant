@@ -2,7 +2,7 @@
   "variantId": "czi_bystryk_PD",
   "hullId": "czi_bystryk",
   "displayName": "Point Defense",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 10,
   "fluxVents": 6,
   "quality": 1,

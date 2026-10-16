@@ -2,11 +2,40 @@
 	"id":"czi_emp",
 	"type":"EMP",
 	"aiType":"EMP",
+
+	"statsScript":"data.scripts.shipsystems.ShockCore",
+
+    "jitterUnderColor":[255,165,90,155],
+    "jitterUnderCopies":25,
+    "jitterUnderMinRange":0,
+    "jitterUnderRange":7,
+    "jitterUnderRangeRadiusFraction":0,
+
+    "jitterColor":[255,165,90,55],
+    "jitterCopies":2,
+    "jitterMinRange":0,
+    "jitterRange":5,
+    "jitterRangeRadiusFraction":0,
+
+    #"weaponGlowColor":[255,165,90,0],
+    #"weaponTypes":[ENERGY, BALLISTIC, MISSILE],
+
+    #"engineGlowColor":[255,90,255,255],
+
+    "soundFilterType":"LOWPASS",
+    "soundFilterGain":0.75,
+    "soundFilterGainHF":0.25,
+
+    "fadeActivationSoundOnChargedown":true,
+    #"useSound":"system_damper",
+    #"loopSound":"system_damper_loop",
+    "deactivateSound":"system_damper_off",
+    #"outOfUsesSound":"gun_out_of_ammo",
+
+	"range":700,
 	
-	"range":600,
-	
-	"empDamage":2000,
-	"damage":1000,
+	"empDamage":600,
+	"damage":200,
 	"damageType":ENERGY,
 	
 	#"effectColor1":[150,150,255,200],
@@ -19,10 +48,16 @@
 	"loopSound":"system_emp_emitter_loop",
 	"impactSound":"system_emp_emitter_impact",
 	"outOfUsesSound":"gun_out_of_ammo",
-	
+
+	# see: EmpArcParams.loadFromSystemJson() for complete list of supported values
+    #"emp_segmentLengthMult":10000f, # makes it a line
+    "emp_segmentLengthMult":3f,
+    "emp_zigZagReductionFactor":0.25f,
+    #"emp_fadedOutAtStart":true,
+
 	"aiHints":{
 		"threatRange":800,
-		"threatAmount":25,
+		"threatAmount":4,
 		"threatAngle":0,
 		"threatArc":360,
 	}

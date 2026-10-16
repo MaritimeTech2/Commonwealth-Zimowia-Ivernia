@@ -2,7 +2,7 @@
   "variantId": "czi_hyacinth_standard",
   "hullId": "czi_hyacinth",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 20,
   "fluxVents": 16,
   "quality": 1,

@@ -54,7 +54,7 @@
     },
     {
       "id": "WS0005",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "HYBRID",
       "mount": "TURRET",
       "arc": 160,

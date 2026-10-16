@@ -2,7 +2,7 @@
   "variantId": "czi_brychan_standard",
   "hullId": "czi_brychan",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 20,
   "fluxVents": 6,
   "quality": 1,

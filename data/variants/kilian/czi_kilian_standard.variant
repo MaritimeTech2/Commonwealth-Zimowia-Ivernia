@@ -2,7 +2,7 @@
   "variantId": "czi_kilian_standard",
   "hullId": "czi_kilian",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 14,
   "fluxVents": 0,
   "quality": 1,

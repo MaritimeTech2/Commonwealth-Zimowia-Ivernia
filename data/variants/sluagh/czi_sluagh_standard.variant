@@ -2,7 +2,7 @@
   "variantId": "czi_sluagh_standard",
   "hullId": "czi_sluagh",
   "displayName": "Standard",
-  "goalVariant": false,
+  "goalVariant": true,
   "fluxCapacitors": 12,
   "fluxVents": 5,
   "quality": 1,
