@@ -39,7 +39,7 @@ public class IcyllanEngineering extends BaseHullMod {
         BLOCKED_HULLMODS.add("roider_fighterClamps"); // not possible, sorry
         BLOCKED_HULLMODS.add("targetingunit"); // No general range boost for you!
         BLOCKED_HULLMODS.add("dedicated_targeting_core"); // No slightly crappier range boost for you, either!
-        BLOCKED_HULLMODS.add("reinforced_hull");  //nope, sorry cant fit inside these ships
+        //BLOCKED_HULLMODS.add("reinforced_hull");  //nope, sorry cant fit inside these ships
     }
 
     @Override

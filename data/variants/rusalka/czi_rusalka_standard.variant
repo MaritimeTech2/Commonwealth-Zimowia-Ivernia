@@ -1,0 +1,44 @@
+{
+  "variantId": "czi_rusalka_standard",
+  "hullId": "czi_rusalka",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "recovery_shuttles",
+    "eccm",
+    "hardenedshieldemitter",
+    "auxiliarythrusters",
+    "blast_doors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "czi_buckle",
+        "WS0002": "czi_buckle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "czi_miss"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "trident_wing"
+  ]
+}

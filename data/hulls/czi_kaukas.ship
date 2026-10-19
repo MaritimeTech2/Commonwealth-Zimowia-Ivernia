@@ -1,0 +1,241 @@
+{
+  "hullName": "Kaukas",
+  "hullId": "czi_kaukas",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/czi_kaukas.png",
+  "style": "CZI_BASE",
+  "height": 300,
+  "width": 300,
+  "center": [150, 150],
+  "collisionRadius": 208.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 178.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "czi_autoforge_repair",
+    "czi_composite_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [40, 41]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [52.5, 1]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [38, -37.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [34.5, -81.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -46.5,
+      "locations": [27, -110]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -131.5,
+      "locations": [-11.5, -26]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 136,
+      "locations": [-11.5, 30.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [33.5, 81.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 42,
+      "locations": [28, 111]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-3.5, 50.5]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-6.5, -46.5]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [12.5, 0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-72.5, 1],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-56, 15.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-56, -12.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-37.5, 50],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-37, -48.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-38.5, -19.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-39, 21.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    }
+  ],
+  "bounds": [
+    -72.5, 4,
+    -65.5, 9,
+    -65.5, 12.5,
+    -57.5, 13.5,
+    -52.5, 16.5,
+    -41.5, 17,
+    -36.5, 21.5,
+    -43, 34.5,
+    -37.5, 50,
+    -50, 71,
+    -42.5, 83.5,
+    -41.5, 98.5,
+    -38.5, 104,
+    -19, 70.5,
+    8.5, 56,
+    15, 85,
+    10.5, 113,
+    12.5, 132.5,
+    18.5, 143.5,
+    29, 143,
+    63, 52,
+    62.5, 39.5,
+    75, 10.5,
+    75.5, -6,
+    63, -40,
+    63.5, -48,
+    29.5, -143.5,
+    13.5, -140.5,
+    10.5, -119.5,
+    15, -84,
+    9.5, -55,
+    -17.5, -68,
+    -36.5, -103.5,
+    -41.5, -98.5,
+    -42, -82,
+    -50.5, -68.5,
+    -42, -50.5,
+    -36.5, -49.5,
+    -43, -32.5,
+    -38, -20.5,
+    -40, -15,
+    -54.5, -13,
+    -57.5, -11,
+    -65, -10.5,
+    -66, -7.5,
+    -72, -1.5
+  ]
+}

@@ -1,14 +1,38 @@
 {
 	"designTypeColors":{
-		"Icyllan":[27,35,74,255],
+		"Commonwealth":[27,35,74,255]
 	},
+
+	# where rule commands called from rules.csv can be implemented.'
+ 	# rules from multiple packages CAN NOT share the same name	
+ 	"ruleCommandPackages":[
+ 		"com.fs.starfarer.api.impl.campaign.rulecmd;",
+ 	],		
   
-    "graphics":{	
-        
+    "graphics":{
 		"blueprint_packages":{
-			"ui_base_package":"graphics/icons/cargo/uibase_bp_package.png",
+			"czi_base_package":"graphics/icons/cargo/uibase_bp_package.png",
 			},
+		"misc":{
+			"ui_rings_lava0":"graphics/planets/ui_rings_lava0.png",
+			"ui_rings_special0":"graphics/planets/ui_rings_special0.png",
+		},
+		"planets":{
+			"ui_frozen_water_world":"graphics/planets/ui_frozen_water_world.jpg",
+			"ui_iskala":"graphics/planets/ui_iskala.jpg"
+		},
+		"hab_glows": {
+			"ui_clouds_storm":"graphics/planets/ui_clouds_storm.png",
+		},
+		"intel":{
+			"ui_pieklo_mining": "graphics/icons/intel/faction_conflict.png",
+		},
+		"czi_person":{
+		"czi_anzhelika":"graphics/portraits/characters/czi_anzhelika.png",
+		"czi_kazimir":"graphics/portraits/characters/czi_kazimir.png",
+		"czi_zygfryd":"graphics/portraits/characters/czi_zygfryd.png",
+		},
+
 		
-    },
-		
+	}
 }

@@ -1,0 +1,173 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+
+		"czi_bystryk_PD":7,
+		
+	},
+	"combatSmall":{
+	"czi_bystryk_PD":6,
+	"czi_brychan_standard":5,
+	"czi_kilian_standard":2,	
+
+	},
+	"combatMedium":{
+
+	"czi_kaukas_standard":3,
+	"czi_kazimierz_stanadard":5,
+	"czi_sluagh_standard":1,
+
+	},
+	"combatLarge":{
+
+	"czi_hyacinth_standard":3,
+	
+
+	},
+	"combatCapital":{
+
+	"czi_jadwiga_standard":2,
+
+	},
+
+
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+
+	},
+	"combatFreighterMedium":{
+
+		
+
+	},
+	"combatFreighterLarge":{
+
+	},
+
+	"civilianRandom":{
+
+	},
+
+	# carriers
+	"carrierSmall":{
+
+	"czi_rusalka_standard":2,
+
+
+	},
+	"carrierMedium":{
+	"czi_oillipheist_standard":3,
+	
+
+	},
+	"carrierLarge":{
+
+	
+
+
+	},
+
+	# phase ships
+	"phaseSmall":{
+	
+
+	},
+	"phaseMedium":{
+
+	},
+	"phaseLarge":{
+
+	},
+	"phaseCapital":{
+	},
+
+	# freighters and such
+	"freighterSmall":{
+
+	
+
+	},
+	"freighterMedium":{
+
+	"czi_pelczar_standard":3,
+
+	},
+	"freighterLarge":{
+	"czi_cailleach_standard":3
+
+	},
+
+	"tankerSmall":{
+
+	
+
+	},
+	"tankerMedium":{
+
+	"czi_pelczar_standard":3,
+
+
+	},
+	"tankerLarge":{
+	"czi_cailleach_standard":3
+
+	},
+
+	"personnelSmall":{
+
+	},
+	"personnelMedium":{
+
+	},
+	"personnelLarge":{
+
+	},
+
+	"linerSmall":{
+
+	},
+	"linerMedium":{
+
+	},
+	"linerLarge":{
+
+	},
+
+	# utility ships
+	"tug":{
+
+	},
+	"crig":{
+
+	},
+	"utility":{
+
+	},
+
+	"orbitalStationLowTech":{
+
+	},
+
+	"battlestationLowTech":{
+
+	},
+
+
+
+
+	# Old/unused below this line
+	"fastAttack":{
+
+	},
+
+	"escortSmall":{
+
+
+	},
+	"escortMedium":{
+
+
+	},
+
+}

@@ -1,0 +1,47 @@
+{
+  "id": "czi_shield",
+  "specClass": "projectile",
+  "projectileSpecId": "dualflak_shot",
+  "type": "HYBRID",
+  "size": "MEDIUM",
+  "displayArcRadius": 400,
+  "turretSprite": "graphics/weapons/seven_kv2_turret_base.png",
+  "turretGunSprite": "graphics/weapons/seven_kv2_turret_gun.png",
+  "hardpointSprite": "graphics/weapons/seven_kv2_hardpoint_base.png",
+  "hardpointGunSprite": "graphics/weapons/seven_kv2_hardpoint_gun.png",
+  "visualRecoil": 8,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    19.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    30,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 25,
+    "particleSizeMin": 8,
+    "particleSizeRange": 8,
+    "particleDuration": 0.12,
+    "particleCount": 46,
+    "particleColor": [
+      255,
+      155,
+      75,
+      245
+    ]
+  },
+  "fireSoundTwo": "flak_fire"
+}

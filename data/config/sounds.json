@@ -1,0 +1,34 @@
+{
+    "music":{
+	    "czi_starsystem_01":[
+			{
+				"source":"sounds/music",
+				"volume":0.4,
+				"files":[
+					"yllaby (feat. TOFIE)_320k.ogg"
+				],
+				"randomStart":false
+			}
+
+        ],
+        "music_combat":[
+            # Eon
+		{"file":"Eos.ogg","source":"sounds/music","volume":0.40},
+		{"file":"Eon - Boss Level.ogg","source":"sounds/music","volume":0.30},
+		{"file":"Eon - Luz Eterna.ogg","source":"sounds/music","volume":0.30},
+		{"file":"Eon - Rebellion.ogg","source":"sounds/music","volume":0.30},
+		{"file":"Eon - Trouble.ogg","source":"sounds/music","volume":0.30},
+		            
+        ],
+    },
+
+    
+
+    # HEAVY MAULER
+   # "ap_heavy_mauler_fire":
+   # [
+   #     
+   # ],
+
+   
+}

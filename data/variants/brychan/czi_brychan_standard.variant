@@ -1,0 +1,31 @@
+{
+  "variantId": "czi_brychan_standard",
+  "hullId": "czi_brychan",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 6,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "czi_szabla",
+        "WS0002": "czi_buckle",
+        "WS0003": "czi_buckle",
+        "WS0004": "czi_miss",
+        "WS0005": "heavymauler",
+        "WS0006": "czi_szabla",
+        "WS0007": "czi_sword"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

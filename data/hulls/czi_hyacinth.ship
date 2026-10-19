@@ -1,0 +1,242 @@
+{
+  "hullName": "Hyacinth",
+  "hullId": "czi_hyacinth",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/czi_hyacinth.png",
+  "style": "CZI_BASE",
+  "height": 300,
+  "width": 300,
+  "center": [147.5, 132],
+  "collisionRadius": 182,
+  "shieldCenter": [-0.5, -0.5],
+  "shieldRadius": 164.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ecm",
+    "czi_autoforge_repair",
+    "czi_composite_armor"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [0, -3]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-27.5, 23.5]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-28, -27]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [27.5, 53.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [29, -58.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [8.5, 82]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [7, -86.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": 0,
+      "locations": [59.5, -21]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 30,
+      "angle": -0,
+      "locations": [58.5, 15]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 27,
+      "locations": [27, 101]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -27,
+      "locations": [26.5, -107]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 145.5,
+      "locations": [-24.5, 57]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -139,
+      "locations": [-22.5, -52]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-46, 19],
+      "length": 158.800491,
+      "width": 22.83872,
+      "angle": 180,
+      "contrailSize": 22.83872,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-46.5, -24.5],
+      "length": 158.800491,
+      "width": 22.83872,
+      "angle": 180,
+      "contrailSize": 22.83872,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-44, 43],
+      "length": 111.102539,
+      "width": 15.129512,
+      "angle": 150,
+      "contrailSize": 15.129512,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-43, -46],
+      "length": 111.102539,
+      "width": 15.129512,
+      "angle": -150,
+      "contrailSize": 15.129512,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-31.5, 67],
+      "length": 96.120544,
+      "width": 14.012993,
+      "angle": 149,
+      "contrailSize": 14.012993,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-33.5, -71],
+      "length": 96.120544,
+      "width": 14.012993,
+      "angle": -149,
+      "contrailSize": 14.012993,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-22.5, 91],
+      "length": 66.117844,
+      "width": 16.208721,
+      "angle": 149,
+      "contrailSize": 16.208721,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    },
+    {
+      "location": [-23.5, -96],
+      "length": 66.117844,
+      "width": 16.208721,
+      "angle": -149,
+      "contrailSize": 16.208721,
+      "style": "CUSTOM",
+      "styleId": "CZI_STANDARD"
+    }
+  ],
+  "bounds": [
+    -38, -10,
+    -54.5, -41.5,
+    -42.5, -46,
+    -45.5, -68,
+    -32, -70.5,
+    -33.5, -93,
+    -22.5, -95,
+    -26.5, -115.5,
+    -8.5, -141.5,
+    39.5, -118,
+    58, -41,
+    77.5, -29,
+    76.5, -17,
+    86, -12,
+    86.5, 8,
+    77, 12,
+    76.5, 25.5,
+    58, 35.5,
+    39.5, 113.5,
+    -8.5, 137.5,
+    -26.5, 111.5,
+    -23, 90,
+    -34, 89,
+    -32.5, 66.5,
+    -45.5, 65,
+    -42.5, 41.5,
+    -55, 38,
+    -38.5, 4.5
+  ]
+}

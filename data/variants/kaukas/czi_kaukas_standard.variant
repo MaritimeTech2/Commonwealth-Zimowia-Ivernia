@@ -1,0 +1,34 @@
+{
+  "variantId": "czi_kaukas_standard",
+  "hullId": "czi_kaukas",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 8,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "targetingunit",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "czi_sword",
+        "WS0002": "czi_fist",
+        "WS0003": "czi_sword",
+        "WS0004": "czi_emp",
+        "WS0005": "czi_sciath",
+        "WS0006": "czi_buckle",
+        "WS0007": "czi_buckle",
+        "WS0008": "czi_emp",
+        "WS0009": "czi_sciath"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,82 +1,82 @@
 name,gender,usage,category
-Gralyna ,f,f,ui_polish
-Kaja ,f,f,ui_polish
-Lilia ,f,f,ui_polish
-Anastazja ,f,f,ui_polish
-Sabina ,f,f,ui_polish
-Weronika ,f,f,ui_polish
-Aurelia ,f,f,ui_polish
-Pola ,f,f,ui_polish
-Ilona ,f,f,ui_polish
-Arleta ,f,f,ui_polish
-Józefina ,f,f,ui_polish
-Wieslawa ,f,f,ui_polish
-Olga ,f,f,ui_polish
-Zuzanna ,f,f,ui_polish
-Alicja ,f,f,ui_polish
-Jadwiga ,f,f,ui_polish
-Maria ,f,f,ui_polish
-Lucyna ,f,f,ui_polish
-Monika ,f,f,ui_polish
-Celina ,f,f,ui_polish
-Zdzislaw ,m,f,ui_polish
-Bonifacy ,m,f,ui_polish
-Tytus ,m,f,ui_polish
-Stefan ,m,f,ui_polish
-Wiktor ,m,f,ui_polish
-Patryk ,m,f,ui_polish
-Mieszko ,m,f,ui_polish
-Wlodzislaw ,m,f,ui_polish
-Bartlomiej ,m,f,ui_polish
-Sebastian ,m,f,ui_polish
-Emil ,m,f,ui_polish
-Przemyslaw ,m,f,ui_polish
-Kornel ,m,f,ui_polish
-Michal,m,f,ui_polish
-Przemek ,m,f,ui_polish
-Aleksy ,m,f,ui_polish
-Joachim ,m,f,ui_polish
-Bernard ,m,f,ui_polish
-Bronislaw ,m,f,ui_polish
+Gralyna ,f,f,czi_polish
+Kaja ,f,f,czi_polish
+Lilia ,f,f,czi_polish
+Anastazja ,f,f,czi_polish
+Sabina ,f,f,czi_polish
+Weronika ,f,f,czi_polish
+Aurelia ,f,f,czi_polish
+Pola ,f,f,czi_polish
+Ilona ,f,f,czi_polish
+Arleta ,f,f,czi_polish
+Jozefina ,f,f,czi_polish
+Wieslawa ,f,f,czi_polish
+Olga ,f,f,czi_polish
+Zuzanna ,f,f,czi_polish
+Alicja ,f,f,czi_polish
+Jadwiga ,f,f,czi_polish
+Maria ,f,f,czi_polish
+Lucyna ,f,f,czi_polish
+Monika ,f,f,czi_polish
+Celina ,f,f,czi_polish
+Zdzislaw ,m,f,czi_polish
+Bonifacy ,m,f,czi_polish
+Tytus ,m,f,czi_polish
+Stefan ,m,f,czi_polish
+Wiktor ,m,f,czi_polish
+Patryk ,m,f,czi_polish
+Mieszko ,m,f,czi_polish
+Wlodzislaw ,m,f,czi_polish
+Bartlomiej ,m,f,czi_polish
+Sebastian ,m,f,czi_polish
+Emil ,m,f,czi_polish
+Przemyslaw ,m,f,czi_polish
+Kornel ,m,f,czi_polish
+Michal,m,f,czi_polish
+Przemek ,m,f,czi_polish
+Aleksy ,m,f,czi_polish
+Joachim ,m,f,czi_polish
+Bernard ,m,f,czi_polish
+Bronislaw ,m,f,czi_polish
 ,,,
 ,,,
-Janeczek,f,l,ui_polish
-Kryger,f,l,ui_polish
-Gliniecka,f,l,ui_polish
-Syrek,f,l,ui_polish
-Bosko,f,l,ui_polish
-Moskwa,f,l,ui_polish
-Ogrodnik,f,l,ui_polish
-Sokól,f,l,ui_polish
-Sobieska,f,l,ui_polish
-Kret,f,l,ui_polish
-Wilelska,f,l,ui_polish
-Królik,f,l,ui_polish
-Klpska,f,l,ui_polish
-Skorupska,f,l,ui_polish
-Piszczek,f,l,ui_polish
-Milewska,f,l,ui_polish
-Walas,f,l,ui_polish
-Kornacka,f,l,ui_polish
-Gawrych,f,l,ui_polish
-Leszczylska,f,l,ui_polish
-Pasilska,f,l,ui_polish
-Rutka,m,l,ui_polish
-lebrowski,m,l,ui_polish
-Hodes,m,l,ui_polish
-Olek,m,l,ui_polish
-Warta,m,l,ui_polish
-Walkowiak,m,l,ui_polish
-Polniak,m,l,ui_polish
-Tafelski,m,l,ui_polish
-Derda,m,l,ui_polish
-Mileski,m,l,ui_polish
-Matula,m,l,ui_polish
-Wach,m,l,ui_polish
-Wilniowski,m,l,ui_polish
-Szymborski,m,l,ui_polish
-lmietana,m,l,ui_polish
-Kapel,m,l,ui_polish
-Jablolski,m,l,ui_polish
-Banaszek,m,l,ui_polish
-Jedynak,m,l,ui_polish
+Janeczek,f,l,czi_polish
+Kryger,f,l,czi_polish
+Gliniecka,f,l,czi_polish
+Syrek,f,l,czi_polish
+Bosko,f,l,czi_polish
+Moskwa,f,l,czi_polish
+Ogrodnik,f,l,czi_polish
+Sokol,f,l,czi_polish
+Sobieska,f,l,czi_polish
+Kret,f,l,czi_polish
+Wilelska,f,l,czi_polish
+Krolik,f,l,czi_polish
+Klpska,f,l,czi_polish
+Skorupska,f,l,czi_polish
+Piszczek,f,l,czi_polish
+Milewska,f,l,czi_polish
+Walas,f,l,czi_polish
+Kornacka,f,l,czi_polish
+Gawrych,f,l,czi_polish
+Leszczylska,f,l,czi_polish
+Pasilska,f,l,czi_polish
+Rutka,m,l,czi_polish
+lebrowski,m,l,czi_polish
+Hodes,m,l,czi_polish
+Olek,m,l,czi_polish
+Warta,m,l,czi_polish
+Walkowiak,m,l,czi_polish
+Polniak,m,l,czi_polish
+Tafelski,m,l,czi_polish
+Derda,m,l,czi_polish
+Mileski,m,l,czi_polish
+Matula,m,l,czi_polish
+Wach,m,l,czi_polish
+Wilniowski,m,l,czi_polish
+Szymborski,m,l,czi_polish
+lmietana,m,l,czi_polish
+Kapel,m,l,czi_polish
+Jablolski,m,l,czi_polish
+Banaszek,m,l,czi_polish
+Jedynak,m,l,czi_polish

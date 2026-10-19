@@ -1,2 +1,34 @@
 id,trigger,conditions,script,text,options,notes
+#marketOpen,OpenInteractionDialog,$hasMarket,"ShowDefaultVisual
+PrintDescription 3
+FireBest MarketPostOpen",Your $shipOrFleet approaches $entityName.,,
 ,,,,,,
+#Blacksite,,,,,,
+ui_blacksiteGateNoFrequency,OpenInteractionDialog,"$tag:gate
+$ui_blacksite_gate",ShowDefaultVisual,"Your $shipOrFleet approaches the mysterious gate.
+
+The gate does not appear to connect, or have ever connected, to the domain network.",100:defaultLeave:Leave,
+beaconOpenDialogDaedaleon,OpenInteractionDialog,"$tag:warning_beacon
+$ui_blacksite_warning_beacon","ShowDefaultVisual
+SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a looping message.
+
+""Enterance to this system is forbidden by Iskalan Naval Diktat 47. All tresspassers will be eliminated on sight.""",beaconLeave:Leave,
+,,,,,,
+#Go to Zygfryd,,,,,,
+kazimir_goto_zygfryd,PickGreeting,$Id == czi_kazimir score:1000,ShowPersonVisual,"You call into the office of the Cesarz, and are answered by a secretary, who tells you that the Cesarz is currently unavailable, however the Vice President of the Terraforming Burreu is looking for captains who have proven themselves to assist him.  ",100:cutCommLink:Cut the comm link,
+,,,,,,
+,,,,,,
+# RaiDz Gate Testing Corner,,,,,,
+ui_interact_iskalan_gate,OpenInteractionDialog,$tag:iskalan_gate score:1000,"FireAll PopulateIskalanGateOptions
+ShowDefaultVisual ",,,
+ui_iskalan_gate_leave_option,PopulateIskalanGateOptions,,,,100:defaultLeave:Leave,
+ui_iskalan_gate_choose_destination_option,PopulateIskalanGateOptions,"$gateScanned
+$global.canScanGates",RemoveOption uiScanIskalanGate,,1:uiOpenDestinationPicker:Travel through the gate,
+ui_iskalan_gate_choose_destination_option_without_janus,PopulateIskalanGateOptions,!$global.canScanGates,,,1:uiOpenDestinationPicker:Travel through the precalibrated gate,
+ui_iskalan_gate_scan_option,PopulateIskalanGateOptions,$global.canScanGates,,,1:uiScanIskalanGate:Scan the gate,
+ui_iskalan_gate_choose_destination_select,DialogOptionSelected,$option == uiOpenDestinationPicker,UI_GateCMD_raidz selectDestination,,,
+ui_iskalan_gate_scan_select,DialogOptionSelected,$option == uiScanIskalanGate,"$gateScanned = true
+$global.numGatesScanned++
+GateCMD notifyScanned
+ShowDefaultVisual
+FireAll PopulateIskalanGateOptions",,,
