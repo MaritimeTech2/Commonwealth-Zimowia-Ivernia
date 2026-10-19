@@ -3,8 +3,8 @@
   "hullId": "czi_hyacinth",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 20,
-  "fluxVents": 16,
+  "fluxCapacitors": 30,
+  "fluxVents": 6,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -20,15 +20,15 @@
       "weapons": {
         "WS0001": "czi_sword",
         "WS0002": "czi_sword",
-        "WS0003": "czi_fist",
-        "WS0004": "czi_fist",
+        "WS0003": "lrpdlaser",
+        "WS0004": "lrpdlaser",
         "WS0005": "czi_emp",
         "WS0006": "czi_emp",
-        "WS0007": "czi_sciath",
-        "WS0008": "czi_sciath",
-        "WS0009": "czi_spear",
-        "WS0010": "pdburst",
-        "WS0011": "pdburst"
+        "WS0007": "czi_szabla",
+        "WS0008": "czi_szabla",
+        "WS0009": "hil",
+        "WS0010": "czi_buckle",
+        "WS0011": "czi_buckle"
       }
     }
   ],

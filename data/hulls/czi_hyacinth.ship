@@ -20,7 +20,7 @@
     {
       "id": "WS0009",
       "size": "LARGE",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 120,
       "angle": 0,
@@ -48,8 +48,8 @@
       "id": "WS0001",
       "size": "MEDIUM",
       "type": "BALLISTIC",
-      "mount": "HARDPOINT",
-      "arc": 60,
+      "mount": "TURRET",
+      "arc": 120,
       "angle": 0,
       "locations": [27.5, 53.5]
     },
@@ -57,14 +57,14 @@
       "id": "WS0002",
       "size": "MEDIUM",
       "type": "BALLISTIC",
-      "mount": "HARDPOINT",
-      "arc": 60,
+      "mount": "TURRET",
+      "arc": 120,
       "angle": 0,
       "locations": [29, -58.5]
     },
     {
       "id": "WS0003",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
       "arc": 210,
@@ -73,7 +73,7 @@
     },
     {
       "id": "WS0004",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
       "arc": 210,
