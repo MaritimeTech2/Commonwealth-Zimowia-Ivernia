@@ -43,7 +43,7 @@
 			"industries":[
 				"population",
 				"refining",
-				["megaport","fullerene_spool"],
+				["megaport"],
 				"waystation",
 				"heavybatteries",
 				"battlestation_high",

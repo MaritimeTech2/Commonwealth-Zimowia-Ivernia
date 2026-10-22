@@ -4,17 +4,17 @@
 		{
 			"entities":["czi_atrimpas"],
 			"faction":"czi",
-			"size":6,
+			"size":5,
 			"startingConditions":[
 				"population_6",
 				"extreme_weather",
 				"dense_atmosphere",
+				"ruins_extensive",
 				"inimical_biosphere",
 				"volatiles_plentiful",
-				"organics_abundant",
 				"ore_sparse",
 				"rare_ore_sparse",
-				"farmland_poor"
+				"water_surface"
 			],
 			"industries":[
 				"population",
@@ -37,16 +37,16 @@
 				"inimical_biosphere",
 				"decivilized_subpop",
 				"ruins_extensive",
-				"organics_common",
+				"organics_abundant",
 				"farmland_poor",
 				"ore_moderate"
 			],
 			"industries":[
 				"population",
-				["megaport","fullerene_spool"],
+				["megaport"],
 				["lightindustry","biofactory_embryo"],
 				["farming","soil_nanites"],
-				"techmining",
+				"mining",
 				"highcommand",
 				"heavybatteries",
 				"battlestation"

@@ -4,24 +4,23 @@
   "displayName": "Point Defense",
   "goalVariant": true,
   "fluxCapacitors": 10,
-  "fluxVents": 6,
+  "fluxVents": 3,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "pointdefenseai"
+    "pointdefenseai",
+    "targetingunit"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "czi_sciath",
-        "WS0002": "czi_sciath",
+        "WS0001": "czi_emp",
+        "WS0002": "czi_emp",
         "WS0003": "czi_buckle",
         "WS0004": "czi_buckle",
-        "WS0005": "czi_szabla",
-        "WS0006": "czi_buckle",
-        "WS0007": "czi_buckle"
+        "WS0005": "czi_shield"
       }
     }
   ],

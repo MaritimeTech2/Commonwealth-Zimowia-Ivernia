@@ -37,7 +37,36 @@ public class CZISirin {
                 "star_white", // id in planets.json
                 750f, // radius (in pixels at default zoom)
                 250); // corona radius, from star edge
-        system.setLightColor(new Color(245, 225, 145)); // light color in entire system, affects all entities
+        system.setLightColor(new Color(225, 225, 185)); // light color in entire system, affects all entities
+
+        PlanetAPI sirin3 = system.addPlanet("czi_sirin3",
+                sirinstar,
+                "Sirin I",
+                "rocky_metallic",
+                240f,
+                110f,
+                2000f,
+                460f);
+        sirin3.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
+        sirin3.getMarket().addCondition(Conditions.ORE_SPARSE);
+        sirin3.getMarket().addCondition(Conditions.RARE_ORE_ABUNDANT);
+        sirin3.getMarket().addCondition(Conditions.VERY_HOT);
+
+        PlanetAPI sirin2 = system.addPlanet("czi_sirin2",
+                sirinstar,
+                "Sirin II",
+                "toxic",
+                360f * (float) Math.random(),
+                140f,
+                4500f,
+                340);
+        sirin2.getMarket().addCondition(Conditions.TECTONIC_ACTIVITY);
+        sirin2.getMarket().addCondition(Conditions.TOXIC_ATMOSPHERE);
+        sirin2.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
+        sirin2.getMarket().addCondition(Conditions.HOT);
+        sirin2.getMarket().addCondition(Conditions.ORE_RICH);
+        sirin2.getMarket().addCondition(Conditions.RARE_ORE_ABUNDANT);
+        sirin2.getMarket().addCondition(Conditions.VOLATILES_ABUNDANT);
 
         PlanetAPI sirina = system.addPlanet("czi_sirina",
                 sirinstar,
@@ -45,7 +74,7 @@ public class CZISirin {
                 "arid",
                 360f * (float) Math.random(),
                 160f,
-                2000f,
+                6000f,
                 320f);
         sirina.getMarket().addCondition(Conditions.THIN_ATMOSPHERE);
         sirina.getMarket().addCondition(Conditions.HOT);
@@ -56,43 +85,17 @@ public class CZISirin {
 
         PlanetAPI sirin1 = system.addPlanet("czi_sirin1",
                 sirinstar,
-                "Sirin I",
+                "Siren",
                 "terran-eccentric",
                 360f * (float) Math.random(),
                 140f,
-                4500f,
+                8000f,
                 320f);
         sirin1.getMarket().addCondition(Conditions.HABITABLE);
         sirin1.getMarket().addCondition(Conditions.ORE_SPARSE);
         sirin1.getMarket().addCondition(Conditions.ORGANICS_TRACE);
         sirin1.getMarket().addCondition(Conditions.FARMLAND_ADEQUATE);
 
-        PlanetAPI sirin2 = system.addPlanet("czi_sirin2",
-                sirinstar,
-                "Sirin II",
-                "toxic",
-                360f * (float) Math.random(),
-                140f,
-                6000f,
-                340);
-        sirin2.getMarket().addCondition(Conditions.TECTONIC_ACTIVITY);
-        sirin2.getMarket().addCondition(Conditions.TOXIC_ATMOSPHERE);
-        sirin2.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
-        sirin2.getMarket().addCondition(Conditions.ORE_RICH);
-        sirin2.getMarket().addCondition(Conditions.RARE_ORE_ABUNDANT);
-        sirin2.getMarket().addCondition(Conditions.VOLATILES_ABUNDANT);
-
-        PlanetAPI sirin3 = system.addPlanet("czi_sirin3",
-                sirinstar,
-                "Sirin III",
-                "rocky_metallic",
-                240f,
-                110f,
-                8000f,
-                460f);
-        sirin3.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
-        sirin3.getMarket().addCondition(Conditions.ORE_SPARSE);
-        sirin3.getMarket().addCondition(Conditions.RARE_ORE_ABUNDANT);
 
         PlanetAPI sirin4 = system.addPlanet("czi_sirin4",
                 sirinstar,
@@ -105,7 +108,7 @@ public class CZISirin {
         sirin4.getMarket().addCondition(Conditions.HIGH_GRAVITY);
         sirin4.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
         sirin4.getMarket().addCondition(Conditions.VOLATILES_DIFFUSE);
-        sirin4.getSpec().setPlanetColor(new Color(150, 194, 194, 255));
+        sirin4.getSpec().setPlanetColor(new Color(180, 144, 114, 255));
         sirin4.getSpec().setAtmosphereColor(new Color(116, 116, 33, 255));
         sirin4.getSpec().setAtmosphereThickness(0.4f);
         sirin4.getSpec().setCloudRotation(5f);
@@ -114,26 +117,26 @@ public class CZISirin {
 
         PlanetAPI sirin5 = system.addPlanet("czi_sirin5",
                 sirin4,
-                "Sirin IIIa",
+                "Sirin IVa",
                 "barren",
                 240f,
-                90f,
+                80f,
                 900f,
                 40f);
         sirin5.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
         sirin5.getMarket().addCondition(Conditions.LOW_GRAVITY);
-        sirin5.getMarket().addCondition(Conditions.ORE_ULTRARICH);
+        sirin5.getMarket().addCondition(Conditions.ORE_RICH);
         sirin5.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
 
         PlanetAPI sirin6 = system.addPlanet("czi_sirin6",
                 sirin4,
-                "Sirin IIIb",
+                "Sirin IVb",
                 "cryovolcanic",
                 200f,
                 70f,
                 1800f,
                 60f);
-        sirin6.getMarket().addCondition(Conditions.THIN_ATMOSPHERE);
+        sirin6.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
         sirin6.getMarket().addCondition(Conditions.COLD);
         sirin6.getMarket().addCondition(Conditions.LOW_GRAVITY);
         sirin6.getMarket().addCondition(Conditions.ORE_SPARSE);

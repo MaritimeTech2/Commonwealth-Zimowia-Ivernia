@@ -36,48 +36,48 @@ public class CZIPuca {
 
         // create the star and generate the hyperspace anchor for this system
         PlanetAPI pucastar = system.initStar("Puca", // unique id for this star
-                "star_white", // id in planets.json
+                "star_yellow", // id in planets.json
                 750f, // radius (in pixels at default zoom)
                 250); // corona radius, from star edge
-        system.setLightColor(new Color(245, 225, 145)); // light color in entire system, affects all entities
+        system.setLightColor(new Color(245, 215, 125)); // light color in entire system, affects all entities
 
         PlanetAPI puca1 = system.addPlanet("czi_puca1",
                 pucastar,
-                "Puca I",
+                "Puca II",
                 "desert",
                 360f * (float) Math.random(),
                 160f,
-                2000f,
+                4500f,
                 320f);
 
 
         PlanetAPI puca2 = system.addPlanet("czi_puca2",
                 pucastar,
-                "Puca II",
+                "Puca III",
                 "toxic",
                 360f * (float) Math.random(),
                 140f,
-                4500f,
+                6000f,
                 320f);
 
 
         PlanetAPI puca3 = system.addPlanet("czi_puca3",
                 pucastar,
-                "Puca III",
+                "Puca IV",
                 "jungle",
                 360f * (float) Math.random(),
                 140f,
-                6000f,
+                8000f,
                 340);
 
 
         PlanetAPI puca4 = system.addPlanet("czi_puca4",
                 pucastar,
-                "Puca IV",
-                "rocky_metallic",
+                "Puca I",
+                "lava_minor",
                 240f,
                 110f,
-                8000f,
+                2000f,
                 460f);
 
 
@@ -86,14 +86,14 @@ public class CZIPuca {
                 "Puca V",
                 "gas_giant",
                 210f,
-                370f,
+                410f,
                 12000f,
                 900f);
-        puca5.getSpec().setPlanetColor(new Color(150, 194, 194, 255));
+        puca5.getSpec().setPlanetColor(new Color(120, 194, 154, 255));
         puca5.getSpec().setAtmosphereColor(new Color(116, 116, 33, 255));
         puca5.getSpec().setAtmosphereThickness(0.4f);
         puca5.getSpec().setCloudRotation(5f);
-        puca5.getSpec().setCloudColor(new Color(129, 3, 13, 245));
+        puca5.getSpec().setCloudColor(new Color(129, 113, 13, 245));
         puca5.applySpecChanges();
 
         PlanetAPI pucaVa = system.addPlanet("czi_puca5a",
@@ -102,17 +102,17 @@ public class CZIPuca {
                 "barren",
                 240f,
                 90f,
-                900f,
+                1200f,
                 40f);
 
 
         PlanetAPI pucaVb = system.addPlanet("czi_puca5b",
                 puca5,
                 "Sirin Vb",
-                "cryovolcanic",
+                "frozen",
                 200f,
-                70f,
-                1800f,
+                90f,
+                2100f,
                 60f);
 
 
@@ -144,16 +144,16 @@ public class CZIPuca {
 
 
         SectorEntityToken nebula = system.addTerrain(Terrain.NEBULA, new BaseTiledTerrain.TileParams(
-                "   xx " +
+                    "   xx " +
                         "  xx x" +
                         " xxxx " +
                         "xxxxxx" +
                         "  xx  " +
                         "    x ",
                 6, 6, // size of the nebula grid, should match above string
-                "terrain", "nebula_amber", 4, 4, null));
+                "terrain", "nebula_amber", 5, 5, null));
         nebula.getLocation().set(puca2.getLocation().x + 1000f, puca2.getLocation().y);
-        nebula.setCircularOrbit(pucastar, 140f, 10000, 500);
+        nebula.setCircularOrbit(pucastar, 140f, 9000, 400);
 
 
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(
