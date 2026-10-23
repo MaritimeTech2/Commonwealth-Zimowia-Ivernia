@@ -1,46 +1,27 @@
-package com.fs.starfarer.api.impl.campaign.rulecmd;
+package data.rulecmd;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.listeners.ListenerUtil;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.impl.campaign.GateEntityPlugin;
-import com.fs.starfarer.api.impl.campaign.GateExplosionScript;
-import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import java.awt.Color;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
-import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.BaseCampaignEntityPickerListener;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
 import com.fs.starfarer.api.campaign.CargoAPI;
 import com.fs.starfarer.api.campaign.InteractionDialogAPI;
-import com.fs.starfarer.api.campaign.JumpPointAPI.JumpDestination;
-import com.fs.starfarer.api.campaign.LocationAPI;
 import com.fs.starfarer.api.campaign.OptionPanelAPI;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
-import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.TextPanelAPI;
-import com.fs.starfarer.api.campaign.listeners.ListenerUtil;
-import com.fs.starfarer.api.campaign.rules.MemoryAPI;
-import com.fs.starfarer.api.impl.campaign.GateEntityPlugin;
-import com.fs.starfarer.api.impl.campaign.GateExplosionScript;
-import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.impl.campaign.rulecmd.BaseCommandPlugin;
-import com.fs.starfarer.api.impl.campaign.rulecmd.missions.GateCMD;
-import com.fs.starfarer.api.ui.TooltipMakerAPI;
-import com.fs.starfarer.api.util.Misc;
-import com.fs.starfarer.api.util.Misc.Token;
 
 import static com.fs.starfarer.api.impl.campaign.GateEntityPlugin.GATE_SCANNED;
 import static com.fs.starfarer.api.impl.campaign.GateEntityPlugin.PLAYER_CAN_USE_GATES;

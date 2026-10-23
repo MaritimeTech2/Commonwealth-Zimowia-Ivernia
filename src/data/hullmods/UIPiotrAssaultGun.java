@@ -7,7 +7,7 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipSystemAPI;
 import com.fs.starfarer.api.fleet.FleetMemberType;
 import com.fs.starfarer.api.mission.FleetSide;
-import org.lazywizard.lazylib.combat.CombatUtils;
+//import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
@@ -75,11 +75,11 @@ public class UIPiotrAssaultGun extends BaseHullMod {
         Vector2f.add(ship.getLocation(), new Vector2f((float) (dist*Math.cos(theta)), (float) (dist*Math.sin(theta))), loc);
 
         //I love you lazylib
-        ShipAPI child = CombatUtils.spawnShipOrWingDirectly("czi_bystryk_PD", FleetMemberType.SHIP,
-                side, 0.7f, loc, ship.getFacing());
-        //if parent ship is ally, make child an ally too
-        if (ship.isAlly()) child.setAlly(true);
-
-        child.setAnimatedLaunch();
+//        ShipAPI child = CombatUtils.spawnShipOrWingDirectly("czi_bystryk_PD", FleetMemberType.SHIP,
+//                side, 0.7f, loc, ship.getFacing());
+//        //if parent ship is ally, make child an ally too
+//        if (ship.isAlly()) child.setAlly(true);
+//
+//        child.setAnimatedLaunch();
     }
 }

@@ -5,7 +5,7 @@ import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.fleet.FleetMemberType;
 import com.fs.starfarer.api.mission.FleetSide;
 import com.fs.starfarer.api.util.Misc;
-import org.lazywizard.lazylib.combat.CombatUtils;
+//import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.util.HashMap;
@@ -74,21 +74,21 @@ public class UIFrigateCarrierTest extends BaseHullMod {
         Vector2f loc = new Vector2f(0,0);
         Vector2f.add(ship.getLocation(), new Vector2f((float) (dist*Math.cos(theta)), (float) (dist*Math.sin(theta))), loc);
 
-        // spawn the frigate
-        float cr = ship.getCurrentCR();
-        ShipAPI child = CombatUtils.spawnShipOrWingDirectly("czi_bystryk_PD", FleetMemberType.SHIP,
-                side, cr, loc, ship.getFacing());
-
-        //if parent ship is ally in allied battle, make child an ally too
-        if (ship.isAlly()) child.setAlly(true);
-
-        // add velocity to the frigate when it spawns so it doesn't materialize inside
-        // the ship once the animation is done
-//        Vector2f velocity = Misc.getUnitVectorAtDegreeAngle(-ship.getFacing());
-//        velocity.scale(5000f);
-//        Vector2f.add(child.getVelocity(), velocity, child.getVelocity());
-
-        // mimic a fighter launching from a carrier
-        child.setAnimatedLaunch();
+//        // spawn the frigate
+//        float cr = ship.getCurrentCR();
+//        ShipAPI child = CombatUtils.spawnShipOrWingDirectly("czi_bystryk_PD", FleetMemberType.SHIP,
+//                side, cr, loc, ship.getFacing());
+//
+//        //if parent ship is ally in allied battle, make child an ally too
+//        if (ship.isAlly()) child.setAlly(true);
+//
+//        // add velocity to the frigate when it spawns so it doesn't materialize inside
+//        // the ship once the animation is done
+////        Vector2f velocity = Misc.getUnitVectorAtDegreeAngle(-ship.getFacing());
+////        velocity.scale(5000f);
+////        Vector2f.add(child.getVelocity(), velocity, child.getVelocity());
+//
+//        // mimic a fighter launching from a carrier
+//        child.setAnimatedLaunch();
     }
 }

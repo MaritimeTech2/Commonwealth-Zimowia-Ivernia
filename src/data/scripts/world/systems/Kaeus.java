@@ -11,7 +11,7 @@ import com.fs.starfarer.api.impl.campaign.procgen.PlanetConditionGenerator;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
-import org.lazywizard.lazylib.MathUtils;
+//import org.lazywizard.lazylib.MathUtils;
 
 import java.awt.*;
 import java.util.Arrays;
@@ -33,10 +33,10 @@ public class Kaeus {
         system.setLightColor(new Color(249, 248, 245)); // light color in entire system, affects all entities
         //add first stable loc
         SectorEntityToken stableLoc1 = system.addCustomEntity("kaeus_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(kaeusstar, MathUtils.getRandomNumberInRange(0f, 360f), 4000f, 220);
+        stableLoc1.setCircularOrbit(kaeusstar, (float) Math.random() * 360f, 4000f, 220);
         //add second stable loc
         SectorEntityToken stableLoc2 = system.addCustomEntity("kaeus_stableloc_2", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc2.setCircularOrbit(kaeusstar, MathUtils.getRandomNumberInRange(0f, 360f), 8000f, 520);
+        stableLoc2.setCircularOrbit(kaeusstar, (float) Math.random() * 360f, 8000f, 520);
         //Comm Array
         //SectorEntityToken AekiSensorArray = system.addCustomEntity("ui_kaeus_sensor", "Domain Sensor Array", "domain_sensor_array", "ui");
         //AekiSensorArray.setCircularOrbitPointingDown(kaeusstar, 240.0F, 6300.0F, 200.0F);

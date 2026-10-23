@@ -12,7 +12,7 @@ import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.MagneticFieldTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
-import org.lazywizard.lazylib.MathUtils;
+//import org.lazywizard.lazylib.MathUtils;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 
 public class CZIAlkanost {
@@ -130,7 +130,7 @@ public class CZIAlkanost {
         // Terrain
         //add first stable loc
         SectorEntityToken stableLoc1 = system.addCustomEntity("jasnazda_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(alkanoststar, MathUtils.getRandomNumberInRange(0f, 360f), 2500f, 220);
+        stableLoc1.setCircularOrbit(alkanoststar, (float) Math.random() * 360f, 2500f, 220);
 
         /*//add second stable loc
         SectorEntityToken stableLoc2 = system.addCustomEntity("jasnazda_stableloc_2", "Stable Location", "stable_location", Factions.NEUTRAL);
@@ -138,15 +138,15 @@ public class CZIAlkanost {
 
         //add comms relay
         SectorEntityToken comms1 = system.addCustomEntity("alkanost_comms1", "Comms Beacon", "comm_relay", "czi");
-        comms1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 5000, 400);
+        comms1.setCircularOrbit(alkanoststar, (float) Math.random() * 360f, 5000, 400);
 
         //add nav beacon
         SectorEntityToken nav1 = system.addCustomEntity("alkanost_nav1", "Nav Beacon", "nav_buoy", "czi");
-        nav1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 13600,700);
+        nav1.setCircularOrbit(alkanoststar, (float) Math.random() * 360f, 13600,700);
 
         //add gate
         SectorEntityToken gate1 = system.addCustomEntity("alkanost_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);
-        gate1.setCircularOrbit(alkanoststar,MathUtils.getRandomNumberInRange(0f, 360f), 12350,420);
+        gate1.setCircularOrbit(alkanoststar, (float) Math.random() * 360f, 12350,420);
         //code to add tag which ties to rulescmd to make gate active
         gate1.addTag("iskalan_gate");
         //gate1.addTag("gatec");
