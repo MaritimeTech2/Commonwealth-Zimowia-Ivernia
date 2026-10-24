@@ -4,7 +4,7 @@
   "displayName": "Standard",
   "goalVariant": true,
   "fluxCapacitors": 40,
-  "fluxVents": 12,
+  "fluxVents": 7,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -21,7 +21,7 @@
         "WS0003": "czi_mrsm",
         "WS0008": "lrpdlaser",
         "WS0009": "ionbeam",
-        "WS0011": "ionbeam",
+        "WS0011": "czi_mrpg",
         "WS0031": "lrpdlaser"
       }
     },

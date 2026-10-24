@@ -64,9 +64,9 @@
     {
       "id": "WS0004",
       "size": "MEDIUM",
-      "type": "SYNERGY",
+      "type": "MISSILE",
       "mount": "HARDPOINT",
-      "arc": 30,
+      "arc": 0,
       "angle": 90,
       "locations": [29, 11]
     },

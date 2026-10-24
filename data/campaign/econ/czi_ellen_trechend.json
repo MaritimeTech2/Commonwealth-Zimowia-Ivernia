@@ -21,7 +21,7 @@
 				"spaceport",
 				"aquaculture",
 				["mining","mantle_bore"],
-				"refining",
+				#"refining",
 				"heavybatteries",
 				"orbitalstation_mid"
 			]

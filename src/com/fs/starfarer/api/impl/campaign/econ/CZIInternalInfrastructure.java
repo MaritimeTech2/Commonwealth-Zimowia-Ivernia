@@ -3,8 +3,7 @@ package com.fs.starfarer.api.impl.campaign.econ;
 import java.awt.Color;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.impl.campaign.intel.PerseanLeagueMembership;
-import com.fs.starfarer.api.impl.campaign.intel.events.EstablishedPolityScript;
+import com.fs.starfarer.api.campaign.econ.Industry;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 
