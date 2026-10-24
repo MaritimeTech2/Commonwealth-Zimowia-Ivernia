@@ -1,52 +1,61 @@
 {
 	id:"czi",
-	"displayName":"Commonwealth",
+
+	displayName":"Commonwealth",
 	"displayNameWithArticle":"the Commonwealth",
-	"displayNameLong":"Commonwealth of Zimowia-Ivernia",
+	
+	displayNameLong":"Commonwealth of Zimowia-Ivernia",
 	"displayNameLongWithArticle":"the Commonwealth of Zimowia-Ivernia",
-	"entityNamePrefix":"Commonwealth",
+	
+	entityNamePrefix":"Commonwealth",
 	#"personNamePrefix":"Polarian",
 	"personNamePrefixAOrAn":"a",
 	"displayNameIsOrAre":"is",
 	
+	"shipNamePrefix":"CEV",
+
 	"logo":"graphics/faction/flags/commonwealth_flag.png",
 	"crest":"graphics/faction/flags/commonwealth_crest.png",
-	"shipNamePrefix":"CEV",
 	
-	"color":[27,35,74,255],
-	"baseUIColor":[237,238,246,255],
-	"darkUIColor":[26,31,54,229],
+	"color":[189,146,166,255],
+	"baseUIColor":[189,146,166,255],
+	"darkUIColor":[79,13,11,255],
 	#"gridUIColor":[87,57,34,140],
+
+	#"secondaryUIColor":[34,51,95,255],
+	#"secondarySegments":4,
 	
 	"showInIntelTab":true,
 	
 	"shipNameSources":{
-		"KNIGHTS":0.1,
+		 
 		"GENERAL":0.5,
 		#"CZI":1,
 	},
 	"names":{
 		"ui_polish":1,
+		"modern":0.5,
 	},
 	"variantOverrides":{
 	},
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
-		"tags":{
+		"tags":{"czi_base_bp":1
 		},
 		"hulls":{
-			"czi_hyacinth":2,
-			"czi_brychan":2,
-			"czi_bystryk":3,
-			"czi_kaukas":1,
-			"czi_sluagh":1,
-			"czi_jadwiga":1,
-			"czi_kazimierz":3,
-			"czi_kilian":2,
-			"czi_oillipheist":1,
-			"czi_rusalka":2,
-			"czi_cailleach":2,
-			"czi_pelczar":3,
+			"czi_hyacinth":1,
+			"czi_brychan":1,
+			"czi_bystryk":1,
+			"czi_kaukas":0.5,
+			"czi_sluagh":0.1,
+			"czi_jadwiga":0.35,
+			"czi_kazimierz":1,
+			"czi_kilian":0.25,
+			"czi_oillipheist":0.5,
+			"czi_rusalka":0.6,
+			"czi_cailleach":0.4,
+			"czi_pelczar":1,
+			"czi_failinis":0.1,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction, reverts to known when empty
@@ -55,7 +64,7 @@
 		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["czi_base_package", "czi"],
+		"tags":["czi_base_bp", "czi"],
 		"hulls":[
 			"czi_hyacinth",
 			"czi_brychan",
@@ -74,7 +83,7 @@
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":["ui_base_package", "ui"],
+		"tags":["czi_base_bp", "czi"],
 		"hulls":[
 			"czi_hyacinth",
 			"czi_brychan",
@@ -92,7 +101,7 @@
 			],
 	},
 	"knownFighters":{
-		"tags":[ "czi"],
+		"tags":[ "czi", "czi_base_bp",],
 		"fighters":[
 			"xyphos_wing",
 			"thunder_wing",
@@ -108,32 +117,57 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["czi"],
+		"tags":["czi", missile_bp, "czi_base_bp",],
 		"weapons":[
 			"czi_spear",
-			"czi_buckle",
-			"czi_shield",
 			"czi_sword",
 			"czi_szabla",
-			"sabotpod",
+			"czi_fist",
+			"czi_emp",
+			"czi_miss",
+			"czi_mrsm",
+			"czi_mrpg",
+			"czi_buckle",
+			"czi_sciath",
+			"czi_shield",
+			"lightag",
 			"phasecl",
 			"phasebeam",
 			"ionbeam",
-			"guardian",
+			"heavymauler",
+			"taclaser",
+			"ioncannon",
+			"lrpdlaser",
+			"irautolance",
+			"pulselaser",
+			"irpulse",
+			"plasma",
+			"hil",
+			"autopulse",
+			"tachyonlance",
+			"hephag",
+			"gauss",
 		],
 	},
 	"priorityWeapons":{
-		"tags":[czi],
+		"tags":[czi, "czi_base_bp",],
 		"weapons":[
 			"czi_spear",
-			"czi_buckle",
-			"czi_shield",
 			"czi_sword",
 			"czi_szabla",
+			"czi_fist",
+			"czi_emp",
+			"czi_miss",
+			"czi_mrsm",
+			"czi_mrpg",
+			"czi_buckle",
+			"czi_sciath",
+			"czi_shield",
+
 		],
 	},
 	"knownHullMods":{
-		"tags":["base_bp",],
+		"tags":[czi,"czi_base_bp",],
 		"hullMods":[
 			"advancedshieldemitter", # accelerated
 			"turretgyros",
@@ -163,8 +197,7 @@
 			"hiressensors",
 			"efficiency_overhaul",
 			"converted_fighterbay",
-			"czi_emeric_escort",
-		],
+					],
 	},
 	"factionDoctrine":{
 		"warships":4,
@@ -187,6 +220,11 @@
 		"commanderSkillsShuffleProbability":0,
 		"commanderSkills":[
 			"officer_management",
+			"coordinated_maneuvers",
+			"crew_training",
+			"electronic_warfare",
+			"fighter_uplink",
+			"flux_regulation",
 		],
 	},
 	"shipRoles":{
@@ -272,13 +310,13 @@
 		},
 	},
 	"custom":{
-		"allowsTransponderOffTrade":true, # to prevent cargoscan dialog from "patrols"
-		"postsNoBounties":true,
+		#"allowsTransponderOffTrade":false, # to prevent cargoscan dialog from "patrols"
+		#"postsNoBounties":false,
 		"offersCommissions":true,
 		"engagesInHostilities":true,
 		"buysAICores":true,
-		"AICoreValueMult":1.5,
-		"AICoreRepMult":2.5,
+		"AICoreValueMult":2.0,
+		"AICoreRepMult":3.0,
 		"buysSurveyData":true,
 		"hostilityImpactOnGrowth":true,
 		"caresAboutAtrocities":true,
@@ -288,6 +326,10 @@
 			"canBombard":false,
 			"territorial":true,
 		},
+		"simulatorData":{
+			InSimulator":true,
+       		 },
+
 	},
 	"fleetTypeNames":{
 		"trade":"Inter-Commerce Fleet",

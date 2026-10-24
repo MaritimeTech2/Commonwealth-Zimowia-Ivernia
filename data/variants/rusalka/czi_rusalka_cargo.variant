@@ -1,0 +1,40 @@
+{
+  "variantId": "czi_rusalka_cargo",
+  "hullId": "czi_rusalka",
+  "displayName": "Combat Freighter",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "expanded_cargo_holds",
+    "auxiliary_fuel_tanks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "czi_buckle",
+        "WS0002": "czi_buckle",
+        "WS0003": "czi_mrsm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "trident_wing"
+  ]
+}

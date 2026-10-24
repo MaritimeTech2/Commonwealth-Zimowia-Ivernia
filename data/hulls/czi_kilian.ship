@@ -18,22 +18,13 @@
   ],
   "weaponSlots": [
     {
-      "id": "WS0001",
-      "size": "MEDIUM",
-      "type": "COMPOSITE",
-      "mount": "HARDPOINT",
-      "arc": 60,
-      "angle": 0,
-      "locations": [0, 17]
-    },
-    {
       "id": "WS0002",
       "size": "MEDIUM",
-      "type": "COMPOSITE",
+      "type": "UNIVERSAL",
       "mount": "HARDPOINT",
-      "arc": 60,
+      "arc": 270,
       "angle": 0,
-      "locations": [0.5, -13]
+      "locations": [4.5, 4]
     },
     {
       "id": "WS0003",

@@ -4,30 +4,33 @@
 	"combatSmallForSmallFleet":{
 
 		"czi_bystryk_PD":7,
-		
+		"czi_brychan_standard":5,
+		"czi_bystryk_standard":7,
 	},
 	"combatSmall":{
 	"czi_bystryk_PD":6,
-	"czi_brychan_standard":5,
-	"czi_kilian_standard":2,	
+	"czi_brychan_standard":8,
+	"czi_kilian_standard":2,
+	"czi_bystryk_standard":7,	
 
 	},
 	"combatMedium":{
 
 	"czi_kaukas_standard":3,
-	"czi_kazimierz_stanadard":5,
+	"czi_kazimierz_stanadard":8,
 	"czi_sluagh_standard":1,
 
 	},
 	"combatLarge":{
 
-	"czi_hyacinth_standard":3,
+	"czi_hyacinth_standard":5,
+	"czi_failinis_assault": 2,
 	
 
 	},
 	"combatCapital":{
 
-	"czi_jadwiga_standard":2,
+	"czi_jadwiga_standard":3,
 
 	},
 
@@ -38,11 +41,11 @@
 	},
 	"combatFreighterMedium":{
 
-		
-
+	"czi_rusalka_cargo":2,	
+	"czi_oillipheist_standard":6,
 	},
 	"combatFreighterLarge":{
-
+	
 	},
 
 	"civilianRandom":{
@@ -52,12 +55,12 @@
 	# carriers
 	"carrierSmall":{
 
-	"czi_rusalka_standard":2,
+	"czi_rusalka_standard":6,
 
 
 	},
 	"carrierMedium":{
-	"czi_oillipheist_standard":3,
+	"czi_oillipheist_standard":4,
 	
 
 	},
@@ -90,7 +93,7 @@
 	},
 	"freighterMedium":{
 
-	"czi_pelczar_standard":3,
+	"czi_pelczar_standard":6,
 
 	},
 	"freighterLarge":{
@@ -105,7 +108,7 @@
 	},
 	"tankerMedium":{
 
-	"czi_pelczar_standard":3,
+	"czi_pelczar_standard":6,
 
 
 	},

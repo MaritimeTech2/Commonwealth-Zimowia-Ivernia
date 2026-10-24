@@ -9,9 +9,9 @@ import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 
 
 public class ShimmerStats extends BaseShipSystemScript {
-    public static final float MAX_TIME_MULT = 2.5f;
-    public static final float MIN_TIME_MULT = 0.1f;
-    public static final float DAM_MULT = 0.2f;
+    public static final float MAX_TIME_MULT = 2f;
+    public static final float MIN_TIME_MULT = 0f;
+    public static final float DAM_MULT = 0.4f;
 
     public static final Color JITTER_COLOR = new Color(225,215,125,75);
     public static final Color JITTER_UNDER_COLOR = new Color(235,225,175,155);
@@ -53,9 +53,9 @@ public class ShimmerStats extends BaseShipSystemScript {
         float shipTimeMult = 1f + (MAX_TIME_MULT - 1f) * effectLevel;
         stats.getTimeMult().modifyMult(id, shipTimeMult);
 
-        stats.getHullDamageTakenMult().modifyMult(id,(1f-DAM_MULT));
-        stats.getArmorDamageTakenMult().modifyMult(id,(1f-DAM_MULT));
-        stats.getEmpDamageTakenMult().modifyMult(id,(1f-DAM_MULT));
+        stats.getHullDamageTakenMult().modifyMult(id, 1f - (1f - DAM_MULT) * effectLevel);
+        stats.getArmorDamageTakenMult().modifyMult(id, 1f - (1f - DAM_MULT) * effectLevel);
+        stats.getEmpDamageTakenMult().modifyMult(id, 1f - (1f - DAM_MULT) * effectLevel);
         if (player) {
             Global.getCombatEngine().getTimeMult().modifyMult(id, 1f / shipTimeMult);
 //			if (ship.areAnyEnemiesInRange()) {

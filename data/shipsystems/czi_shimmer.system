@@ -2,10 +2,24 @@
 	"id":"czi_shimmer",
 	"type":"STAT_MOD",
 	"aiType":"TEMPORAL_SHELL",
-	
-	"statsScript":"data.scripts.shipsystems.ShimmerStats",
+	#"aiType":"DAMPER_FIELD",
+	#"type":"PHASE_CLOAK",
+    #"aiType":"PHASE_CLOAK",
 
 	
+	"statsScript":"data.scripts.shipsystems.ShimmerStats",
+    "runScriptWhilePaused":true, # only for the player's ship
+    "runScriptWhileIdle":true,  # this means unapply() never gets called
+    "blockActionsWhileChargingDown":false,
+
+	"canNotCauseOverload":true,
+
+    "phaseHighlight":"_glow1",
+    "phaseDiffuse":"_glow2",
+
+    "effectColor1":[255,175,255,255],
+    "effectColor2":[255,0,255,150],
+
 	"soundFilterType":"LOWPASS",
 	"soundFilterGain":0.75,
 	"soundFilterGainHF":0.5,
@@ -14,12 +28,12 @@
 	"useSound":"system_temporalshell",
 	"loopSound":"system_temporalshell_loop",
 	"deactivateSound":"system_temporalshell_off",
-	"outOfUsesSound":"gun_out_of_ammo",
+	"outOfUsesSound":"system_phase_cloak_collision",
 	
 	"aiHints":{
-		"activeSpeedIncrease":100,  # not right since it's ship-dependent, but hopefully close enough
+		"activeSpeedIncrease":120,  # not right since it's ship-dependent, but hopefully close enough
 		"burstMovementPotential":0,
-		"averageSpeedMult":1.46,
+		"averageSpeedMult":1.86,
 	}
 }
 
