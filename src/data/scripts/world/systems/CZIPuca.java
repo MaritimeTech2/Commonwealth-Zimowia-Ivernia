@@ -13,7 +13,7 @@ import com.fs.starfarer.api.impl.campaign.terrain.BaseTiledTerrain;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.MagneticFieldTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
-import org.lazywizard.lazylib.MathUtils;
+//import org.lazywizard.lazylib.MathUtils;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 
 public class CZIPuca {
@@ -120,11 +120,11 @@ public class CZIPuca {
         // Terrain
         //add first stable loc
         SectorEntityToken stableLoc1 = system.addCustomEntity("sirin_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(pucastar, MathUtils.getRandomNumberInRange(0f, 360f), 2850f, 220);
+        stableLoc1.setCircularOrbit(pucastar, (float) Math.random() * 360f, 2850f, 220);
 
         //add second stable location
         SectorEntityToken comms1 = system.addCustomEntity("sirin_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        comms1.setCircularOrbit(pucastar,MathUtils.getRandomNumberInRange(0f, 360f), 8800, 400);
+        comms1.setCircularOrbit(pucastar, (float) Math.random() * 360f, 8800, 400);
 
         //add nav beacon
         /*SectorEntityToken nav1 = system.addCustomEntity("alkanost_nav1", "Nav Beacon", "nav_buoy", "ui");

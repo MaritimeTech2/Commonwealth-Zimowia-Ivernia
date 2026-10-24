@@ -14,8 +14,8 @@ import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.rulecmd.missions.GateCMD;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
-import exerelin.campaign.intel.specialforces.SpecialForcesAssignmentAI;
-import org.lazywizard.lazylib.MathUtils;
+//import exerelin.campaign.intel.specialforces.SpecialForcesAssignmentAI;
+//import org.lazywizard.lazylib.MathUtils;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 
 public class CZIEllenTrechend {
@@ -152,7 +152,7 @@ public class CZIEllenTrechend {
         // Terrain
         //add first stable loc
         SectorEntityToken stableLoc1 = system.addCustomEntity("ellen_trechend_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(center, MathUtils.getRandomNumberInRange(0f, 360f), 4150f, 220);
+        stableLoc1.setCircularOrbit(center, (float) Math.random() * 360f, 4150f, 220);
 
         /*//add second stable loc
         SectorEntityToken stableLoc2 = system.addCustomEntity("ui_ellen_trechend_stableloc_2", "Stable Location", "stable_location", Factions.NEUTRAL);
@@ -160,15 +160,15 @@ public class CZIEllenTrechend {
 
         //add comms relay
         SectorEntityToken comms1 = system.addCustomEntity("ellen_trechend_comms1", "Comms Beacon", "comm_relay", "czi");
-        comms1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 5800f, 290);
+        comms1.setCircularOrbit(center, (float) Math.random() * 360f, 5800f, 290);
 
         //add nav beacon
         SectorEntityToken nav1 = system.addCustomEntity("ellen_trechend_nav1", "Nav Beacon", "nav_buoy", "czi");
-        nav1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 15000,800);
+        nav1.setCircularOrbit(center, (float) Math.random() * 360f, 15000,800);
 
         //add gate
         SectorEntityToken gate1 = system.addCustomEntity("ellen_trechend_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);
-        gate1.setCircularOrbit(center,MathUtils.getRandomNumberInRange(0f, 360f), 7250,380);
+        gate1.setCircularOrbit(center, (float) Math.random() * 360f, 7250,380);
         //code to add tag which ties to rulescmd to make gate active
         gate1.addTag("iskalan_gate");
 
