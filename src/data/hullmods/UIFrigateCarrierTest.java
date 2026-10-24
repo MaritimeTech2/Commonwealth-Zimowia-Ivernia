@@ -18,18 +18,16 @@ public class UIFrigateCarrierTest extends BaseHullMod {
 
     @Override
     public void advanceInCombat(ShipAPI ship, float amount) {
-
         // only run script once
         Map<String, Object> customData = Global.getCombatEngine().getCustomData();
         String key = ship.getId();
         if (!customData.containsKey(key)) customData.put(key, true);
         else return;
 
-
-        // add frigate to player reserves
-        CombatFleetManagerAPI fleetManager = Global.getCombatEngine().getFleetManager(FleetSide.PLAYER);
+        // add frigate to reserves
+        CombatFleetManagerAPI fleetManager = Global.getCombatEngine().getFleetManager(ship.getOwner());
         FleetMemberAPI frigate = Global.getFactory().createFleetMember(FleetMemberType.SHIP, "czi_bystryk_PD");
-//        frigate.getStats().getDynamic().getStat(Stats.)  .setCR(ship.getCurrentCR()); // frigate will have same CR as parent ship
+        frigate.getCrewComposition().addCrew(frigate.getNeededCrew());
 
         fleetManager.addToReserves(frigate);
     }
