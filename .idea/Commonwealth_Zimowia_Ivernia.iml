@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/out/production/Commonwealth_Zimowia_Ivernia" />
+    <output-test url="file://$MODULE_DIR$/out/test/Commonwealth_Zimowia_Ivernia" />
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="starfarer.api" level="project" />
+    <orderEntry type="library" name="ashlib" level="project" />
+    <orderEntry type="library" name="ExerelinCore" level="project" />
+    <orderEntry type="library" exported="" name="Graphics" level="project" />
+    <orderEntry type="library" exported="" name="LazyLib" level="project" />
   </component>
 </module>

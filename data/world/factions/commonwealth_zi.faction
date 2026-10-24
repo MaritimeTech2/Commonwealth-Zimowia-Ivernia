@@ -1,13 +1,13 @@
 {
 	id:"czi",
 
-	displayName":"Commonwealth",
+	"displayName":"Commonwealth",
 	"displayNameWithArticle":"the Commonwealth",
 	
-	displayNameLong":"Commonwealth of Zimowia-Ivernia",
+	"displayNameLong":"Commonwealth of Zimowia-Ivernia",
 	"displayNameLongWithArticle":"the Commonwealth of Zimowia-Ivernia",
 	
-	entityNamePrefix":"Commonwealth",
+	"entityNamePrefix":"Commonwealth",
 	#"personNamePrefix":"Polarian",
 	"personNamePrefixAOrAn":"a",
 	"displayNameIsOrAre":"is",
@@ -18,12 +18,15 @@
 	"crest":"graphics/faction/flags/commonwealth_crest.png",
 	
 	"color":[189,146,166,255],
-	"baseUIColor":[189,146,166,255],
+	"baseUIColor":[105,142,207,255],
+	
 	"darkUIColor":[79,13,11,255],
-	#"gridUIColor":[87,57,34,140],
+	
+	"gridUIColor":[155,163,191,100],
 
-	#"secondaryUIColor":[34,51,95,255],
-	#"secondarySegments":4,
+	"brightUIColor":[105,142,207,255],
+	"secondaryUIColor":[79,13,11,255],
+	"secondarySegments":8,
 	
 	"showInIntelTab":true,
 	
@@ -150,7 +153,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":[czi, "czi_base_bp",],
+		"tags":["czi", "czi_base_bp",],
 		"weapons":[
 			"czi_spear",
 			"czi_sword",
@@ -327,7 +330,7 @@
 			"territorial":true,
 		},
 		"simulatorData":{
-			InSimulator":true,
+			"InSimulator":true,
        		 },
 
 	},
