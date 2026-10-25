@@ -1,11 +1,11 @@
-package com.fs.starfarer.api.impl.campaign;
+package data.econ;
 
 import com.fs.starfarer.api.impl.campaign.econ.impl.BaseIndustry;
 import com.fs.starfarer.api.impl.campaign.econ.impl.Farming;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 
 
-public class CZIAutofabHub extends BaseIndustry {
+public class CZIAutofabHub {
 
     public static float EXPORT_REDUCTION = -5f;
     public static float S_DEMAND_REDUCTION = 1f;
@@ -14,6 +14,7 @@ public class CZIAutofabHub extends BaseIndustry {
     public static float Size_Small = 5f;
 
 
+   /* //@Override
     public void apply() {
         super.apply(true);
         int size = market.getSize();
@@ -34,5 +35,5 @@ public class CZIAutofabHub extends BaseIndustry {
         super.unapply();
 
 
-    }
+    }*/
 }

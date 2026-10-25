@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CommonwealthZI">
+    <output-path>$PROJECT_DIR$/jars</output-path>
+    <root id="archive" name="CommonwealthZI.jar">
+      <element id="module-output" name="Commonwealth_Zimowia_Ivernia" />
+    </root>
+  </artifact>
+</component>

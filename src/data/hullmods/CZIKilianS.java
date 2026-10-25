@@ -1,13 +1,17 @@
 package data.hullmods;
 
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.campaign.BuffManagerAPI;
 import com.fs.starfarer.api.combat.*;
-import com.fs.starfarer.api.combat.ShipAPI.HullSize;
+import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.fleet.FleetMemberType;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.mission.FleetSide;
+import com.fs.starfarer.api.util.Misc;
 //import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
+
+import java.util.Map;
 
 public class CZIKilianS extends BaseHullMod {
 
@@ -15,7 +19,7 @@ public class CZIKilianS extends BaseHullMod {
     public static final float lesscargo = 40f;
     public static final float lessfuel = 30f;
     public static final float recoverycost = 3f;
-    public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
+    public void applyEffectsBeforeShipCreation(ShipAPI.HullSize hullSize, MutableShipStatsAPI stats, String id) {
         //increase crew requirements
         stats.getMinCrewMod().modifyFlat(id, addcrew);
         //reduce cargo and fuel capacity
