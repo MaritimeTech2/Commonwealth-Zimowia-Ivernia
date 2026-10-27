@@ -1,23 +1,23 @@
 {
     "music":{
 	    "czi_starsystem_01":[
-			{
-				"source":"sounds/music",
-				"volume":0.2,
-				"files":[
-					"yllaby (feat. TOFIE)_320k.ogg"
-				],
-				"randomStart":false
-			}
+			#{
+			#	"source":"sounds/music",
+			#	"volume":0.2,
+			#	"files":[
+			#		"yllaby (feat. TOFIE)_320k.ogg"
+			#	],
+			#	"randomStart":false
+			#}
 
         ],
         "music_combat":[
             # Eon
-		{"file":"Eos.ogg","source":"sounds/music","volume":0.20},
-		{"file":"Eon - Boss Level.ogg","source":"sounds/music","volume":0.10},
-		{"file":"Eon - Luz Eterna.ogg","source":"sounds/music","volume":0.10},
-		{"file":"Eon - Rebellion.ogg","source":"sounds/music","volume":0.10},
-		{"file":"Eon - Trouble.ogg","source":"sounds/music","volume":0.10},
+		#{"file":"Eos.ogg","source":"sounds/music","volume":0.20},
+		#{"file":"Eon - Boss Level.ogg","source":"sounds/music","volume":0.10},
+		#{"file":"Eon - Luz Eterna.ogg","source":"sounds/music","volume":0.10},
+		#{"file":"Eon - Rebellion.ogg","source":"sounds/music","volume":0.10},
+		#{"file":"Eon - Trouble.ogg","source":"sounds/music","volume":0.10},
 		            
         ],
     },

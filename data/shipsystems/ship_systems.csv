@@ -1,5 +1,5 @@
 name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,noVent,isPhaseCloak,tags,icon
-Aggressive Phase Flicker,czi_shortflicker,,,,,,0.05,,5,.1,0.25,,0.25,0,,TRUE,,TRUE,,,,,,,,movement,graphics/icons/hullsys/displacer.png
-Shimmer Core,czi_shimmer,,.15,,,,,,,,.5,,.5,1,TRUE,,TRUE,TRUE,,,,,TRUE,TRUE,,"defensive, movement",graphics/icons/hullsys/temporal_shell.png
-Shock Core,czi_emp,1,,,,,0.1,,2,0.05,.25,3,.25,0,,,,,TRUE,,,,TRUE,TRUE,,"uses_damper_ai, defensive, ",graphics/icons/hullsys/emp_emitter.png
+Aggressive Phase Skimmer,czi_shortflicker,,,,,,0.05,,5,.1,0.25,,0.25,0,,TRUE,,TRUE,,,,,,,,movement,graphics/icons/hullsys/displacer.png
+Shimmer Core,czi_shimmer,,.25,,,,,,,,.5,,.5,1,TRUE,,TRUE,TRUE,,,,,TRUE,TRUE,,"defensive, movement",graphics/icons/hullsys/temporal_shell.png
+Dual EMP-Damper Emitters,czi_emp,1,,,,,0.1,,2,0.05,.25,3,.25,0,,,,,TRUE,,,,TRUE,TRUE,,"uses_damper_ai, defensive, ",graphics/icons/hullsys/emp_emitter.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,

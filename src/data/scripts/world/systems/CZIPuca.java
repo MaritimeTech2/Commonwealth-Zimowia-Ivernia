@@ -8,6 +8,7 @@ import com.fs.starfarer.api.impl.MusicPlayerPluginImpl;
 import com.fs.starfarer.api.impl.campaign.GateEntityPlugin;
 import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
+import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.terrain.BaseTiledTerrain;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
@@ -28,11 +29,11 @@ public class CZIPuca {
         //system.getLocation().set(15000, 30000); // Far Northeast of core (static)
         float w = Global.getSettings().getFloat("sectorWidth");
         float h = Global.getSettings().getFloat("sectorHeight");
-        system.getLocation().set( ( (w/2f) - 12500f), ( (h/2f) - 6500f) );
+        system.getLocation().set( ( (w/2f) - 13500f), ( (h/2f) - 6500f) );
 
-        system.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
+        system.setBackgroundTextureFilename("graphics/backgrounds/background1.jpg");
 
-        system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "czi_starsystem_01");
+        //system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "czi_starsystem_01");
 
         // create the star and generate the hyperspace anchor for this system
         PlanetAPI pucastar = system.initStar("Puca", // unique id for this star
@@ -134,7 +135,7 @@ public class CZIPuca {
 
         //inner band
         system.addRingBand(pucastar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 3000f, 250f, Terrain.RING, null);
-        system.addRingBand(pucastar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 3200f, 250f, Terrain.RING, null);
+        //system.addRingBand(pucastar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 3200f, 250f, Terrain.RING, null);
 
         /*//outer band
         system.addRingBand(pucastar, "misc", "rings_asteroids0", 256f, 1, Color.gray, 256f, 9000f, 250f, Terrain.RING, null);
@@ -142,18 +143,23 @@ public class CZIPuca {
         system.addRingBand(pucastar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 9300f, 250f, Terrain.RING, null);
         system.addRingBand(pucastar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 9500f, 250f, Terrain.RING, null);*/
 
-
-        SectorEntityToken nebula = system.addTerrain(Terrain.NEBULA, new BaseTiledTerrain.TileParams(
+        //add in a yellow-blue nebula
+        SectorEntityToken Puca_nebula_blue = Misc.addNebulaFromPNG("data/campaign/terrain/blue_nebula.png",
+                0, 0, // center of nebula
+                system, // location to add to
+                "terrain", "nebula", // "nebula_blue", // texture to use, uses xxx_map for map
+                4, 4, StarAge.AVERAGE);
+        /*SectorEntityToken nebula = system.addTerrain(Terrain.NEBULA, new BaseTiledTerrain.TileParams(
                     "   xx " +
                         "  xx x" +
                         " xxxx " +
-                        "xxxxxx" +
+                        "xx xxx" +
                         "  xx  " +
                         "    x ",
                 6, 6, // size of the nebula grid, should match above string
                 "terrain", "nebula_amber", 5, 5, null));
         nebula.getLocation().set(puca2.getLocation().x + 1000f, puca2.getLocation().y);
-        nebula.setCircularOrbit(pucastar, 140f, 9000, 400);
+        nebula.setCircularOrbit(pucastar, 140f, 9000, 400);*/
 
 
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(

@@ -6,7 +6,7 @@
 			"faction":"czi",
 			"size":5,
 			"startingConditions":[
-				"population_6",
+				"population_5",
 				"extreme_weather",
 				"dense_atmosphere",
 				"ruins_extensive",

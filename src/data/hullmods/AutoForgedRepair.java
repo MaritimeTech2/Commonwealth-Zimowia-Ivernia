@@ -22,7 +22,7 @@ public class AutoForgedRepair extends BaseHullMod {
 
     public static Map mag = new HashMap();
     static {
-        mag.put(HullSize.FRIGATE, 15f);
+        mag.put(HullSize.FRIGATE, 2f);
         mag.put(HullSize.DESTROYER, 20f);
         mag.put(HullSize.CRUISER, 30f);
         mag.put(HullSize.CAPITAL_SHIP, 50f);
