@@ -1,15 +1,14 @@
-# Starsector IntelliJ Mod Template
+# Welcome to the Commonwealth Github!
 
-v1.0.0
+v0.1.0
 
-## Description
+## Overview
 
-This is a template for a generic Starsector mod using Java.
+This is the GitHub page for the Starsector mod Commonwealth of Zimowia-Ivernia. A passion project of mine years in the works.
 
-When you are done, you will have a mod that does nothing, but is ready for anything to be added.
+I will not claim to be the best at anything, but i am seeking to create a memorable and enjoyable mod.
 
-Written for IntelliJ Community ([free download](https://www.jetbrains.com/idea/download)), but should work with any IDE.
-You do NOT need IntelliJ Ultimate. Latest version of IntelliJ is 2022.2 as of writing.
+If you wish to help out, or have any questions, contact me on discord at MaritimeTech2.
 
 ## Optional
 
@@ -118,6 +117,4 @@ LazyLib not enough?
 
 ## Other
 
-Author: Wisp
-
-Lowtech Tempest: Selkie
+Author: MaritimeTech2

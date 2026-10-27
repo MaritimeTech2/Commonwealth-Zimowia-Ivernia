@@ -1,13 +1,16 @@
-package com.fs.starfarer.api.impl.campaign.econ;
+package data.econ;
 
 import java.awt.Color;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.econ.Industry;
+import com.fs.starfarer.api.impl.campaign.econ.BaseMarketConditionPlugin;
+import com.fs.starfarer.api.impl.campaign.intel.PerseanLeagueMembership;
+import com.fs.starfarer.api.impl.campaign.intel.events.EstablishedPolityScript;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
 
-public class CZIInternalInfrastructure extends BaseMarketConditionPlugin{
+public class CZIInternalInfrastructure extends BaseMarketConditionPlugin {
     public static float INCOME_REDUCTION = -0.1f;
 
     public static String NAME_BASE = "Established Polity";

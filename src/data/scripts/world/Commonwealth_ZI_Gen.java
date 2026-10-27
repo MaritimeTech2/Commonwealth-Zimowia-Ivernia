@@ -52,6 +52,6 @@ public class Commonwealth_ZI_Gen { //implements SectorGeneratorPlugin {
             czi.setRelationship(Factions.HEGEMONY, -0.3f);
             czi.setRelationship(Factions.TRITACHYON, -0.5f);
             czi.setRelationship(Factions.LUDDIC_CHURCH, -0.5f);
-            czi.setRelationship(Factions.PERSEAN, 0.3f);
+            czi.setRelationship(Factions.PERSEAN, 0.5f);
         }
 }

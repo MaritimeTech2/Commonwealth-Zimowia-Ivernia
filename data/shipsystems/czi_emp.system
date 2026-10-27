@@ -32,10 +32,10 @@
     "deactivateSound":"system_damper_off",
     #"outOfUsesSound":"gun_out_of_ammo",
 
-	"range":700,
+	"range":650,
 	
-	"empDamage":600,
-	"damage":200,
+	"empDamage":400,
+	"damage":150,
 	"damageType":ENERGY,
 	
 	#"effectColor1":[150,150,255,200],

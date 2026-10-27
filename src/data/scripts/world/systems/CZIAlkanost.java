@@ -28,9 +28,9 @@ public class CZIAlkanost {
         float h = Global.getSettings().getFloat("sectorHeight");
         system.getLocation().set( ( (w/2f) - 8000f), ( (h/2f) - 6000f) );
 
-        system.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
+        system.setBackgroundTextureFilename("graphics/backgrounds/background1.jpg");
 
-        system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "czi_starsystem_01");
+        //system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "czi_starsystem_01");
 
         // create the star and generate the hyperspace anchor for this system
         PlanetAPI alkanoststar = system.initStar("Alkanost", // unique id for this star

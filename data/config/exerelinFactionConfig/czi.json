@@ -1,19 +1,22 @@
 {
-    "playableFaction":true,
-    "corvusCompatible":true,
-    "startingFaction":true,
-    "freeStart":true,
-    #"spawnAsFactionId":"ui",
+   	"playableFaction":true,
+   	"corvusCompatible":true,
+   	"startingFaction":true,
+    	"freeStart":true,
+   	#"spawnAsFactionId":"czi",
+	#id:"czi",
     
-    "ngcTooltip":"For our struggle is not against enemies of blood and flesh, but against the rulers, against the authorities, against the cosmic powers of this present darkness, against the spiritual forces of evil in the heavenly places. Therefore take up the whole armor of God, so that you may be able to withstand on that evil day, and having done everything, to stand firm. Ephesians 6:12",
-    "rebelFleetSuffix":"Renegades",
+    	#"ngcTooltip":"For our struggle is not against enemies of blood and flesh, but against the rulers, against the authorities, against the cosmic powers of 	#this present darkness, against the spiritual forces of evil in the heavenly places. Ephesians 6:12",
+    
+	"rebelFleetSuffix":"Renegades",
 
-    "asteroidMiningFleetName":"Mining Mission",
-    "gasMiningFleetName":"Gas Mining Mission",
-    "invasionFleetName":"Planetary Liberation Corp",
-    "responseFleetName":"Guard Corp",
-    "invasionSupportFleetName":"Guard Corp Support",
-    "defenceFleetName":"Defense Constellation",
+   	 "asteroidMiningFleetName":"Mining Mission",
+  	  "gasMiningFleetName":"Gas Mining Mission",
+   	 "invasionFleetName":"Planetary Liberation Corp",
+   	 "responseFleetName":"Guard Corp",
+   	 "invasionSupportFleetName":"Guard Corp Support",
+   	 "defenceFleetName":"Defense Constellation",
+		
 	"noSyncRelations":false,
 	"noStartingContact":true,
 
@@ -35,14 +38,14 @@
     #general tip; Our Terraforming tech makes us infamous among the sector.
 
     "startRelationships":{
-        "independent":-.1,
-        "player":-0.1,
+        "independent":0.1,
+        "player":0.1,
         "scalartech":0.3,
-        "pirates":-0.6,
-        "hegemony":-0.15,
-        "luddic_church":-0.45,
+        "pirates":-0.4,
+        "hegemony":-0.35,
+        "luddic_church":-0.55,
         "luddic_path":-0.9,
-        "persean":0.1,
+        "persean":0.4,
         "tritachyon":-0.55,
         "sindrian_diktat":-0.25,
         "diableavionics":-0.55, 
@@ -71,43 +74,55 @@
 
     "morality":"good",
     "alignments":{
-        "technocratic":0.25,
+        "technocratic":0.35,
         "hierarchial":0.25,
-        "militarist":1,
-        "diplomatic":1,
-        "ideological":0.5,
+        "militarist":0.55,
+        "diplomatic":0.6,
+        "ideological":-0.2,
     },
-    "diplomacyTraits":["irredentist", "stalwart", "helps_allies", "pacifist", "low_profile"],
+    "diplomacyTraits":["irredentist", "stalwart", "helps_allies", "low_profile"],
     
     "freeMarket":true,
 
     "invasionOnlyRetake": true,
     # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
-    "colonyExpeditionChance":0.95,	# We WILL claim the sector for the greater Union.
+    "colonyExpeditionChance":0.90,	# We WILL claim the sector for the greater Union.
     "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
 
-    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+   	"specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
 
-    "startShipsSolo":[["brawler_Elite"]],
-    "startShipsCombatSmall":[
-	["ui_eurosia_standard", "ui_ladislaus_pd"],
-      ["ui_eurosia_standard", "ui_ladislaus_standard"],
-    ],
-   "startShipsTradeSmall":[["ui_kowalska_cargo", "ui_ladislaus_pd"]],
-    "startShipsCombatLarge":[
-      ["ui_wenceslaus_standard", "ui_eurosia_standard", "ui_ladislaus_standard"],
-      ["ui_hyacinth_assault", "ui_ladislaus_standard", "ui_ladislaus_pd"]
-    ],
-    "startShipsTradeLarge":[["ui_wenceslaus_standard", "ui_kowalska_cargo", "ui_ladislaus_pd"]],
-    "startShipsExplorerLarge":[["ui_wenceslaus_standard", "ui_kowalska_cargo", "ui_pelczar_fuel"]],
-    #startShipsCarrierSmall":[["drover_Strike", "vigilance_Standard", "brawler_Elite"]],    
+	    "startShipsSolo":[["czi_bystryk_standard"]],
+
+	    "startShipsCombatSmall":[
+		["czi_brychan_standard", "czi_bystryk_standard"],
+		["czi_bystryk_standard", "czi_bystryk_standard","czi_kilian_standard"],
+		["czi_kaukas_standard"],
+	    ],
+
+	   "startShipsCarrierSmall":[["czi_rusalka_standard", "czi_bystryk_standard"]],
+
+	   "startShipsTradeSmall":[["czi_pelczar_standard", "czi_bystryk_standard","czi_kilian_standard"]],
+
+	    "startShipsCombatLarge":[
+		["czi_kazimierz_stanadard", "czi_kaukas_standard", "czi_rusalka_standard","czi_pelczar_standard"],
+		["czi_hyacinth_standard", "czi_brychan_standard", "czi_brychan_standard","czi_pelczar_standard"]
+	    ],
+
+	"startShipsTradeLarge":[["czi_cailleach_standard", "czi_pelczar_standard", "czi_pelczar_standard", "czi_kaukas_standard", 								"czi_bystryk_standard","czi_kilian_standard"]],
+
+	"startShipsExplorerLarge":[["czi_kazimierz_stanadard", "czi_brychan_standard","czi_cailleach_standard", "czi_pelczar_standard"]],
+
+	"startShipsGrandFleet":[
+		[ "czi_jadwiga_standard","czi_hyacinth_standard","czi_kaukas_standard", "czi_brychan_standard", 								"czi_brychan_standard","czi_bystryk_standard","czi_kilian_standard", "czi_cailleach_standard"]
+	],
+    
     
     "startSpecialItems":[
-       # [["czi_base_package", ""]],[["ui_emeric_escort", ""]],
+       [ ["czi_base_package",""]],
     ],
 
     "defenceStations":[
-        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+        #{"ids":["orbitalstation", "battlestation", "starfortress"]},
         {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.5},
     ],
     

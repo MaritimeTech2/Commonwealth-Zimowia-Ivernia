@@ -1,4 +1,4 @@
-package data.scripts.world.systems;
+package data.oldjava;
 
 import java.awt.Color;
 import java.util.Random;

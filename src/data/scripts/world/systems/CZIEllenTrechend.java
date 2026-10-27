@@ -30,11 +30,11 @@ public class CZIEllenTrechend {
         //system.getLocation().set(28000, 10000); //Northeast of core
         system.getLocation().set(-30000, -15000); //Southeast of core
 
-        system.setBackgroundTextureFilename("graphics/backgrounds/background3.jpg");
+        system.setBackgroundTextureFilename("graphics/backgrounds/background6.jpg");
 
         SectorEntityToken center = system.getCenter();
 
-        system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "czi_starsystem_01");
+        //system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "czi_starsystem_01");
 
         // Planets
         PlanetAPI vesta = system.addPlanet("czi_vesta", center, "Vesta", "lava",
@@ -91,7 +91,7 @@ public class CZIEllenTrechend {
                 "gas_giant",
                 180f,
                 400f,
-                14500f,
+                15500f,
                 720f);
         tarasque.getSpec().setPlanetColor(new Color(185, 14, 14, 255));
         tarasque.getSpec().setCloudColor(new Color(196, 86, 3, 255));
@@ -164,11 +164,11 @@ public class CZIEllenTrechend {
 
         //add nav beacon
         SectorEntityToken nav1 = system.addCustomEntity("ellen_trechend_nav1", "Nav Beacon", "nav_buoy", "czi");
-        nav1.setCircularOrbit(center, (float) Math.random() * 360f, 15000,800);
+        nav1.setCircularOrbit(tarasque, (float) Math.random() * 360f, 4500,800);
 
         //add gate
         SectorEntityToken gate1 = system.addCustomEntity("ellen_trechend_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);
-        gate1.setCircularOrbit(center, (float) Math.random() * 360f, 7250,380);
+        gate1.setCircularOrbit(center, (float) Math.random() * 360f, 7450,380);
         //code to add tag which ties to rulescmd to make gate active
         gate1.addTag("iskalan_gate");
 

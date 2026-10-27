@@ -1,4 +1,4 @@
-package data.scripts.world.systems;
+package data.oldjava;
 
 import com.fs.starfarer.api.campaign.PlanetAPI;
 import com.fs.starfarer.api.campaign.SectorAPI;
