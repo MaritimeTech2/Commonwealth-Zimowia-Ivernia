@@ -15,7 +15,7 @@ import data.scripts.world.systems.CZIPuca;
 import data.scripts.world.systems.CZISirin;
 
 
-public class Commonwealth_ZI_Gen { //implements SectorGeneratorPlugin {
+    public class Commonwealth_ZI_Gen { //implements SectorGeneratorPlugin {
 
         public void generate(SectorAPI sector) {
 

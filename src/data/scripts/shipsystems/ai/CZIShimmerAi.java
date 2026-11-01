@@ -58,7 +58,7 @@ public class CZIShimmerAi implements ShipSystemAIScript{
                 Current_Flux_Level = true;
             }
             //checks if the flux is high enough, and tells ai to shut off system
-            if(ship.getFluxLevel() >= 0.85f && Is_System_On) {
+            if((ship.getFluxLevel() >= 0.85f || Enemy_ship_Range >RANGE) && Is_System_On) {
                 ship.useSystem();
                 Is_System_On = false;
             }

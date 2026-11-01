@@ -114,13 +114,15 @@ public class CZIEllenTrechend {
                 3000f,
                 90f);
         atrimpas.setCustomDescriptionId("czi_atrimpas"); //reference descriptions.csv
-        atrimpas.setInteractionImage("illustrations", "fikenhild");
+        //atrimpas.setInteractionImage("illustrations", "volturn");
         atrimpas.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ui_frozen_water_world"));
         atrimpas.getSpec().setGlowTexture(Global.getSettings().getSpriteName("hab_glows", "sindria"));
         atrimpas.getSpec().setAtmosphereThickness(.9f);
-        atrimpas.getSpec().setAtmosphereColor(new Color(110, 133, 166,235));
-        atrimpas.getSpec().setCloudRotation(5F);
+        atrimpas.getSpec().setAtmosphereThicknessMin(80f);
+        atrimpas.getSpec().setAtmosphereColor(new Color(166, 163, 166,235));
+        atrimpas.getSpec().setCloudRotation(10F);
         //atrimpas.getSpec().setCloudTexture(Global.getSettings().getSpriteName("hab_glows", "ui_clouds_storm"));
+        //atrimpas.getSpec().setCloudTexture(Global.getSettings().getSpriteName("clouds", "clouds_terran03"));
         atrimpas.getSpec().setCloudColor(new Color(255, 255, 255, 130));
         atrimpas.applySpecChanges();
 
@@ -160,7 +162,7 @@ public class CZIEllenTrechend {
 
         //add comms relay
         SectorEntityToken comms1 = system.addCustomEntity("ellen_trechend_comms1", "Comms Beacon", "comm_relay", "czi");
-        comms1.setCircularOrbit(center, (float) Math.random() * 360f, 5800f, 290);
+        comms1.setCircularOrbit(center, (float) Math.random() * 360f, 3500f, 290);
 
         //add nav beacon
         SectorEntityToken nav1 = system.addCustomEntity("ellen_trechend_nav1", "Nav Beacon", "nav_buoy", "czi");

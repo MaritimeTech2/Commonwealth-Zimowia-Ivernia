@@ -2,6 +2,8 @@ package data.scripts;
 
 import com.fs.starfarer.api.campaign.CharacterDataAPI;
 import com.fs.starfarer.api.campaign.PersonImportance;
+import com.fs.starfarer.api.campaign.SectorAPI;
+import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.CharacterStatsSkillEffect;
 import com.fs.starfarer.api.characters.FullName;
@@ -10,16 +12,21 @@ import com.fs.starfarer.api.impl.campaign.ids.Skills;
 import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.impl.campaign.ids.Voices;
 //import com.fs.starfarer.api.impl.campaign.intel.UIPiekloMiningIntel;
+import data.scripts.world.AtrimpasSwitcherNex;
 import data.scripts.world.Commonwealth_ZI_Gen;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 //import exerelin.campaign.SectorManager;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
+import exerelin.campaign.PlayerFactionStore;
+import exerelin.campaign.SectorManager;
+import exerelin.campaign.intel.BuyColonyIntel;
 
 public class CZIModPlugin extends BaseModPlugin {
-//    @Override
-//    public void onApplicationLoad() throws Exception {
+    public static boolean isExerelin = false;
+    //    @Override
+    //    public void onApplicationLoad() throws Exception {
  //       super.onApplicationLoad();
 
         // Test that the .jar is loaded and working, using the most obnoxious way possible.
@@ -27,23 +34,30 @@ public class CZIModPlugin extends BaseModPlugin {
 //    }
 
     @Override
+    public void onApplicationLoad() {
+        if(Global.getSettings().getModManager().isModEnabled("nexerelin"))isExerelin = true;
+    }
+    @Override
     public void onNewGame() {
         super.onNewGame();
-
-        //The code below requires that Nexerelin is added as a library (not a dependency, it's only needed to compile the mod).
-//        boolean isNexerelinEnabled = Global.getSettings().getModManager().isModEnabled("nexerelin");
-//
-//        if (!isNexerelinEnabled || SectorManager.getManager().isCorvusMode()) {
-//            new Commonwealth_ZI_Gen().generate(Global.getSector()); //create systems and do relations stuff
-//        }
-
-        // don't create star systems in nexerelin random sector generation
+       //The code below requires that Nexerelin is added as a library (not a dependency, it's only needed to compile the mod).
         boolean isNexerelinEnabled = Global.getSettings().getModManager().isModEnabled("nexerelin");
-
+        //gets data for corvus mode ?(whats corvus mode)?
+      if (!isNexerelinEnabled || SectorManager.getManager().isCorvusMode()) {
+          new Commonwealth_ZI_Gen().generate(Global.getSector()); //create systems and do relations stuff
+          Global.getSector().addScript(new AtrimpasSwitcherNex());
+          return;
+        }
+        //create star systems in nexerelin NON-random sector generation (ie, non corvus?)
+        //boolean isNexerelinEnabled = Global.getSettings().getModManager().isModEnabled("nexerelin");
         if (!isNexerelinEnabled || !Global.getSector().getMemoryWithoutUpdate().getBoolean("$nex_randomSector")) {
             new Commonwealth_ZI_Gen().generate(Global.getSector()); //create systems and do relations stuff
         }
+        else{
+            new Commonwealth_ZI_Gen().generate(Global.getSector()); //create systems and do relations stuff
+        }
     }
+
 
     @Override
     public void onGameLoad(boolean newGame) {
@@ -71,6 +85,7 @@ public class CZIModPlugin extends BaseModPlugin {
 
         market = Global.getSector().getEconomy().getMarket("czi_zimowia"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
+            //adds the king kazimir
             PersonAPI czi_kazimir = Global.getFactory().createPerson();
             czi_kazimir.setId("czi_kazimir");
             czi_kazimir.setFaction("czi");
@@ -91,6 +106,7 @@ public class CZIModPlugin extends BaseModPlugin {
         }
         market = Global.getSector().getEconomy().getMarket("czi_agropelter"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
+            //adds princess Anzhelika
             PersonAPI czi_anzhelika = Global.getFactory().createPerson();
             czi_anzhelika.setId("czi_anzhelika");
             czi_anzhelika.setFaction("czi");
@@ -111,6 +127,7 @@ public class CZIModPlugin extends BaseModPlugin {
         }
         market = Global.getSector().getEconomy().getMarket("czi_ivernia"); //MAKE SURE to add _market onto the end of the string, due to how MarketCreateHelper works
         if (market != null) {
+            //adds prince zygfryd
             PersonAPI czi_zygfryd = Global.getFactory().createPerson();
             czi_zygfryd.setId("czi_zygfryd");
             czi_zygfryd.setFaction("czi");
@@ -130,4 +147,36 @@ public class CZIModPlugin extends BaseModPlugin {
             //market.setAdmin(czi_zygfryd);
         }
     }
+
+    @Override
+    public void onNewGameAfterTimePass() {
+        SectorAPI sector = Global.getSector();
+        boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
+
+        // Handle Nex governorship event
+        if (haveNexerelin && SectorManager.getManager().isCorvusMode()
+                && AtrimpasSwitcherNex.Commonwealth.equals(PlayerFactionStore.getPlayerFactionIdNGC())) {
+            SectorEntityToken Atrimpas = Global.getSector().getEntityById(AtrimpasSwitcherNex.Atrimpas);
+            if (Atrimpas == null) return;
+            MarketAPI market = Atrimpas.getMarket();
+            if (market != null) {
+                BuyColonyIntel intel = new BuyColonyIntel(market.getFactionId(), market);
+                intel.init();
+            }
+        }
+    }
+    // ======================================================
+    //          HELPER METHODS (from Mayasuran Navy)
+    // ======================================================
+    /*private static void setExerelin(boolean bool) {
+        isExerelin = bool;
+    }
+
+    private static void initMN() {
+        if (isExerelin && !SectorManager.getManager().isCorvusMode()) {
+            return;
+        }
+        new Commonwealth_ZI_Gen().generate(Global.getSector());
+    }*/
+
 }

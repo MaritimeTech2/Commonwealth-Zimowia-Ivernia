@@ -32,7 +32,7 @@
     "deactivateSound":"system_damper_off",
     #"outOfUsesSound":"gun_out_of_ammo",
 
-	"range":650,
+	"range":800,
 	
 	"empDamage":400,
 	"damage":150,
@@ -56,7 +56,7 @@
     #"emp_fadedOutAtStart":true,
 
 	"aiHints":{
-		"threatRange":800,
+		"threatRange":900,
 		"threatAmount":4,
 		"threatAngle":0,
 		"threatArc":360,

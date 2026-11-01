@@ -13,36 +13,35 @@
   "viewOffset": 0,
   "builtInMods": [
     "czi_autoforge_repair",
-    "czi_composite_armor",
-    "fluxshunt"
+    "czi_composite_armor"
   ],
   "weaponSlots": [
     {
       "id": "WS0002",
-      "size": "MEDIUM",
-      "type": "UNIVERSAL",
-      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
       "arc": 270,
-      "angle": 0,
-      "locations": [4.5, 4]
+      "angle": 56.5,
+      "locations": [9, 27.5]
     },
     {
       "id": "WS0003",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 290,
-      "angle": 83,
-      "locations": [10.5, 44]
+      "angle": 83.5,
+      "locations": [12.5, 48]
     },
     {
       "id": "WS0004",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 290,
       "angle": -83,
-      "locations": [10.5, -38]
+      "locations": [11.5, -42]
     },
     {
       "id": "LB 1",
@@ -52,6 +51,33 @@
       "arc": 360,
       "angle": 0,
       "locations": [-7, 2.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -55,
+      "locations": [10.5, -25]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 178.5,
+      "locations": [-6, 2.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [14, 1.5]
     }
   ],
   "engineSlots": [
