@@ -6,7 +6,7 @@
    	#"spawnAsFactionId":"czi",
 	#id:"czi",
     
-    	#"ngcTooltip":"For our struggle is not against enemies of blood and flesh, but against the rulers, against the authorities, against the cosmic powers of 	#this present darkness, against the spiritual forces of evil in the heavenly places. Ephesians 6:12",
+    	"ngcTooltip":"For our struggle is not against enemies of blood and flesh, but against the rulers, against the authorities, against the cosmic powers of 	this present darkness, against the spiritual forces of evil in the heavenly places. Ephesians 6:12",
     
 	"rebelFleetSuffix":"Renegades",
 
@@ -25,9 +25,9 @@
 	"invasionPointMult":0.45,
 
 	"vengeanceFleetSizeMult":1.15,
-    "vengeanceLevelNames":["Hunter", "Fanatic", "Revenge"],
-    "vengeanceFleetNames":["Hunter-Killer", "Fanatics", "Revengeance"],
-    "vengeanceFleetNamesSingle":["a Hunter-Killer Fleet", "a Fanatical Armada", "a Revengeance Squadron"],
+    	"vengeanceLevelNames":["Hunter", "Fanatic", "Revenge"],
+    	"vengeanceFleetNames":["Hunter-Killer", "Fanatics", "Revengeance"],
+    	"vengeanceFleetNamesSingle":["a Hunter-Killer Fleet", "a Fanatical Armada", "a Revengeance Squadron"],
 
     "specialForcesPointMult":2.55,
 	"specialForcesSizeMult":2.55,

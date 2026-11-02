@@ -1,22 +1,22 @@
 name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,c/s,c/f,f/s,f/f,crew/s,crew/f,hints,tags,rarity,breakProb,minPieces,maxPieces,travel drive,number
-Hyacinth,czi_hyacinth,Heavy Gun Platform,Commonwealth,czi_shortflicker,16,3200,5750,6500,7000,950,170,0,55,70,55,55,45,1600,FRONT,,210,0.4,0.9,,,180,200,150,100,5,20,8,145000,5,10,210,0.094,25,25,,,,,,,,"czi, czi_base_bp",,.4,2,4,,502
-Kaukas,czi_kaukas,Light Gun Platform,Commonwealth,maneuveringjets,12,2600,3250,5000,5000,650,130,0,75,50,40,50,20,1300,FRONT,,180,0.4,0.9,,,100,120,90,60,4,15,9,95000,5,10,180,0.094,15,15,,,,,,,,"czi, czi_base_bp",,.4,2,4,,407
-Brychan,czi_brychan,Gun Platform,Commonwealth,ammofeed,10,1500,2750,3200,5000,450,90,0,80,60,50,45,60,500,OMNI,,120,0.3,1.1,,,30,48,50,40,2,20,9,35000,5,10,120,0.094,10,10,,,,,,,,"czi, czi_base_bp",,.4,2,3,,302
-Bystryk,czi_bystryk,Light Gun Platform,Commonwealth,czi_shortflicker,4,1100,700,1800,1500,250,50,0,110,100,80,100,80,300,FRONT,,360,0.4,0.8,,,15,20,40,15,1,15,10,22500,5,10,60,0.094,5,5,,,,,,,,"czi, czi_base_bp",,.4,2,3,,202
+Hyacinth,czi_hyacinth,Heavy Gun Platform,Commonwealth,czi_shortflicker,18,2900,7000,7500,7000,950,170,0,60,70,55,55,45,1600,FRONT,,210,0.3,0.85,,,180,200,150,75,5,15,9,145000,5,10,210,0.094,25,25,,,,,,,,"czi, czi_base_bp",,.4,2,4,,502
+Kaukas,czi_kaukas,Light Gun Platform,Commonwealth,highenergyfocus,12,2200,4500,6000,5500,700,130,0,85,50,40,50,20,1300,FRONT,,180,0.3,0.85,,,100,120,90,160,4,40,9,95000,5,10,180,0.094,15,15,,,,,,,,"czi, czi_base_bp",,.4,2,4,,407
+Brychan,czi_brychan,Gun Platform,Commonwealth,ammofeed,10,1400,3800,3400,3000,500,90,0,80,60,50,45,60,500,FRONT,,240,0.3,0.8,,,30,48,50,50,2,25,10,35000,5,10,120,0.094,10,10,,,,,,,,"czi, czi_base_bp",,.4,2,3,,302
+Bystryk,czi_bystryk,Light Gun Platform,Commonwealth,czi_shortflicker,4,1100,1800,2200,2000,400,50,0,125,100,80,100,80,300,FRONT,,210,0.3,0.8,,,15,20,40,15,1,15,10,22500,5,10,60,0.094,5,5,,,,,,,,"czi, czi_base_bp",,.4,2,3,,202
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Sluagh,czi_sluagh,Hunter Killer,Commonwealth,acausaldisruptor,8,800,2800,3500,3000,550,100,0,115,90,80,70,60,350,OMNI,,300,0.4,0.9,,,35,40,30,30,2,15,9,90000,5,10,180,0.094,14,14,,,,,,,,"czi, czi_base_bp",,.4,2,4,,306
+Sluagh,czi_sluagh,Hunter Killer,Commonwealth,acausaldisruptor,12,800,2800,3500,3000,550,100,0,115,90,80,70,60,350,OMNI,,300,0.4,0.9,,,35,40,30,30,2,15,9,90000,5,10,180,0.094,14,14,,,,,,,,"czi, czi_base_bp",,.4,2,4,,306
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Failinis,czi_failinis,Assault Platform,Commonwealth,czi_shimmer,20,3500,5000,6000,4500,900,175,0,70,60,50,50,45,1200,NONE,,,,,,,75,100,100,60,4,15,9,155000,6,15,240,0.094,30,30,,,,,,,,"czi, czi_base_bp",,.4,2,3,,505
+Failinis,czi_failinis,Assault Platform,Commonwealth,czi_shimmer,25,3500,8000,7000,6500,900,175,0,90,60,50,50,45,1200,NONE,,,,,,,75,100,100,60,4,15,9,155000,6,15,240,0.094,30,30,,,,,,,,"czi, czi_base_bp",,.4,2,3,,505
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jadwiga,czi_jadwiga,Bulwark,Commonwealth,czi_emp,28,4600,6500,11000,11000,1500,335,0,50,20,15,25,10,2700,OMNI,,120,0.3,1.1,,,600,800,450,300,20,15,8,375000,4,12,360,0.094,45,45,,,,,,,,"czi, czi_base_bp",,.4,2,4,,601
-Kazimierz ,czi_kazimierz,Bulwark,Commonwealth,czi_emp,14,3000,4500,6500,7000,850,160,0,60,60,50,30,35,1500,OMNI,,110,0.3,1.1,,,150,200,100,100,5,20,9,85000,5,10,180,0.094,20,20,,,,,,,,"czi, czi_base_bp",,.4,2,3,,405
-Kilian,czi_kilian,Bulwark,Commonwealth,czi_emp,3,1500,900,2600,2000,300,45,0,105,80,80,80,70,200,OMNI,,160,0.3,1.1,,,10,20,30,15,1,15,10,30000,6,12,120,0.094,5,5,,,,,,,,"czi, czi_base_bp",,.4,2,3,,201
+Jadwiga,czi_jadwiga,Bulwark,Commonwealth,czi_emp,35,6000,7000,11500,10000,1500,335,0,50,20,15,25,10,2700,OMNI,,120,0.4,1.1,,,600,800,450,225,15,15,8,375000,4,12,360,0.094,45,45,,,,,,,,"czi, czi_base_bp",,.4,2,4,,601
+Kazimierz ,czi_kazimierz,Bulwark,Commonwealth,czi_emp,16,3300,5500,8500,8000,600,160,0,60,60,50,30,35,1500,OMNI,,110,0.4,1.1,,,150,200,100,100,4,25,9,85000,5,10,180,0.094,20,20,,,,,,,,"czi, czi_base_bp",,.4,2,3,,405
+Kilian,czi_kilian,Bulwark,Commonwealth,czi_emp,3,2000,1000,3000,2500,250,55,0,105,80,80,80,70,350,OMNI,,270,0.4,0.9,,,10,20,30,15,1,15,10,30000,6,12,120,0.094,5,5,,,,,,,,"czi, czi_base_bp",,.4,2,3,,201
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Oillipheist,czi_oillipheist,Carrier,Commonwealth,forgevats,22,2600,3250,4500,4000,400,170,2,70,60,40,30,30,1700,FRONT,,180,0.4,0.9,,,200,400,400,400,5,80,8,135000,5,14,210,0.094,22,22,,,,,,,"CARRIER, COMBAT","czi, czi_base_bp",,.4,2,4,,503
-Rusalka,czi_rusalka,Patrol Carrier,Commonwealth,fastmissileracks,7,1400,2000,2000,1500,200,90,1,80,80,60,40,30,500,OMNI,,90,0.3,1.1,,,40,200,200,120,3,40,9,40000,5,14,180,0.094,7,7,,,,,,,CARRIER,"czi, czi_base_bp",,.4,2,3,,301
+Oillipheist,czi_oillipheist,Carrier,Commonwealth,forgevats,22,2600,3250,4500,4000,400,170,2,70,60,40,30,30,1700,FRONT,,180,0.4,0.9,,,200,400,400,480,6,80,9,135000,5,14,210,0.094,20,20,,,,,,,"CARRIER, COMBAT","czi, czi_base_bp",,.4,2,4,,503
+Rusalka,czi_rusalka,Patrol Carrier,Commonwealth,fastmissileracks,7,1400,2500,2000,1500,200,90,1,80,80,60,40,30,500,OMNI,,90,0.3,1.1,,,40,200,200,120,3,40,9,40000,5,14,180,0.094,7,7,,,,,,,CARRIER,"czi, czi_base_bp",,.4,2,3,,301
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Cailleach,czi_cailleach,Replenishment Vessel,Commonwealth,microburn,8,3000,1500,4000,3000,350,160,0,40,30,20,30,20,3000,OMNI,,90,0.3,1.1,,,80,100,1600,2500,5,500,7,120000,2,20,120,0.094,18,18,,,,,,,"CIVILIAN, FREIGHTER","czi, czi_base_bp",,.4,2,4,,602
-Pelczar,czi_pelczar,Replenishment Vessel,Commonwealth,microburn,4,900,650,1000,800,200,65,0,80,50,40,20,10,550,OMNI,,90,0.3,1.1,,,25,50,400,900,3,300,8,30000,2,20,60,0.094,7,7,,,,,,,"CIVILIAN, FREIGHTER","czi, czi_base_bp",,.4,2,3,,308
+Cailleach,czi_cailleach,Replenishment Vessel,Commonwealth,microburn,6,3000,1500,4000,3000,350,160,0,40,30,20,30,20,3000,OMNI,,90,0.3,1.1,,,80,100,2750,3500,7,500,7,110000,2,20,120,0.094,18,18,,,,,,,"CIVILIAN, FREIGHTER","czi, czi_base_bp",,.4,2,4,,602
+Pelczar,czi_pelczar,Replenishment Vessel,Commonwealth,microburn,2,900,650,1000,800,200,65,0,80,50,40,20,10,550,OMNI,,90,0.3,1.1,,,25,50,550,1050,3,350,8,30000,2,20,60,0.094,6,6,,,,,,,"CIVILIAN, FREIGHTER","czi, czi_base_bp",,.4,2,3,,308
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Frigate Carrier Test,ui_frigate_carrier_test,Light Frieghter,Commonwealth,maneuveringjets,5,2000,200,8000,5000,150,55,0,85,50,40,40,35,600,OMNI,,90,0.6,0.95,,,25,48,900,90,3,30,8,25000,5,10,120,0.094,5,5,,,,,,,CIVILIAN,,,.4,2,3,,9923
 Piotr,ui_piotr,Shimmer Vessel,Commonwealth,ui_shimmer,5,300,750,3000,2000,150,50,0,135,60,80,80,40,200,FRONT,,120,0.3,0.8,,,5,5,0,0,0,0,9,10,5,0,120,0.094,0,0,,,,,,,,,,.4,2,3,,9000

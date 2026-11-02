@@ -138,11 +138,11 @@ public class CZIAlkanost {
 
         //add comms relay
         SectorEntityToken comms1 = system.addCustomEntity("alkanost_comms1", "Comms Beacon", "comm_relay", "czi");
-        comms1.setCircularOrbit(alkanoststar, (float) Math.random() * 360f, 5000, 400);
+        comms1.setCircularOrbit(alkanoststar, (float) Math.random() * 360f, 13600, 400);
 
         //add nav beacon
         SectorEntityToken nav1 = system.addCustomEntity("alkanost_nav1", "Nav Beacon", "nav_buoy", "czi");
-        nav1.setCircularOrbit(alkanoststar, (float) Math.random() * 360f, 13600,700);
+        nav1.setCircularOrbit(alkanoststar, (float) Math.random() * 360f, 5000,700);
 
         //add gate
         SectorEntityToken gate1 = system.addCustomEntity("alkanost_gate", "Active Gate", "inactive_gate", Factions.NEUTRAL);

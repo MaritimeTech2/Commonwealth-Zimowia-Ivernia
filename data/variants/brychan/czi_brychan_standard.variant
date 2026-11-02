@@ -3,7 +3,7 @@
   "hullId": "czi_brychan",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 15,
+  "fluxCapacitors": 13,
   "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
@@ -16,13 +16,14 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "czi_szabla",
+        "WS0001": "lightag",
         "WS0002": "czi_buckle",
         "WS0003": "czi_buckle",
         "WS0004": "czi_miss",
         "WS0005": "heavymauler",
-        "WS0006": "czi_szabla",
-        "WS0007": "czi_sword"
+        "WS0006": "lightag",
+        "WS0007": "czi_sword",
+        "WS0008": "czi_szabla"
       }
     }
   ],
