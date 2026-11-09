@@ -47,11 +47,12 @@ import data.scripts.world.systems.CZISirin;
 
             //starting relations
             FactionAPI czi = sector.getFaction("czi");
-            czi.setRelationship(Factions.PIRATES, -0.25f);
+            czi.setRelationship(Factions.PIRATES, -0.4f);
             czi.setRelationship(Factions.LUDDIC_PATH, -0.5f);
             czi.setRelationship(Factions.HEGEMONY, -0.3f);
             czi.setRelationship(Factions.TRITACHYON, -0.5f);
             czi.setRelationship(Factions.LUDDIC_CHURCH, -0.5f);
-            czi.setRelationship(Factions.PERSEAN, 0.5f);
+            czi.setRelationship(Factions.PERSEAN, 0.35f);
+            czi.setRelationship(Factions.INDEPENDENT, 0.1f);
         }
 }

@@ -3,14 +3,12 @@
   "hullId": "czi_oillipheist",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 20,
-  "fluxVents": 7,
+  "fluxCapacitors": 14,
+  "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "eccm",
-    "stabilizedshieldemitter",
-    "targetingunit",
     "reinforcedhull",
     "missleracks"
   ],
@@ -19,8 +17,14 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "hurricane",
-        "WS0002": "czi_shield"
+        "WS0001": "czi_talon_large",
+        "WS0002": "czi_talon_med",
+        "WS0003": "czi_buckle",
+        "WS0004": "pdlaser",
+        "WS0005": "pdlaser",
+        "WS0006": "czi_sword",
+        "WS0007": "czi_sword",
+        "WS0008": "czi_emp"
       }
     },
     {
@@ -31,24 +35,17 @@
     {
       "autofire": true,
       "mode": "LINKED",
-      "weapons": {
-        "WS0003": "czi_shield",
-        "WS0004": "czi_buckle",
-        "WS0005": "czi_buckle"
-      }
+      "weapons": {}
     },
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS0006": "czi_emp",
-        "WS0007": "czi_emp"
-      }
+      "weapons": {}
     }
   ],
   "modules": [],
   "wings": [
-    "gladius_wing",
-    "gladius_wing"
+    "trident_wing",
+    "trident_wing"
   ]
 }

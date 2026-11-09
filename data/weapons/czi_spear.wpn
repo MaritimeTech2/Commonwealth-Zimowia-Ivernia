@@ -2,7 +2,7 @@
   "id": "czi_spear",
   "specClass": "projectile",
   "projectileSpecId": "spear_shot",
-  "type": "ENERGY",
+  "type": "BALLISTIC",
   "size": "LARGE",
   "displayArcRadius": 1200,
   "turretSprite": "graphics/weapons/sw_phalanx1 (1).png",

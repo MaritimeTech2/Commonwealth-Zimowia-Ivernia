@@ -3,13 +3,15 @@
   "hullId": "czi_cailleach",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 8,
+  "fluxCapacitors": 23,
   "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "efficiency_overhaul",
-    "expanded_cargo_holds"
+    "expanded_cargo_holds",
+    "unstable_injector",
+    "czi_repair_overclock"
   ],
   "weaponGroups": [
     {

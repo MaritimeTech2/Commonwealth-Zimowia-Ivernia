@@ -91,7 +91,7 @@
 
    	"specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
 
-	    "startShipsSolo":[["czi_bystryk_standard"]],
+	    "startShipsSolo":[["czi_kilian_standard"]],
 
 	    "startShipsCombatSmall":[
 		["czi_brychan_standard", "czi_bystryk_standard"],
@@ -108,9 +108,9 @@
 		["czi_hyacinth_standard", "czi_brychan_standard", "czi_brychan_standard","czi_pelczar_standard"]
 	    ],
 
-	"startShipsTradeLarge":[["czi_cailleach_standard", "czi_pelczar_standard", "czi_pelczar_standard", "czi_kaukas_standard", 								"czi_bystryk_standard","czi_kilian_standard"]],
+	"startShipsTradeLarge":[["czi_cailleach_standard","czi_kaukas_standard", "czi_bystryk_standard","czi_kilian_standard"]],
 
-	"startShipsExplorerLarge":[["czi_kazimierz_stanadard", "czi_brychan_standard","czi_cailleach_standard", "czi_pelczar_standard"]],
+	"startShipsExplorerLarge":[["czi_kazimierz_stanadard", "czi_brychan_standard","czi_pelczar_standard","czi_pelczar_standard", "czi_pelczar_standard"]],
 
 	"startShipsGrandFleet":[
 		[ "czi_jadwiga_standard","czi_hyacinth_standard","czi_kaukas_standard", "czi_brychan_standard", 								"czi_brychan_standard","czi_bystryk_standard","czi_kilian_standard", "czi_cailleach_standard"]

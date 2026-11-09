@@ -191,3 +191,4 @@ nbdist/
 # End of https://www.toptal.com/developers/gitignore/api/netbeans,macos
 .idea/vcs.xml
 .idea/libraries/starfarer_api.xml
+/.idea/

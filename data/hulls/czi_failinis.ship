@@ -12,7 +12,6 @@
   "shieldRadius": 162,
   "viewOffset": 0,
   "builtInMods": [
-    "czi_composite_armor",
     "czi_autoforge_repair"
   ],
   "weaponSlots": [

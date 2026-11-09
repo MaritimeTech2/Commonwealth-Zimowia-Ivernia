@@ -26,7 +26,7 @@ public class CZISirin {
         //system.getLocation().set(15000, 30000); // Far Northeast of core (static)
         float w = Global.getSettings().getFloat("sectorWidth");
         float h = Global.getSettings().getFloat("sectorHeight");
-        system.getLocation().set( ( (w/2f) - 9500f), ( (h/2f) - 7000f) );
+        system.getLocation().set( ( (w/2f) - 11500f), ( (h/2f) - 8500f) );
 
         system.setBackgroundTextureFilename("graphics/backgrounds/background1.jpg");
 
@@ -35,7 +35,7 @@ public class CZISirin {
         // create the star and generate the hyperspace anchor for this system
         PlanetAPI sirinstar = system.initStar("Sirin", // unique id for this star
                 "star_white", // id in planets.json
-                750f, // radius (in pixels at default zoom)
+                450f, // radius (in pixels at default zoom)
                 250); // corona radius, from star edge
         system.setLightColor(new Color(225, 225, 185)); // light color in entire system, affects all entities
 
@@ -58,7 +58,7 @@ public class CZISirin {
                 "toxic",
                 360f * (float) Math.random(),
                 140f,
-                4500f,
+                3350f,
                 340);
         sirin2.getMarket().addCondition(Conditions.TECTONIC_ACTIVITY);
         sirin2.getMarket().addCondition(Conditions.TOXIC_ATMOSPHERE);
@@ -73,28 +73,29 @@ public class CZISirin {
                 "Sinir",
                 "arid",
                 360f * (float) Math.random(),
-                160f,
-                6000f,
+                105f,
+                4200f,
                 320f);
-        sirina.getMarket().addCondition(Conditions.THIN_ATMOSPHERE);
+        sirina.getMarket().addCondition(Conditions.LOW_GRAVITY);
         sirina.getMarket().addCondition(Conditions.HOT);
         sirina.getMarket().addCondition(Conditions.HABITABLE);
         sirina.getMarket().addCondition(Conditions.FARMLAND_POOR);
         sirina.getMarket().addCondition(Conditions.ORGANICS_ABUNDANT);
         sirina.getMarket().addCondition(Conditions.ORE_ABUNDANT);
+        sirina.getMarket().addCondition(Conditions.RARE_ORE_SPARSE);
 
         PlanetAPI sirin1 = system.addPlanet("czi_sirin1",
                 sirinstar,
                 "Siren",
                 "terran-eccentric",
                 360f * (float) Math.random(),
-                140f,
-                8000f,
+                160f,
+                5200f,
                 320f);
         sirin1.getMarket().addCondition(Conditions.HABITABLE);
         sirin1.getMarket().addCondition(Conditions.ORE_SPARSE);
-        sirin1.getMarket().addCondition(Conditions.ORGANICS_TRACE);
-        sirin1.getMarket().addCondition(Conditions.FARMLAND_ADEQUATE);
+        sirin1.getMarket().addCondition(Conditions.ORGANICS_COMMON);
+        sirin1.getMarket().addCondition(Conditions.FARMLAND_RICH);
 
 
         PlanetAPI sirin4 = system.addPlanet("czi_sirin4",
@@ -103,7 +104,7 @@ public class CZISirin {
                 "gas_giant",
                 210f,
                 370f,
-                12000f,
+                8500f,
                 900f);
         sirin4.getMarket().addCondition(Conditions.HIGH_GRAVITY);
         sirin4.getMarket().addCondition(Conditions.DENSE_ATMOSPHERE);
@@ -146,11 +147,11 @@ public class CZISirin {
         // Terrain
         //add first stable loc
         SectorEntityToken stableLoc1 = system.addCustomEntity("sirin_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        stableLoc1.setCircularOrbit(sirinstar, (float) Math.random() * 360f, 2850f, 220);
+        stableLoc1.setCircularOrbit(sirinstar, (float) Math.random() * 360f, 2550f, 220);
 
         //add second stable location
         SectorEntityToken comms1 = system.addCustomEntity("sirin_stableloc_1", "Stable Location", "stable_location", Factions.NEUTRAL);
-        comms1.setCircularOrbit(sirinstar, (float) Math.random() * 360f, 8800, 400);
+        comms1.setCircularOrbit(sirinstar, (float) Math.random() * 360f, 5600, 400);
 
         //add nav beacon
         /*SectorEntityToken nav1 = system.addCustomEntity("alkanost_nav1", "Nav Beacon", "nav_buoy", "ui");
@@ -159,14 +160,14 @@ public class CZISirin {
 
 
         //inner band
-        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 3000f, 250f, Terrain.RING, null);
-        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 3200f, 250f, Terrain.RING, null);
+        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 2700f, 250f, Terrain.RING, null);
+        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 2900f, 250f, Terrain.RING, null);
 
         //outer band
-        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 1, Color.gray, 256f, 9000f, 250f, Terrain.RING, null);
-        system.addRingBand(sirinstar, "misc", "rings_ice0", 256f, 2, Color.gray, 256f, 9100f, 250f, Terrain.RING, null);
-        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 9300f, 250f, Terrain.RING, null);
-        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 9500f, 250f, Terrain.RING, null);
+        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 1, Color.gray, 256f, 5700f, 250f, Terrain.RING, null);
+        system.addRingBand(sirinstar, "misc", "rings_ice0", 256f, 2, Color.gray, 256f, 5900f, 250f, Terrain.RING, null);
+        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 6100f, 250f, Terrain.RING, null);
+        system.addRingBand(sirinstar, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 6300f, 250f, Terrain.RING, null);
 
 
 
@@ -175,7 +176,7 @@ public class CZISirin {
                 "Inner Jump");
         jumpPoint1.setCircularOrbit(system.getEntityById("Sirin"),
                 360f * (float) Math.random(), //position
-                1500f, // distance from focus
+                1200f, // distance from focus
                 90f); //days it takes to orbit
         jumpPoint1.setStandardWormholeToHyperspaceVisual();
         system.addEntity(jumpPoint1);
@@ -185,7 +186,7 @@ public class CZISirin {
                 "Outer Jump");
         jumpPoint2.setCircularOrbit(system.getEntityById("Sirin"),
                 0f, //position
-                10000f, // distance from focus
+                6600f, // distance from focus
                 400f); //days it takes to orbit
         jumpPoint2.setStandardWormholeToHyperspaceVisual();
         system.addEntity(jumpPoint2);

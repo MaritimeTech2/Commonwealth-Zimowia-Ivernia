@@ -6,6 +6,7 @@ import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.combat.listeners.AdvanceableListener;
+import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.ui.Alignment;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
@@ -15,17 +16,14 @@ import java.util.Map;
 
 public class AutoForgedRepair extends BaseHullMod {
 
-    public static final float CASUALTY_REDUCTION = 40f;
-    public static final float COMBAT_REPAIR_ENG = 100f;
-    public static final float CAMPAIGN_REPAIR = 100f;
-    public static final float CAMPAIGN_REPAIR_COST = 50f;
+    public static final float RECOVERY_INCREASE = 25f;
 
     public static Map mag = new HashMap();
     static {
-        mag.put(HullSize.FRIGATE, 10f);
-        mag.put(HullSize.DESTROYER, 30f);
-        mag.put(HullSize.CRUISER, 50f);
-        mag.put(HullSize.CAPITAL_SHIP, 75f);
+        mag.put(HullSize.FRIGATE, 5f);
+        mag.put(HullSize.DESTROYER, 10f);
+        mag.put(HullSize.CRUISER, 20f);
+        mag.put(HullSize.CAPITAL_SHIP, 40f);
     }
 
     public String getDescriptionParam(int index, HullSize hullSize) {
@@ -33,21 +31,15 @@ public class AutoForgedRepair extends BaseHullMod {
         if (index == 1) return "" + ((Float) mag.get(HullSize.DESTROYER)).intValue();
         if (index == 2) return "" + ((Float) mag.get(HullSize.CRUISER)).intValue();
         if (index == 3) return "" + ((Float) mag.get(HullSize.CAPITAL_SHIP)).intValue();
-        if (index == 4) return "" + (int) Math.round(COMBAT_REPAIR_ENG) + "%";
-        if (index == 5) return "" + (int) Math.round(CASUALTY_REDUCTION) + "%";
+        if (index == 4) return "" + (int) Math.round(RECOVERY_INCREASE) + "%";
+        //if (index == 5) return "" + (int) Math.round(CASUALTY_REDUCTION) + "%";
         return null;
     }
 
     public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
-
-        boolean sMod = isSMod(stats);
-        // reduces crew causaulties due to hull damage
-        stats.getCrewLossMult().modifyPercent(id,CASUALTY_REDUCTION);
-        // reduces time engines and weapons take to repair
-        stats.getCombatEngineRepairTimeMult().modifyPercent(id,COMBAT_REPAIR_ENG);
-        stats.getCombatWeaponRepairTimeMult().modifyPercent(id,COMBAT_REPAIR_ENG);
-        // increases repair rate speed for ships after a battle in the campaign layer
-        //stats.getRepairRatePercentPerDay().modifyPercent(id, CAMPAIGN_REPAIR);
+        //boolean sMod = isSMod(stats);
+        // Increases recovery percent
+        stats.getDynamic().getMod(Stats.INDIVIDUAL_SHIP_RECOVERY_MOD).modifyPercent(id, RECOVERY_INCREASE);
 
         // gives the ships a hull repair modifier while in battle
         //stats.getHullCombatRepairRatePercentPerSecond()

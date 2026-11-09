@@ -32,14 +32,14 @@ public class CZIShimmerAi implements ShipSystemAIScript{
         if(IntervalTick.intervalElapsed()){
             //rip bozo if you think i know why this is here
             if(Current_Flux_Level){
-                if(ship.getFluxLevel() <= 0.60f) Current_Flux_Level = false;
+                if(ship.getHardFluxLevel() <= 0.60f) Current_Flux_Level = false;
                 return;
             }
             //checks if the system is not active and if Is_system_on is true, if so sets is_system_on to false.
             if(!system.isActive() && Is_System_On) Is_System_On = false;
 
             //make the ai turn on shipsystem if flux is low enough.  checking if the system is off and that enemies are near
-            if(ship.getFluxLevel() <= 0.75f) {
+            if(ship.getHardFluxLevel() <= 0.75f) {
                 ShipAPI enemy_ship = (ShipAPI) AIUtils.getNearestEnemy(ship);
                 //checks if enemies are within 2000su
                 if(enemy_ship != null){
@@ -58,7 +58,7 @@ public class CZIShimmerAi implements ShipSystemAIScript{
                 Current_Flux_Level = true;
             }
             //checks if the flux is high enough, and tells ai to shut off system
-            if((ship.getFluxLevel() >= 0.85f || Enemy_ship_Range >RANGE) && Is_System_On) {
+            if((ship.getHardFluxLevel() >= 0.85f || Enemy_ship_Range >RANGE) && Is_System_On) {
                 ship.useSystem();
                 Is_System_On = false;
             }

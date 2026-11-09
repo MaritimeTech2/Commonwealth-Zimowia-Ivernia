@@ -3,14 +3,12 @@
   "hullId": "czi_sluagh",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 12,
-  "fluxVents": 5,
+  "fluxCapacitors": 20,
+  "fluxVents": 10,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
-    "reinforcedhull",
-    "heavyarmor",
     "hardenedshieldemitter"
   ],
   "weaponGroups": [
@@ -18,17 +16,18 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "czi_fist",
-        "WS0002": "czi_fist"
+        "WS0001": "czi_low_intensity",
+        "WS0002": "czi_fist",
+        "WS0003": "pdburst",
+        "WS0004": "czi_light_mrpg",
+        "WS0006": "czi_szabla",
+        "WS0007": "czi_szabla"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS0003": "czi_sciath",
-        "WS0004": "czi_sciath"
-      }
+      "weapons": {}
     },
     {
       "autofire": true,

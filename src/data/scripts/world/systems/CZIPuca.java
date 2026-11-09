@@ -29,7 +29,7 @@ public class CZIPuca {
         //system.getLocation().set(15000, 30000); // Far Northeast of core (static)
         float w = Global.getSettings().getFloat("sectorWidth");
         float h = Global.getSettings().getFloat("sectorHeight");
-        system.getLocation().set( ( (w/2f) - 13500f), ( (h/2f) - 6500f) );
+        system.getLocation().set( ( (w/2f) - 14500f), ( (h/2f) - 6500f) );
 
         system.setBackgroundTextureFilename("graphics/backgrounds/background1.jpg");
 
@@ -48,27 +48,27 @@ public class CZIPuca {
                 "desert",
                 360f * (float) Math.random(),
                 160f,
-                4500f,
+                4200f,
                 320f);
 
 
-        PlanetAPI puca2 = system.addPlanet("czi_puca2",
+        /*PlanetAPI puca2 = system.addPlanet("czi_puca2",
                 pucastar,
                 "Puca III",
                 "toxic",
                 360f * (float) Math.random(),
                 140f,
                 6000f,
-                320f);
+                320f);*/
 
 
         PlanetAPI puca3 = system.addPlanet("czi_puca3",
                 pucastar,
-                "Puca IV",
+                "Puca III",
                 "jungle",
                 360f * (float) Math.random(),
                 140f,
-                8000f,
+                5700f,
                 340);
 
 
@@ -84,7 +84,7 @@ public class CZIPuca {
 
         PlanetAPI puca5 = system.addPlanet("czi_puca5",
                 pucastar,
-                "Puca V",
+                "Puca IV",
                 "gas_giant",
                 210f,
                 410f,
@@ -99,8 +99,8 @@ public class CZIPuca {
 
         PlanetAPI pucaVa = system.addPlanet("czi_puca5a",
                 puca5,
-                "Sirin Va",
-                "barren",
+                "Puca IVa",
+                "cryovolcanic",
                 240f,
                 90f,
                 1200f,
@@ -109,7 +109,7 @@ public class CZIPuca {
 
         PlanetAPI pucaVb = system.addPlanet("czi_puca5b",
                 puca5,
-                "Sirin Vb",
+                "Puca IVb",
                 "frozen",
                 200f,
                 90f,

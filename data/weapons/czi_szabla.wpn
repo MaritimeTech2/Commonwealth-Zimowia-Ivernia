@@ -4,10 +4,12 @@
   "projectileSpecId": "szabla_shot",
   "type": "BALLISTIC",
   "size": "SMALL",
-  "turretSprite": "graphics/weapons/seven_micro_pulse_turret.png",
-  "turretGlowSprite": "graphics/weapons/seven_micro_pulse_turret_glow.png",
-  "hardpointSprite": "graphics/weapons/seven_micro_pulse_hardpoint.png",
-  "hardpointGlowSprite": "graphics/weapons/seven_micro_pulse_hardpoint_glow.png",
+  "turretSprite": "graphics/weapons/Szabla_hardpoint.png",
+  "turretGlowSprite": "graphics/weapons/Szabla_hardpoint_glow.png",
+  "turretGunSprite": "graphics/weapons/Szabla_hardpoint.png",
+  "hardpointSprite": "graphics/weapons/Szabla_hardpoint.png",
+  "hardpointGlowSprite": "graphics/weapons/Szabla_hardpoint_glow.png",
+  "hardpointGunSprite": "graphics/weapons/Szabla_hardpoint.png",
   "glowColor": [
     200,
     200,
@@ -15,15 +17,15 @@
     255
   ],
   "turretOffsets": [
-    10,
-    0
+    12,
+    1.5
   ],
   "turretAngleOffsets": [
     0
   ],
   "hardpointOffsets": [
-    15,
-    0
+    20.5,
+    1.5
   ],
   "hardpointAngleOffsets": [
     0

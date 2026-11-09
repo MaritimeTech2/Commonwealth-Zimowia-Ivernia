@@ -12,8 +12,7 @@
   "shieldRadius": 173.5,
   "viewOffset": 0,
   "builtInMods": [
-    "czi_autoforge_repair",
-    "czi_composite_armor"
+    "czi_autoforge_repair"
   ],
   "weaponSlots": [
     {
@@ -21,22 +20,22 @@
       "size": "LARGE",
       "type": "SYNERGY",
       "mount": "HARDPOINT",
-      "arc": 0,
+      "arc": 20,
       "angle": 0,
-      "locations": [40.5, -5]
+      "locations": [28, -4]
     },
     {
       "id": "WS0002",
       "size": "MEDIUM",
-      "type": "ENERGY",
-      "mount": "TURRET",
-      "arc": 210,
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
       "angle": 0,
-      "locations": [118, -4]
+      "locations": [119.5, -3]
     },
     {
       "id": "WS0003",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 210,
@@ -46,25 +45,25 @@
     {
       "id": "WS0004",
       "size": "SMALL",
-      "type": "HYBRID",
+      "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 160,
-      "angle": 112,
+      "arc": 200,
+      "angle": 95,
       "locations": [-50, 16.5]
     },
     {
       "id": "WS0005",
       "size": "SMALL",
-      "type": "HYBRID",
+      "type": "ENERGY",
       "mount": "TURRET",
-      "arc": 160,
-      "angle": -115,
+      "arc": 210,
+      "angle": -95,
       "locations": [-51, -29]
     },
     {
       "id": "WS0006",
-      "size": "SMALL",
-      "type": "COMPOSITE",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 160,
       "angle": -63,
@@ -72,8 +71,8 @@
     },
     {
       "id": "WS0007",
-      "size": "SMALL",
-      "type": "COMPOSITE",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 160,
       "angle": 37,
@@ -110,6 +109,15 @@
         -12.5, -48,
         -13, -65
       ]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 0,
+      "locations": [83, -4]
     }
   ],
   "engineSlots": [

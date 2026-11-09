@@ -3,7 +3,7 @@
   "hullId": "czi_rusalka",
   "displayName": "Combat Freighter",
   "goalVariant": true,
-  "fluxCapacitors": 2,
+  "fluxCapacitors": 8,
   "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
@@ -17,9 +17,12 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "czi_buckle",
-        "WS0002": "czi_buckle",
-        "WS0003": "czi_mrsm"
+        "WS0001": "czi_emp",
+        "WS0002": "czi_emp",
+        "WS0003": "czi_emp",
+        "WS0004": "czi_buckle",
+        "WS0005": "czi_buckle",
+        "WS0006": "czi_talon_small"
       }
     },
     {
@@ -35,6 +38,6 @@
   ],
   "modules": [],
   "wings": [
-    "trident_wing"
+    "xyphos_wing"
   ]
 }

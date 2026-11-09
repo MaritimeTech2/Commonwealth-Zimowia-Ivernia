@@ -3,8 +3,8 @@
   "hullId": "czi_jadwiga",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 40,
-  "fluxVents": 7,
+  "fluxCapacitors": 35,
+  "fluxVents": 29,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -17,12 +17,21 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "squall",
+        "WS0001": "czi_talon_large",
         "WS0003": "czi_mrsm",
-        "WS0008": "lrpdlaser",
-        "WS0009": "ionbeam",
+        "WS0004": "czi_talon_med",
+        "WS0005": "czi_talon_med",
+        "WS0008": "pdburst",
+        "WS0009": "czi_mrpg",
+        "WS0010": "czi_mrpg",
         "WS0011": "czi_mrpg",
-        "WS0031": "lrpdlaser"
+        "WS0012": "czi_szabla",
+        "WS0013": "czi_mrpg",
+        "WS0026": "czi_buckle",
+        "WS0027": "czi_buckle",
+        "WS0028": "pdburst",
+        "WS0029": "czi_light_mrpg",
+        "WS0031": "taclaser"
       }
     },
     {
@@ -30,10 +39,7 @@
       "mode": "LINKED",
       "weapons": {
         "WS0002": "czi_spear",
-        "WS0007": "czi_szabla",
-        "WS0010": "czi_sword",
-        "WS0012": "czi_szabla",
-        "WS0013": "czi_sword"
+        "WS0007": "czi_szabla"
       }
     },
     {
@@ -53,20 +59,13 @@
         "WS0023": "czi_buckle",
         "WS0024": "czi_buckle",
         "WS0025": "pdburst",
-        "WS0026": "czi_sciath",
-        "WS0027": "czi_sciath",
-        "WS0028": "pdburst",
-        "WS0029": "czi_sciath",
         "WS0030": "czi_shield"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
-      "weapons": {
-        "WS0004": "czi_miss",
-        "WS0005": "czi_miss"
-      }
+      "weapons": {}
     }
   ],
   "modules": [],

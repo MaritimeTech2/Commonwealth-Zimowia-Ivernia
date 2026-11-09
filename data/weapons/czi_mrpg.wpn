@@ -7,11 +7,9 @@
   "turretSprite": "graphics/weapons/mrgp_h.png",
   "turretGlowSprite": "graphics/weapons/mrgp_h_glow.png",
   "turretGunSprite": "graphics/weapons/mrgp_h_barrels.png",
-  "turretUnderSprite": "graphics/weapons/mrgp_h.png",
   "hardpointSprite": "graphics/weapons/mrgp_h.png",
   "hardpointGlowSprite": "graphics/weapons/mrgp_h_glow.png",
   "hardpointGunSprite": "graphics/weapons/mrgp_h_barrels.png",
-  "hardpointUnderSprite": "graphics/weapons/mrgp_h.png",
   "visualRecoil": 5,
   "renderHints": [
     RENDER_BARREL_BELOW

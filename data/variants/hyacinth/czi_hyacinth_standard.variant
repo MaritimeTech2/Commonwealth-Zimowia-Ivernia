@@ -4,14 +4,13 @@
   "displayName": "Standard",
   "goalVariant": true,
   "fluxCapacitors": 30,
-  "fluxVents": 6,
+  "fluxVents": 10,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "reinforcedhull",
     "targetingunit",
-    "blast_doors",
-    "auxiliarythrusters"
+    "blast_doors"
   ],
   "weaponGroups": [
     {
@@ -20,15 +19,13 @@
       "weapons": {
         "WS0001": "czi_sword",
         "WS0002": "czi_sword",
-        "WS0003": "lrpdlaser",
-        "WS0004": "lrpdlaser",
-        "WS0005": "czi_emp",
-        "WS0006": "czi_emp",
-        "WS0007": "czi_szabla",
-        "WS0008": "czi_szabla",
+        "WS0007": "pdburst",
+        "WS0008": "pdburst",
         "WS0009": "hil",
         "WS0010": "czi_buckle",
-        "WS0011": "czi_buckle"
+        "WS0011": "czi_szabla",
+        "WS0012": "czi_mrsm",
+        "WS0013": "gravitonbeam"
       }
     }
   ],

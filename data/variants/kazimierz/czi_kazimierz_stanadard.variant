@@ -3,8 +3,8 @@
   "hullId": "czi_kazimierz",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 26,
-  "fluxVents": 5,
+  "fluxCapacitors": 29,
+  "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -20,14 +20,14 @@
         "WS0001": "czi_sword",
         "WS0002": "ionbeam",
         "WS0003": "czi_sword",
-        "WS0004": "ionbeam",
+        "WS0004": "czi_low_intensity",
         "WS0005": "pdburst",
-        "WS0006": "pdburst",
+        "WS0006": "czi_talon_small",
         "WS0007": "czi_emp",
-        "WS0009": "heavymauler",
+        "WS0009": "heavyburst",
         "WS0010": "czi_buckle",
-        "WS0011": "czi_emp",
-        "WS0012": "lrpdlaser"
+        "WS0011": "czi_szabla",
+        "WS0012": "pdburst"
       }
     }
   ],

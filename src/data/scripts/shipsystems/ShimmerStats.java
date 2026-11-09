@@ -11,11 +11,13 @@ import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 public class ShimmerStats extends BaseShipSystemScript {
     public static final float MAX_TIME_MULT = 2.0f;
     public static final float MIN_TIME_MULT = 0f;
-    public static final float DAM_MULT = 0.5f;
+    public static final float DAM_MULT = 0.7f;
+    public static final float DAMAGE_BONUS_PERCENT = 20f;
+    public static final float ROF_BONUS = 0.4f;
+    public static final float FLUX_REDUCTION = 20f;
 
     public static final Color JITTER_COLOR = new Color(225,215,125,75);
     public static final Color JITTER_UNDER_COLOR = new Color(235,225,175,155);
-
 
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
         ShipAPI ship = null;
@@ -49,13 +51,21 @@ public class ShimmerStats extends BaseShipSystemScript {
         ship.setJitter(this, JITTER_COLOR, jitterLevel, 3, 0, 0 + jitterRangeBonus);
         ship.setJitterUnder(this, JITTER_UNDER_COLOR, jitterLevel, 25, 0f, 7f + jitterRangeBonus);
 
-
         float shipTimeMult = 1f + (MAX_TIME_MULT - 1f) * effectLevel;
         stats.getTimeMult().modifyMult(id, shipTimeMult);
 
+        // reduce damage taken while in shimmer
         stats.getHullDamageTakenMult().modifyMult(id, 1f - (1f - DAM_MULT) * effectLevel);
         stats.getArmorDamageTakenMult().modifyMult(id, 1f - (1f - DAM_MULT) * effectLevel);
         stats.getEmpDamageTakenMult().modifyMult(id, 1f - (1f - DAM_MULT) * effectLevel);
+
+        //increase damage from energy and ballistic weapons
+        float bonusPercent = DAMAGE_BONUS_PERCENT * effectLevel;
+        stats.getEnergyWeaponDamageMult().modifyPercent(id, bonusPercent);
+        float mult = 1f + ROF_BONUS * effectLevel;
+        stats.getBallisticRoFMult().modifyMult(id, mult);
+        stats.getBallisticWeaponFluxCostMod().modifyMult(id, 1f - (FLUX_REDUCTION * 0.01f));
+
         if (player) {
             Global.getCombatEngine().getTimeMult().modifyMult(id, 1f / shipTimeMult);
 //			if (ship.areAnyEnemiesInRange()) {

@@ -1,7 +1,7 @@
 {
 	"id":"spear_shot",
 	"specClass":"projectile",
-	"onHitEffect":"com.fs.starfarer.api.impl.combat.IonCannonOnHitEffect",
+	#"onHitEffect":"com.fs.starfarer.api.impl.combat.IonCannonOnHitEffect",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",
@@ -15,5 +15,21 @@
 	"passThroughMissiles":true,
 	"passThroughFighters":true,
 	"passThroughFightersOnlyWhenDestroyed":true,
-	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png",
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"range":5,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":85,
+									 "coreRadius":35, # full damage within core radius - also equal to proximity fuse range
+									 "collisionClass":PROJECTILE_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":100,
+									 "particleColor":[255,155,155,255],
+									 "sound":"explosion_flak"},
+					}
+
+	
 }

@@ -13,8 +13,7 @@
   "viewOffset": 0,
   "builtInMods": [
     "czi_autoforge_repair",
-    "czi_composite_armor",
-    "insulatedengine"
+    "fluxshunt"
   ],
   "weaponSlots": [
     {
@@ -22,18 +21,18 @@
       "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "HARDPOINT",
-      "arc": 60,
+      "arc": 30,
       "angle": 0,
-      "locations": [8.5, 27]
+      "locations": [8.5, 34]
     },
     {
       "id": "WS0002",
       "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "HARDPOINT",
-      "arc": 60,
+      "arc": 30,
       "angle": -0,
-      "locations": [8.5, -27]
+      "locations": [8.5, -34]
     },
     {
       "id": "WS0003",
@@ -42,7 +41,7 @@
       "mount": "TURRET",
       "arc": 160,
       "angle": 0,
-      "locations": [40, 15.5]
+      "locations": [29, 15.5]
     },
     {
       "id": "WS0004",
@@ -51,7 +50,7 @@
       "mount": "TURRET",
       "arc": 160,
       "angle": -0,
-      "locations": [40, -15.5]
+      "locations": [29, -15.5]
     },
     {
       "id": "WS0005",
@@ -73,6 +72,24 @@
         -7.5, 1,
         -56.5, 1.5
       ]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [50, 11.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": -0,
+      "locations": [50, -11.5]
     }
   ],
   "engineSlots": [

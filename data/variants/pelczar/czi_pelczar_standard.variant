@@ -3,13 +3,14 @@
   "hullId": "czi_pelczar",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 15,
-  "fluxVents": 11,
+  "fluxCapacitors": 16,
+  "fluxVents": 5,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "efficiency_overhaul",
     "auxiliary_fuel_tanks",
+    "unstable_injector",
     "reinforcedhull"
   ],
   "weaponGroups": [
