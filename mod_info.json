@@ -6,7 +6,7 @@
     "utility":"false",
 	"version":"0.1.0",
 	"description":"A faction mod",
-    "gameVersion": "0.98a-RC8",
+    "gameVersion": "0.98.5a-RC5",
   	"jars":["jars/CommonwealthZI.jar"],
   	"modPlugin":"data.scripts.CZIModPlugin",
 

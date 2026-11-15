@@ -1,10 +1,10 @@
 name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,c/s,c/f,f/s,f/f,crew/s,crew/f,hints,tags,rarity,breakProb,minPieces,maxPieces,travel drive,number
 Hyacinth,czi_hyacinth,Heavy Gun Platform,Commonwealth,czi_shortflicker,16,6000,1800,8500,8000,950,165,0,60,70,55,55,45,1600,FRONT,,210,0.3,0.85,,,180,200,150,75,5,15,9,145000,5,10,210,0.094,25,25,,,,,,,,"czi, czi_base_bp",,.4,2,4,,502
 Kaukas,czi_kaukas,Light Gun Platform,Commonwealth,highenergyfocus,12,5000,1200,6000,5500,650,130,0,85,50,40,50,20,1300,FRONT,,180,0.3,0.85,,,100,120,90,160,4,40,9,95000,5,10,180,0.094,15,15,,,,,,,,"czi, czi_base_bp",,.4,2,4,,407
-Brychan,czi_brychan,Gun Platform,Commonwealth,ammofeed,10,3200,1100,3400,3000,550,90,0,80,60,50,45,60,500,FRONT,,240,0.3,0.8,,,30,48,50,50,2,25,10,35000,5,10,120,0.094,11,11,,,,,,,,"czi, czi_base_bp",,.4,2,3,,302
+Brychan,czi_brychan,Gun Platform,Commonwealth,ammofeed,10,3200,1100,3600,3200,550,90,0,80,60,50,45,60,500,FRONT,,240,0.3,0.8,,,30,48,50,50,2,25,10,35000,5,10,120,0.094,11,11,,,,,,,,"czi, czi_base_bp",,.4,2,3,,302
 Bystryk,czi_bystryk,Light Gun Platform,Commonwealth,czi_shortflicker,4,1250,700,2300,2200,350,50,0,125,100,80,100,80,300,FRONT,,210,0.3,0.8,,,15,20,40,15,1,15,10,22500,5,10,60,0.094,4,4,,,,,,,,"czi, czi_base_bp",,.4,2,3,,202
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Sluagh,czi_sluagh,Hunter Killer,Commonwealth,acausaldisruptor,13,2500,1200,5000,3000,500,100,0,115,90,80,70,60,350,OMNI,,160,0.4,1,,,35,40,30,30,2,15,9,90000,5,10,180,0.094,14,14,,,,,,,,"czi, czi_base_bp",,.4,2,4,,306
+Sluagh,czi_sluagh,Hunter Killer,Commonwealth,acausaldisruptor,13,2500,1200,5000,3000,550,100,0,115,90,80,70,60,350,OMNI,,160,0.4,1,,,35,40,30,30,2,15,9,90000,5,10,180,0.094,14,14,,,,,,,,"czi, czi_base_bp",,.4,2,4,,306
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Failinis,czi_failinis,Assault Platform,Commonwealth,czi_shimmer,25,6000,2200,6500,6500,900,175,0,90,60,50,50,45,1200,NONE,,,,,,,75,100,100,60,4,15,9,155000,6,15,240,0.094,30,30,,,,,,,,"czi, czi_base_bp",,.4,2,3,,505
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
